@@ -16,7 +16,7 @@ SITE = os.path.dirname(HERE)
 SRC = os.path.join(os.path.dirname(SITE), "rvtr_archive")
 OUT = os.path.join(SITE, "images")
 
-LADDER = [320, 640, 960, 1280, 1920]
+LADDER = [320, 640, 960, 1280, 1600]
 QUALITY = 82
 
 
@@ -49,7 +49,16 @@ def build(job):
                 im.resize((tw, th), Image.LANCZOS).save(
                     out, "JPEG", quality=QUALITY, optimize=True, progressive=True
                 )
-            return uuid, {"stem": stem, "width": w, "height": h, "sizes": made}, None
+            # Drop derivatives from an earlier, different ladder so a lowered
+            # cap does not leave orphaned wide files behind.
+            keep = {f"{stem}-{tw}w.jpg" for tw in made}
+            pruned = []
+            for old in os.listdir(dest):
+                if old.endswith(".jpg") and old not in keep:
+                    os.remove(os.path.join(dest, old))
+                    pruned.append(old)
+            return uuid, {"stem": stem, "width": w, "height": h,
+                          "sizes": made, "pruned": pruned}, None
     except Exception as e:                                  # noqa: BLE001
         return uuid, None, f"{path}: {e}"
 
@@ -85,6 +94,9 @@ def main():
         for dp, _, fs in os.walk(OUT) for f in fs
     )
     print(f"\nbuilt {len(manifest)} images, {total/1e9:.2f} GB in {OUT}")
+    npruned = sum(len(v.get("pruned", ())) for v in manifest.values())
+    if npruned:
+        print(f"pruned {npruned} stale derivatives from a previous ladder")
     for e in errors:
         print("ERROR", e, file=sys.stderr)
     return 1 if errors else 0
