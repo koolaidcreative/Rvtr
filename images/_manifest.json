@@ -1,0 +1,7566 @@
+{
+ "010b3ea2-aff4-4129-879b-62bf572a83f6": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "infra-eco-logi-urbanism_yale_04",
+  "width": 1356
+ },
+ "01a4c2e6-0d31-4093-8a04-ad7c87d04055": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_01",
+  "width": 1080
+ },
+ "01c42e2c-7eda-4c4d-92de-3796db93a0be": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2009_ontario-power-authority",
+  "width": 9000
+ },
+ "0259d079-d0c7-4408-b486-56a71f7d38f7": {
+  "height": 1520,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_det6-1",
+  "width": 2344
+ },
+ "03067cac-800e-4b10-a848-c1d9f2c8abca": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1434
+  ],
+  "stem": "rvtr_matters-of-concern_01",
+  "width": 1434
+ },
+ "0351a090-8879-4fa0-99be-af702dded772": {
+  "height": 3899,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_det1-1",
+  "width": 6920
+ },
+ "036c0e51-c0f8-49fd-8e59-cc0cc98d00fa": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1810
+  ],
+  "stem": "rvtr_latitude_01",
+  "width": 1810
+ },
+ "03c79afb-2c78-498a-bd18-0f9e4efbf5ae": {
+  "height": 2571,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infundibuliforms_01",
+  "width": 3840
+ },
+ "063044bc-c3e6-4113-81ed-fa040bcde0f0": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1608
+  ],
+  "stem": "rvtr_resonant-chamber_07",
+  "width": 1608
+ },
+ "065a72be-a0b2-43b8-9778-d910954e9925": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1523
+  ],
+  "stem": "rvtr_pneusystems_06",
+  "width": 1523
+ },
+ "078a1ed7-ec50-4466-b1cc-530720dbbe71": {
+  "height": 2023,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_conduit-urbanism_17",
+  "width": 3840
+ },
+ "081ce0e1-dc77-455e-a85c-653fd0c0cb59": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1359
+  ],
+  "stem": "rvtr_rtm_resonant-chamber_03",
+  "width": 1359
+ },
+ "082e68c1-fd73-4360-868b-fd3eebe36e83": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_acadia_projects_12x12in",
+  "width": 3600
+ },
+ "0843e295-1499-4e7b-9a9d-08da77b11a06": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1799
+  ],
+  "stem": "rvtr_rtm_resonant-chamber_04",
+  "width": 1799
+ },
+ "08632fcf-c6ea-4778-bd96-72951a5c49dc": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1716
+  ],
+  "stem": "rvtr_seasons-house_05",
+  "width": 1716
+ },
+ "090b0f50-3bd1-4f72-8705-4ed42a4751f8": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2019_fertile-ground",
+  "width": 9000
+ },
+ "09513648-972c-487b-b4a9-cdf13551d053": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_resonant-chamber_05",
+  "width": 7200
+ },
+ "098f6d1b-5166-41f7-8280-cd76c898ea55": {
+  "height": 1073,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_notion_survey_triptych_imaging",
+  "width": 1920
+ },
+ "0ad0cfa3-545f-4d77-8adf-3ab00b576926": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_new-geographies",
+  "width": 3600
+ },
+ "0b246833-d940-4230-a503-bceb3255e874": {
+  "height": 8250,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20240913_site-plan-final_notitle",
+  "width": 13050
+ },
+ "0b24acfd-09d5-4e15-840c-c00eab0f8b4c": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "6_succession-farming",
+  "width": 7132
+ },
+ "0bc485bc-c534-40f7-be15-6e33661db4a8": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1284
+  ],
+  "stem": "rvtr_stratus-project_04",
+  "width": 1284
+ },
+ "0bdc06d3-18fd-4ab8-b94a-0a7f79db392f": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2012_small-projects",
+  "width": 9000
+ },
+ "0c9a33f9-067c-439d-891f-f82ccbd61530": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1335
+  ],
+  "stem": "rvtr_grounding_06",
+  "width": 1335
+ },
+ "0c9df946-bd8c-4977-b048-12f9d382f446": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2008_national-research-council",
+  "width": 9000
+ },
+ "0d33ac61-a14c-49aa-b0a1-1c102ae88a54": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   914
+  ],
+  "stem": "rvtr_buoyant-aquacology_04",
+  "width": 914
+ },
+ "0d70c7f6-c33b-4144-889f-03ad0909d35d": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30718432406_o",
+  "width": 4512
+ },
+ "0dbb3aee-d6fc-4d5c-ab63-ec441725e788": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_dimensions-21",
+  "width": 3600
+ },
+ "0eb26463-7e52-4af5-a086-628a1bef8918": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1320
+  ],
+  "stem": "rvtr_buoyant-aquacology_02",
+  "width": 1320
+ },
+ "0ebd3203-00eb-4111-b669-227e518f46ac": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_evolo-06",
+  "width": 3600
+ },
+ "0f2e72ab-546d-4482-99e7-bdbefda0b341": {
+  "height": 1913,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ch-jamaica_12",
+  "width": 2550
+ },
+ "0fda1d17-f123-45f0-90fe-2143eef26dcd": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_leonardo_vol-47-no4",
+  "width": 3600
+ },
+ "0ffe929d-ea4b-43a5-bed1-beeccbdef188": {
+  "height": 1259,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190826_pavilion_sketch",
+  "width": 2258
+ },
+ "10108412-362d-41ae-8d13-5feb1e4a963f": {
+  "height": 1086,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1440
+  ],
+  "stem": "fr-river-5",
+  "width": 1440
+ },
+ "1023908d-6816-40ee-813a-06c47cc5664f": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_archis",
+  "width": 3600
+ },
+ "109efeae-389c-42c5-86d5-62633a544158": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2014_aia",
+  "width": 9000
+ },
+ "10a4b453-58df-4e2e-ae13-fb5bae4de5a7": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1468
+  ],
+  "stem": "rvtr_pampas-house_04",
+  "width": 1468
+ },
+ "10d10339-7b64-4751-a846-5df4cd16f4e8": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_research-through-making-v-pneus_07",
+  "width": 1356
+ },
+ "10fd6349-a1e7-4332-8fda-4e34b240ec6c": {
+  "height": 1856,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition_30639026042_o",
+  "width": 2784
+ },
+ "11ca9604-1b19-4c7a-a34e-3a3123923f95": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_53",
+  "width": 1080
+ },
+ "12da6757-5f9f-43ab-a1fa-e5445f143c53": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "dighouse-iso-aerial",
+  "width": 3840
+ },
+ "1301dedc-140a-4da2-b1b0-dfeded114238": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2_maps-1",
+  "width": 4800
+ },
+ "130d8779-a2b9-4d04-9672-c6488b3ae652": {
+  "height": 495,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1344
+  ],
+  "stem": "pev-01",
+  "width": 1344
+ },
+ "13278cb7-7626-46c2-a9ea-ae08f714163d": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   903
+  ],
+  "stem": "rvtr_protean-prototypes_01",
+  "width": 903
+ },
+ "1341356e-01fe-4e48-80df-a507f523b66c": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1200
+  ],
+  "stem": "rvtr_opsys_extraction_21",
+  "width": 1200
+ },
+ "136b5365-bafa-4838-bf59-3f7e8adbef04": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_penser-tout-haut_03",
+  "width": 1205
+ },
+ "13da984a-b533-47c9-bbd0-58c6581dab30": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2013_usdot-nextrans",
+  "width": 9000
+ },
+ "1411611d-5128-4592-9557-2e637c884c5c": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_05",
+  "width": 1205
+ },
+ "142d1c9c-4d26-4380-ba00-bddc12a24807": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "chi_fireworks",
+  "width": 6000
+ },
+ "146f1cdf-9f25-4929-a552-adc2c75f739e": {
+  "height": 1745,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "lv_4-1",
+  "width": 2993
+ },
+ "152345c5-c2ea-4b8d-8b50-16e33cb8296b": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2014_acsa",
+  "width": 9000
+ },
+ "1526acdf-37af-4bbb-834a-4ffed5c28142": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30119520723_o",
+  "width": 4512
+ },
+ "15365f87-928c-4df4-8734-8f0bdc6c7239": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_grounding_09",
+  "width": 1205
+ },
+ "15cb531d-a350-4859-a9f7-ac24680606da": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "bb-cover",
+  "width": 4800
+ },
+ "15d45cc0-43ca-4dae-9dda-161d54c1b965": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30454590560_o",
+  "width": 4512
+ },
+ "161e8016-345a-4da9-828c-bc726e8e566d": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1397
+  ],
+  "stem": "rvtr_infundibuliforms_09",
+  "width": 1397
+ },
+ "16c4d919-c617-427a-bf77-67a7ce6dc404": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1083
+  ],
+  "stem": "rvtr_research-through-making-v-pneus_05",
+  "width": 1083
+ },
+ "17483b8f-d57b-4100-bcb1-d13e3ce86a4a": {
+  "height": 2319,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "1cdn_arch07_04cover_sq",
+  "width": 2319
+ },
+ "175fb3ee-5cde-4023-9f41-ff07d36afb0e": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1350
+  ],
+  "stem": "rvtr_opsys_extraction_19",
+  "width": 1350
+ },
+ "17b5eb52-d6fa-4948-bcc4-8a59d3fe372a": {
+  "height": 451,
+  "sizes": [
+   320,
+   640,
+   836
+  ],
+  "stem": "rvtr_swamp-house_08",
+  "width": 836
+ },
+ "183267c4-3c5d-45b5-9b0f-cd96142bdca9": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1419
+  ],
+  "stem": "rvtr_pneusystems_07",
+  "width": 1419
+ },
+ "188c3ea2-9e1b-4190-b16f-ab205ca5cdc1": {
+  "height": 750,
+  "sizes": [
+   320,
+   640,
+   750
+  ],
+  "stem": "rvtrweb_amps_2023_sm",
+  "width": 750
+ },
+ "18d0923c-6637-4b2f-a01b-df78c92dd63d": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1571
+  ],
+  "stem": "rvtr_rotc-protean-prototypes_01",
+  "width": 1571
+ },
+ "19055dff-f3d4-4383-bac7-b6e4b19acbd4": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "10_grtv-exhibit_utk",
+  "width": 4875
+ },
+ "190a97b4-0a71-40a9-bee6-241e4f964266": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_44",
+  "width": 1080
+ },
+ "19240ea7-8eac-45b0-b65d-060cedf5cb62": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2013_architizer",
+  "width": 9000
+ },
+ "19735ad7-140f-4cd9-a11a-61a4a83ea300": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2020-acsa-tad-award",
+  "width": 9000
+ },
+ "1a4796f5-c5fe-4859-a6c4-7eda3a68f15f": {
+  "height": 4320,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "courtyard-1",
+  "width": 7680
+ },
+ "1a53283c-79a1-4e8e-bf89-b48b56e50ef5": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_conduit-urbanism_33",
+  "width": 6000
+ },
+ "1a9ca726-cc9a-400a-8579-335b435971b2": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_jae_69_issue_01",
+  "width": 3600
+ },
+ "1aa58ee3-37d3-4d2c-a98f-bc03ef00ea65": {
+  "height": 4320,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "courtyard-2",
+  "width": 7680
+ },
+ "1b8e70ab-b0d4-434e-84ae-08cb86cbe8c3": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1261
+  ],
+  "stem": "rvtr_new-brutalist-image_03",
+  "width": 1261
+ },
+ "1b95b5ef-199b-4486-8ec3-eef0ad01c86e": {
+  "height": 2980,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_swamp-house_07",
+  "width": 4050
+ },
+ "1bdcb6b1-0179-42f7-9fb4-3a9ccd83486c": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_penser-tout-haut_06",
+  "width": 1205
+ },
+ "1d336925-e67d-4ef1-98e4-7dc06e4ca8bd": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_helsinki-south-harbor_06",
+  "width": 1205
+ },
+ "1d4e5ccf-f0c7-41bf-a831-9f1b7195109f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1481
+  ],
+  "stem": "rvtr_infographic-center_03",
+  "width": 1481
+ },
+ "1df4789f-04ab-4403-8ac9-3ead8095372c": {
+  "height": 2340,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_montreal_06",
+  "width": 3300
+ },
+ "1dfffdec-d27b-4e40-9f3a-0b55451b9c84": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1780
+  ],
+  "stem": "rvtr_nervous-ether_09",
+  "width": 1780
+ },
+ "1e030aa7-30f8-4701-b8d5-23d8a4212867": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_04",
+  "width": 1356
+ },
+ "1e4a4a7d-b171-4b80-961a-69266a56a9f8": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_11",
+  "width": 1205
+ },
+ "1e7b78ae-1086-468a-a37a-19517da51754": {
+  "height": 6600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190816_dighouse_sections",
+  "width": 10200
+ },
+ "1eb2c738-adf6-4cd4-bf8c-cd5638e89e45": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "across-river",
+  "width": 3840
+ },
+ "1f1210b1-c2ee-42c1-9f7b-8640557a5d01": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "lv_48",
+  "width": 4800
+ },
+ "1ff65368-e7b7-445d-a879-1f8718d356ce": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2012_acsa",
+  "width": 9000
+ },
+ "20018fde-90e8-43b5-97b3-6e5e76595ff9": {
+  "height": 560,
+  "sizes": [
+   320,
+   640,
+   740
+  ],
+  "stem": "pev_3",
+  "width": 740
+ },
+ "20903249-1331-4e32-bc4b-54f428c4746f": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2012_special-projects",
+  "width": 9000
+ },
+ "216919aa-8df4-476b-aa70-3b97c0f9f5cc": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_toronto_10",
+  "width": 1356
+ },
+ "218dfae5-915e-43bf-86df-49644aa475af": {
+  "height": 6220,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190816_dighouse-ground-plan_300",
+  "width": 9393
+ },
+ "21d1ea06-6afe-489e-817a-46b8e13a134b": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_23",
+  "width": 1080
+ },
+ "21e11774-d232-4381-a20b-ef72f042a4dc": {
+  "height": 2170,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "lv_05",
+  "width": 3271
+ },
+ "237016bc-7e39-435a-b597-6847ac05fe2e": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1706
+  ],
+  "stem": "rvtr_buoyant-aquacology_06",
+  "width": 1706
+ },
+ "23b03067-8996-4153-9675-c6a067c66079": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2010_ontario-assoc-architects",
+  "width": 9000
+ },
+ "2515d3ba-798a-47c1-8774-d8493d3cf235": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "restaurant_1",
+  "width": 3840
+ },
+ "25342519-9ab0-4798-bf5c-901ef50500d0": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "dtw-axo-black",
+  "width": 3600
+ },
+ "253959eb-55e4-4cff-9bc1-eb70354702b3": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1170
+  ],
+  "stem": "rvtr_protean-prototypes_16",
+  "width": 1170
+ },
+ "257a173d-ca57-4ee5-add0-bfa0f3430b9a": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   960,
+   1265
+  ],
+  "stem": "rvtr_mobiprize_04",
+  "width": 1265
+ },
+ "25f17c8a-000b-4d8f-8a81-34d9c5b12c8f": {
+  "height": 1464,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1464
+  ],
+  "stem": "tad-9-1-flatcover",
+  "width": 1464
+ },
+ "2625ad00-34fa-4dd4-88ee-7c18742881aa": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2005_canadian-architect",
+  "width": 9000
+ },
+ "26429b1e-b5ab-4238-9f57-0cb4594ed73e": {
+  "height": 3744,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "notion20140884",
+  "width": 5616
+ },
+ "265cc776-a2b5-4f39-a43c-ca49a26a8158": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1678
+  ],
+  "stem": "rvtr_latitude_02",
+  "width": 1678
+ },
+ "2672e9c0-1158-4be0-8a2c-ca1ce41b8d80": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30119522113_o",
+  "width": 4512
+ },
+ "268c11bb-e630-471c-b4f5-8700fdf70aec": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1349
+  ],
+  "stem": "rvtr_infographic-center_01",
+  "width": 1349
+ },
+ "26c7af07-e31e-400d-a9b8-f55d161550c3": {
+  "height": 700,
+  "sizes": [
+   320,
+   640,
+   700
+  ],
+  "stem": "rvtr_a_n_cover_180801",
+  "width": 700
+ },
+ "26fd436f-2328-4742-8bce-372e072b8421": {
+  "height": 2076,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_north-house_07",
+  "width": 3660
+ },
+ "271b8dcc-6706-450f-84c7-757e4c2fff35": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1359
+  ],
+  "stem": "rvtr_rtm_resonant-chamber_08",
+  "width": 1359
+ },
+ "2832fa86-fe93-40c9-83bd-24a192123871": {
+  "height": 1446,
+  "sizes": [
+   320,
+   640,
+   960,
+   1082
+  ],
+  "stem": "fr-river-19",
+  "width": 1082
+ },
+ "284058a2-40c1-4b3d-95b7-670366d080d2": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1514
+  ],
+  "stem": "rvtr_nervous-ether_04",
+  "width": 1514
+ },
+ "2887444a-3b27-4d5e-ae4a-f48e8326dcc2": {
+  "height": 4032,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "model_top-vew_adj",
+  "width": 3024
+ },
+ "28a9ab41-87b8-4c96-8324-c7a05fd616b2": {
+  "height": 1500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_latitude_04",
+  "width": 3000
+ },
+ "2918071f-1b3a-425f-bdb2-68f5484fa67a": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_harmony_04",
+  "width": 2152
+ },
+ "2a2a8cb5-4e16-4b14-af6b-c41c86d6b66c": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2011_vai-conduit-urbanism",
+  "width": 9000
+ },
+ "2a812ae5-9672-4281-9681-cb7d0caf58a6": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1751
+  ],
+  "stem": "rvtr_nervous-ether_10",
+  "width": 1751
+ },
+ "2bd09b5e-03f1-4138-b41d-019af4125ffb": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_08",
+  "width": 1356
+ },
+ "2beeae76-46b5-4ce8-9ebc-882ed43b9e3d": {
+  "height": 1856,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition_30755684405_o",
+  "width": 2784
+ },
+ "2c783735-4b20-4bcc-8699-521365a18cc4": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1533
+  ],
+  "stem": "rvtr_rtm_stratus-project_06",
+  "width": 1533
+ },
+ "2da28478-5ed8-496d-9a33-9d2d7720deca": {
+  "height": 2032,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ch-jamaica_01",
+  "width": 3264
+ },
+ "2dc194ae-c20a-48fe-8aeb-7dc0476ad73b": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_houses-of-steel",
+  "width": 3600
+ },
+ "2e2e9f8a-5be5-41bf-8297-e9df5b5b5dbc": {
+  "height": 1357,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ch-jamaica_02",
+  "width": 1920
+ },
+ "2ef222fb-b0e3-4704-8c4b-71c48ba091f1": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1325
+  ],
+  "stem": "rvtr_pneusystems_01",
+  "width": 1325
+ },
+ "2ef5b142-dd17-4f54-b5dc-7429b88a4fa1": {
+  "height": 1856,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition_30755674815_o",
+  "width": 2784
+ },
+ "2f861cf3-3d10-40b3-9d06-c44ad035b851": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ijac_vol-10-issue-03",
+  "width": 3600
+ },
+ "2fe98705-57fa-4c8f-8d64-75d5327ab750": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_toronto_03",
+  "width": 1356
+ },
+ "3026cd03-37a0-4498-b7b9-66f80b5becb3": {
+  "height": 1007,
+  "sizes": [
+   320,
+   640,
+   960,
+   1007
+  ],
+  "stem": "txa_2013_web",
+  "width": 1007
+ },
+ "3050776d-c328-4e63-96c4-4d0900bd5c72": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_stratus-project_07",
+  "width": 2152
+ },
+ "30b58f54-df42-404b-95bd-1abc327cddaf": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1402
+  ],
+  "stem": "rvtr_beirut-house-of-arts-culture_01",
+  "width": 1402
+ },
+ "30d7e151-3fe6-4d2e-b6cc-cac1504b0262": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_think-space",
+  "width": 3600
+ },
+ "311cb712-b449-40fa-aac9-49ba13de3fac": {
+  "height": 1600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1600
+  ],
+  "stem": "rvtrweb_indoorair_2017",
+  "width": 1600
+ },
+ "313d224c-b453-4efd-8952-9736e7c07ed1": {
+  "height": 1021,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "infra-eco-logi-urbanism_yale_02",
+  "width": 2000
+ },
+ "31bff16f-5537-4839-a837-ec7b9d3ec8c0": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1374
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_02",
+  "width": 1374
+ },
+ "31f5e577-c5d3-44cc-9013-5858d7d6ab9b": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "chi-interior-rendering",
+  "width": 3600
+ },
+ "31fca817-9480-43af-9183-9a79bd62d051": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_latitudo-borealis_e01",
+  "width": 3840
+ },
+ "3215a8f1-a40c-4284-aa43-a634b44f8a5d": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_matters-of-concern_02",
+  "width": 2525
+ },
+ "323059d2-ba82-49ba-9ace-0436c22d98a1": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1360
+  ],
+  "stem": "rvtr_north-house_03",
+  "width": 1360
+ },
+ "325e5e61-c4bb-423a-bbe7-35ce6210ca22": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_jae-62_issue_04",
+  "width": 3600
+ },
+ "327904c9-3cfa-42f4-8462-022d9218a52e": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_rtm_stratus-project_02",
+  "width": 2281
+ },
+ "329e705e-0ac6-47e6-b804-a4a94d8e1a9b": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1384
+  ],
+  "stem": "rvtr_grounding_05",
+  "width": 1384
+ },
+ "32b91a41-9fcd-4290-aa80-f5bc320d3fd9": {
+  "height": 2392,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_shadowtimelandscape_model",
+  "width": 3597
+ },
+ "32e03ed3-5947-47dd-bcde-ea337194855e": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1270
+  ],
+  "stem": "rvtr_new-brutalist-image_02",
+  "width": 1270
+ },
+ "32eaee64-724d-4024-a75d-bf3b750555c1": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016_fordalliancegrant",
+  "width": 9000
+ },
+ "340e7abe-b647-474f-b949-0aa76c3b8862": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1607
+  ],
+  "stem": "rvtr_infundibuliforms_11",
+  "width": 1607
+ },
+ "349a7139-e750-403d-b4d0-22f166790916": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2009_research-creation-grant",
+  "width": 9000
+ },
+ "34a6b85f-3bf1-4dfb-ab30-a02d484bfe09": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1407
+  ],
+  "stem": "rvtr_opsys_extraction_12",
+  "width": 1407
+ },
+ "3504e38a-2244-4b59-8bd2-05d4b5ec8bea": {
+  "height": 120,
+  "sizes": [
+   320,
+   640,
+   750
+  ],
+  "stem": "rvtr-logo-nc-blue-copy_short_2",
+  "width": 750
+ },
+ "3662c6cb-99b3-41db-9ec9-541e9d9377b1": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "4_loblolly-switchgrass",
+  "width": 7200
+ },
+ "36ff15d9-29ef-4fd5-b18b-e2770053373a": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_07",
+  "width": 1205
+ },
+ "379e668f-c78f-460e-9093-5cde7049a1ce": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2014_ford_urp",
+  "width": 9000
+ },
+ "384aafeb-5ead-4494-8ae3-79860c82fe8d": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30454447800_o",
+  "width": 4512
+ },
+ "396d398b-74e4-4def-81c7-bab948209be5": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "5_bioremiation-landscape",
+  "width": 7200
+ },
+ "3a57aa55-3ab8-4af4-ad82-1bb6bcf817c8": {
+  "height": 3643,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_lodge-at-dry-pine-bay_01",
+  "width": 6000
+ },
+ "3a6b97c0-5551-4b63-84ce-ac8296cf1d6c": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_latitudo-borealis_e03",
+  "width": 3840
+ },
+ "3a801c22-d509-4401-ac56-2184a6a9b5e2": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   904
+  ],
+  "stem": "rvtr_protean-prototypes_14",
+  "width": 904
+ },
+ "3ae7223d-2227-4c4b-a04e-76b6dc2024f7": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_korean-translation-design-construction",
+  "width": 3600
+ },
+ "3b8cffc6-737e-4b3e-8edf-00850a36a688": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1808
+  ],
+  "stem": "rvtr_pampas-house_02",
+  "width": 1808
+ },
+ "3bfe935f-6b73-4137-ba1f-8e00c0d140cd": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_rotc-protean-prototypes_05",
+  "width": 2106
+ },
+ "3bffd04e-ad93-483b-87ee-4b02f2aebbcb": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "chi-axo-black_slide",
+  "width": 3148
+ },
+ "3c1942da-304a-4026-9d25-7ea7edc295ed": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_harmony_03",
+  "width": 2254
+ },
+ "3cdd82bd-cb77-4201-93a8-932300c04c9a": {
+  "height": 1075,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1915
+  ],
+  "stem": "rvtr_protean-prototypes_06",
+  "width": 1915
+ },
+ "3d088dcc-9085-4334-bef0-b210dc744288": {
+  "height": 1947,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "_rvtr_annex_composite_rev",
+  "width": 3872
+ },
+ "3d29f09e-4e50-4bfc-b464-29f1aef8e67e": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1170
+  ],
+  "stem": "rvtr_protean-prototypes_02",
+  "width": 1170
+ },
+ "3f6d2d16-6a9e-4d6a-a6a8-9b24870136e6": {
+  "height": 324,
+  "sizes": [
+   320,
+   576
+  ],
+  "stem": "lv_53",
+  "width": 576
+ },
+ "3fdd221a-cbf7-4338-a18c-e256db7bc05c": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "east-entry_1",
+  "width": 3840
+ },
+ "4120d96f-d6af-4708-be80-29a579f7b3ab": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30454442170_o",
+  "width": 4512
+ },
+ "4148dcca-21d9-48f4-9e6d-8254e4e3210f": {
+  "height": 3969,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ch-jamaica_08",
+  "width": 5760
+ },
+ "41f9d9db-195d-4283-9ad5-9654e27a8504": {
+  "height": 773,
+  "sizes": [
+   320,
+   640,
+   960,
+   1086
+  ],
+  "stem": "lv_55",
+  "width": 1086
+ },
+ "422c9f7d-995e-48ef-a157-b3f82537252c": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_plastic-architecture_05",
+  "width": 1356
+ },
+ "4261358b-234a-49d9-930f-9717f19cb5f6": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ijac_vol13-issue02_12x12in",
+  "width": 3600
+ },
+ "42967866-87e2-4033-9b28-b866290db79b": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1350
+  ],
+  "stem": "rvtr_opsys_extraction_05",
+  "width": 1350
+ },
+ "42c2a0aa-92c3-421c-8822-5df27715f040": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_toronto_08",
+  "width": 1356
+ },
+ "43253264-cb58-4b10-8178-0b6abe90683c": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "dtw_circlerenderings",
+  "width": 6000
+ },
+ "438208c5-7c62-465f-9190-5e65e5db6691": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2019_guardian-industries",
+  "width": 9000
+ },
+ "441e8a28-b068-427a-bff1-0a5fe7466704": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2009_cca_prix-de-rome",
+  "width": 9000
+ },
+ "445cd534-7ba5-44fe-a26c-4a44b854fb68": {
+  "height": 1073,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_notion_survey_triptych_devices",
+  "width": 1920
+ },
+ "447bd3a8-dd13-4480-ac0e-a6141854dbe3": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_09",
+  "width": 1356
+ },
+ "4487131e-49f5-41d5-90df-462220c77985": {
+  "height": 2310,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_pampas-house_05",
+  "width": 3959
+ },
+ "459f8179-715b-4e05-be63-9c3479bb58d0": {
+  "height": 2448,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ch-jamaica_05",
+  "width": 2772
+ },
+ "45c9b12f-674e-4cc5-a480-b44ac6cc1e2a": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1279
+  ],
+  "stem": "rvtr_infundibuliforms_13",
+  "width": 1279
+ },
+ "475607ad-87d9-4e02-9594-30f796a287a4": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2015_epa",
+  "width": 9000
+ },
+ "47a83be1-284b-4d99-845a-1584eed46bac": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1818
+  ],
+  "stem": "rvtr_pneusystems_05",
+  "width": 1818
+ },
+ "48145331-2dbc-4a88-911b-1794e5d49718": {
+  "height": 1856,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition_30638933952_o",
+  "width": 2784
+ },
+ "4819e87b-8c2e-45cb-8e02-c448b121ac4a": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_twenty-change",
+  "width": 3600
+ },
+ "4950b461-3c7c-43a7-b6ab-37a69a4c2e16": {
+  "height": 904,
+  "sizes": [
+   320,
+   603
+  ],
+  "stem": "rvtr_matters-of-concern_03",
+  "width": 603
+ },
+ "4983270c-94c6-407b-b330-f264738f68d2": {
+  "height": 560,
+  "sizes": [
+   320,
+   640,
+   740
+  ],
+  "stem": "pev_2",
+  "width": 740
+ },
+ "49a5ced4-20d2-467a-a6fa-6aa4ea6f9d81": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_research-through-making-v-pneus_02",
+  "width": 1205
+ },
+ "49d6bcd4-5e43-4808-9ba7-3c91a5495fb2": {
+  "height": 1440,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_notion_site-design",
+  "width": 2196
+ },
+ "4aa6a356-47b6-4be7-a267-2523b059a395": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1136
+  ],
+  "stem": "rvtr_office-project-project-office_03",
+  "width": 1136
+ },
+ "4b4f7565-a8fe-4988-8696-82c6ef8ff536": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_rtm_resonant-chamber_09",
+  "width": 1356
+ },
+ "4b8000a0-509e-48b5-b9eb-56448ff57bbe": {
+  "height": 2651,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_swamp-house_06",
+  "width": 2972
+ },
+ "4b8d37ff-3e75-4408-9958-70152e3822e0": {
+  "height": 1365,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "lv_40",
+  "width": 2048
+ },
+ "4bb589ea-c7fd-4ca4-ba00-1c4004219476": {
+  "height": 2001,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190815_restaurantpavilion_section",
+  "width": 3300
+ },
+ "4bd0cc0a-e80d-4637-b685-47609de05a0a": {
+  "height": 1078,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1916
+  ],
+  "stem": "rvtr_protean-prototypes_05",
+  "width": 1916
+ },
+ "4bf5aef3-5189-43a7-8daf-5484a15fae5d": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2019_usf-grant",
+  "width": 9000
+ },
+ "4c4cce15-340d-412a-ba26-fe9686a6119c": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30119514493_o",
+  "width": 4512
+ },
+ "4c5436b7-80e8-4957-8f98-910366c1118a": {
+  "height": 1500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1500
+  ],
+  "stem": "rvtrweb_nextnewyork_sm",
+  "width": 1500
+ },
+ "4c916b7f-acc6-436c-b1be-aa83d8adc465": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1458
+  ],
+  "stem": "rvtr_infographic-center_05",
+  "width": 1458
+ },
+ "4ce6ad49-470e-49af-993a-743c6891d8d0": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1273
+  ],
+  "stem": "rvtr_latitude_03",
+  "width": 1273
+ },
+ "4d9a184f-4e11-4c0e-bad7-0359f73c1851": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_sound-materials_12x12in",
+  "width": 3600
+ },
+ "4db94d13-3349-41cc-b2b6-bcd2cbb3b43a": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_paradigms-in-computing",
+  "width": 3600
+ },
+ "4df5bf2a-012b-4592-91b6-037804b72798": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_penser-tout-haut_02",
+  "width": 1205
+ },
+ "4e007d58-6899-4e30-bf7c-60aedb9fafb7": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_13",
+  "width": 1205
+ },
+ "4e4ae8ae-a2bb-4f61-a1b0-82ab3972a4c2": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1087
+  ],
+  "stem": "rvtr_office-project-project-office_04",
+  "width": 1087
+ },
+ "4ee65ad8-3c54-4f36-af29-24996445369b": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_swamp-house_10",
+  "width": 7200
+ },
+ "4ef555f6-3465-4443-a7b2-103bbb36e732": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30454628990_o",
+  "width": 4512
+ },
+ "4f1bf1b5-d79c-4c4e-aded-9ef6dd8a8c1e": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_latitudo-borealis_i02",
+  "width": 3840
+ },
+ "4f61c8c7-1d33-48b0-87d8-f1e1c6bed15a": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1607
+  ],
+  "stem": "rvtr_infundibuliforms_10",
+  "width": 1607
+ },
+ "4fbd2c1a-dbf5-44d2-b8ed-5b1f9380a283": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2017_fabrciate_proceedings",
+  "width": 3600
+ },
+ "4ff3821c-1e69-4cba-ad15-88cd07e17f64": {
+  "height": 6687,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190822_eastentrypavilion_plan",
+  "width": 7181
+ },
+ "5023b2e2-b970-43e7-9d98-6824a7fb9624": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1316
+  ],
+  "stem": "rvtr_opsys_extraction_10",
+  "width": 1316
+ },
+ "50417ea2-0376-4d75-b111-c58259091e14": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_41",
+  "width": 1080
+ },
+ "50d14e19-f847-45ed-9b87-671ed9678dce": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1350
+  ],
+  "stem": "rvtr_nexus-park-city_03",
+  "width": 1350
+ },
+ "512e8d67-e6ca-4513-beab-0d29d05042c6": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "chi-actor-network-black",
+  "width": 3600
+ },
+ "515ff0dc-2613-4bc1-9458-cbab0e030a13": {
+  "height": 3801,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "bb_model_1",
+  "width": 3008
+ },
+ "51e82f9a-f6bb-434e-b5bd-47dce606d73f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_penser-tout-haut_05",
+  "width": 1205
+ },
+ "5211c821-4d3e-4bc8-8b96-c91ffd6a4996": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_toronto_02",
+  "width": 1356
+ },
+ "52e19a44-3fb4-4b08-a56f-4a0a9006c239": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "yyz-axo-black_slide",
+  "width": 3160
+ },
+ "52fc2a29-9bd9-4e0a-b037-64a42337d49e": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "yyz_circlerenderings",
+  "width": 6000
+ },
+ "53565e47-3577-4cc9-af58-ef9732d6cb92": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   676
+  ],
+  "stem": "rvtr_opsys_extraction_36",
+  "width": 676
+ },
+ "53700cd7-9f6b-49dc-acdc-6d4f6a45f2a4": {
+  "height": 2550,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_stratus-project_17",
+  "width": 3840
+ },
+ "5391ff7d-9ff6-4d15-9de7-65361a898a20": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1135
+  ],
+  "stem": "rvtr_north-house_06",
+  "width": 1135
+ },
+ "544cb0b0-0d9f-4edb-a50a-9f70c3241257": {
+  "height": 2112,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ch-jamaica_06",
+  "width": 3126
+ },
+ "549b9dc3-df25-40ea-8723-a83b82adab0b": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2017_fordalliancegrant_2",
+  "width": 9000
+ },
+ "54ca7f8f-7489-4a45-850d-7c57e9ceba32": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1279
+  ],
+  "stem": "rvtr_grounding_03",
+  "width": 1279
+ },
+ "54d1ecd6-a8e7-49f8-a1b1-4bd4346fe902": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1485
+  ],
+  "stem": "rvtr_north-house_02",
+  "width": 1485
+ },
+ "55c225ef-9b79-4a79-8afa-924b56546b63": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1765
+  ],
+  "stem": "rvtr_helsinki-south-harbor_08",
+  "width": 1765
+ },
+ "566744ed-470c-4e2d-8efb-b5eef5e85ea5": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1505
+  ],
+  "stem": "rvtr_pampas-house_01",
+  "width": 1505
+ },
+ "575f1394-36d0-428f-ac30-e0274547d9f1": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "chi-exterior-rendering",
+  "width": 3600
+ },
+ "57fe3983-5078-4df0-ade6-50556a6a9f6f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1808
+  ],
+  "stem": "rvtr_latitude_05",
+  "width": 1808
+ },
+ "58c90a55-c626-49fc-ab27-5ed8029f5d6a": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2011_royal-arch-inst-canada",
+  "width": 9000
+ },
+ "59a495d5-cf38-4a1c-9497-5d9ae8806321": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_08",
+  "width": 1205
+ },
+ "59a60e78-d5e1-4e5b-b148-2ddfaa469b96": {
+  "height": 2422,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_swamp-house_04",
+  "width": 4312
+ },
+ "5a694471-8ee7-4672-9813-dc92c42b1280": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "infra-eco-logi-urbanism_yale_08",
+  "width": 1356
+ },
+ "5a9468d6-137f-47aa-8103-2c632427f89f": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_37",
+  "width": 1080
+ },
+ "5aa00965-7ab7-4b5d-a35e-9ea9b7ca8344": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1431
+  ],
+  "stem": "rvtr_pneusystems_04",
+  "width": 1431
+ },
+ "5ac05eb4-98ae-46cf-9f4b-45efefa57be2": {
+  "height": 4320,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "archaeological-staging",
+  "width": 7680
+ },
+ "5b1e301f-7975-4df5-ae78-c8ef62e72ba0": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2008_architectural-league",
+  "width": 9000
+ },
+ "5c086003-3492-4249-b808-cd5068b53105": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2019_ford-alliance",
+  "width": 9000
+ },
+ "5d3bf567-d6da-4c45-a06e-3410b81910d7": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1200
+  ],
+  "stem": "rvtr_opsys_extraction_32",
+  "width": 1200
+ },
+ "5de593e9-bef0-4c45-a8cb-e9f102101386": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "dtw_fireworks",
+  "width": 6000
+ },
+ "5e2780c9-6159-4cd0-a9ac-b78873be481b": {
+  "height": 700,
+  "sizes": [
+   320,
+   640,
+   960
+  ],
+  "stem": "rvtr_cenote2000",
+  "width": 960
+ },
+ "5e7ea8d5-2bf0-48ee-8c83-b32e2acedf28": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_canadian-architect-05",
+  "width": 3600
+ },
+ "5ed78bdc-0107-4230-8333-9f5fecba2d70": {
+  "height": 2314,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ch-jamaica_07",
+  "width": 3141
+ },
+ "5f4f3a34-9399-4878-9203-50fb56ecef00": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_03",
+  "width": 1080
+ },
+ "5f5730aa-17c8-42f1-a5bb-81c22514927c": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infographic-center_04",
+  "width": 2341
+ },
+ "5f74ddea-a89c-4399-8969-2703650d47af": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1318
+  ],
+  "stem": "rvtr_north-house_08",
+  "width": 1318
+ },
+ "5f9e1956-b4c8-49d5-b9d2-f6bf9984ab3f": {
+  "height": 1349,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1532
+  ],
+  "stem": "dtw-council_circle",
+  "width": 1532
+ },
+ "5fc42851-32db-4580-bb86-a76eef7e3077": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1808
+  ],
+  "stem": "rvtr_beirut-house-of-arts-culture_03",
+  "width": 1808
+ },
+ "5fe1cb53-8e3b-4732-a280-f6ccfd9202d8": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1808
+  ],
+  "stem": "rvtr_pampas-house_03",
+  "width": 1808
+ },
+ "602ca71b-c104-4166-8c20-ff0e21498765": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_research-through-making-v-pneus_03",
+  "width": 1356
+ },
+ "60a12db7-03a9-48e7-9361-d7348be72d6e": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "dtw-exterior-rendering",
+  "width": 3600
+ },
+ "6112c5e5-bfa0-4e5f-ad4a-02994fcdab82": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30454392280_o",
+  "width": 4512
+ },
+ "61706587-f0ba-43a9-bcda-843e402d7fc1": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_toronto_07",
+  "width": 1356
+ },
+ "61e2d3e0-d039-492f-a481-6841bb4bbb36": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_structures_v18",
+  "width": 3600
+ },
+ "629b1db6-ee67-4202-8cdb-cfb502af25b0": {
+  "height": 1446,
+  "sizes": [
+   320,
+   640,
+   960,
+   1086
+  ],
+  "stem": "fr-river-18",
+  "width": 1086
+ },
+ "62ad4639-d429-4ac2-8915-ef355a292e4e": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1328
+  ],
+  "stem": "rvtr_nervous-ether_01",
+  "width": 1328
+ },
+ "62cf82fe-3fe8-4ac8-afbd-5f0d2037fe38": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_toronto_06",
+  "width": 1356
+ },
+ "62d5bd7a-f618-44dd-9fc0-b6a3c63f480a": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   960,
+   1265
+  ],
+  "stem": "rvtr_mobiprize_03",
+  "width": 1265
+ },
+ "636909c3-667f-4c58-b212-97a106583101": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1409
+  ],
+  "stem": "rvtr_nexus-park-city_01",
+  "width": 1409
+ },
+ "638ed67a-d8f2-4744-8553-7ed2d4c02502": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1197
+  ],
+  "stem": "rvtr_opsys_extraction_29",
+  "width": 1197
+ },
+ "63eb7bc3-b2cf-4ff4-a079-b9fd5cf63337": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_interiors",
+  "width": 3600
+ },
+ "64022b2f-bec7-4cc5-94ea-1bb6fd72331b": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_research-through-making-v-pneus_06",
+  "width": 1356
+ },
+ "64359b40-daf3-420d-a892-33a79c3d75bf": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30638339592_o",
+  "width": 4512
+ },
+ "649937a8-cc1e-4301-a07e-a083aacd079d": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1810
+  ],
+  "stem": "rvtr_seasons-house_04",
+  "width": 1810
+ },
+ "64ca5550-68d2-450c-82c9-47eb03ca1d63": {
+  "height": 2905,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_det4",
+  "width": 4400
+ },
+ "64ded6b7-0c3a-41f1-92e1-3617cbe413dd": {
+  "height": 4957,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_swamp-house_03",
+  "width": 9480
+ },
+ "654d4548-ec9a-4e39-94f9-d8ef189d1e15": {
+  "height": 6756,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190822_westentrypavilion_plan",
+  "width": 7169
+ },
+ "657a62b8-fee2-465d-81e6-e4e8965365c0": {
+  "height": 885,
+  "sizes": [
+   320,
+   640,
+   885
+  ],
+  "stem": "rvtr_web_footprint",
+  "width": 885
+ },
+ "660c5032-8e89-4bd4-bc56-2f6787bbb7cc": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_protean-prototypes_21",
+  "width": 1971
+ },
+ "66de0a2f-9ee0-46b0-a47f-caa744d5bd7e": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_09",
+  "width": 1205
+ },
+ "67164b9a-0fbc-458e-8faa-c2b39b580adb": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1204
+  ],
+  "stem": "rvtr_stratus-project_08",
+  "width": 1204
+ },
+ "675ed53f-5f94-4e3a-9c93-171bccfd445c": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_07",
+  "width": 1356
+ },
+ "678652b4-00a9-4cb2-8a7e-5c05a73d490a": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_acadia_proceedings_12x12in",
+  "width": 3600
+ },
+ "6789e44a-fd8b-4993-8371-be301ff1ce14": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_14",
+  "width": 1080
+ },
+ "6851c1a6-2fb2-4bc5-ad43-297354b0c93a": {
+  "height": 1631,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1631
+  ],
+  "stem": "tara-cover-square",
+  "width": 1631
+ },
+ "68579b95-f253-4133-ae01-389bea78e428": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_eco-structure-oct-11",
+  "width": 3600
+ },
+ "69d15242-1180-4623-9c4d-81234df110f3": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_a22-new-ecologies-for-osmotic",
+  "width": 3600
+ },
+ "69d30143-08eb-4ffa-a9ae-cce0407e7ed8": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1679
+  ],
+  "stem": "rvtr_seasons-house_02",
+  "width": 1679
+ },
+ "69d99b27-c304-44d7-b0ec-0ffb9275626c": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1346
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_05",
+  "width": 1346
+ },
+ "6a43d4b5-4d95-4088-9deb-3ba79ccb0343": {
+  "height": 5745,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190822_restaurantpavilion_plan",
+  "width": 7133
+ },
+ "6a588761-3c13-4926-b170-bc4a778f1f3d": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_swamp-house_09",
+  "width": 7200
+ },
+ "6a888f6e-9283-456d-b394-b29054383078": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1350
+  ],
+  "stem": "rvtr_opsys_extraction_07",
+  "width": 1350
+ },
+ "6abae46d-03cb-4c40-b234-e50180ee67ca": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_exhibition-catalog",
+  "width": 3600
+ },
+ "6ad72cc1-c2f9-4453-8a3d-fcf33f393954": {
+  "height": 1611,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_acadia_01",
+  "width": 3200
+ },
+ "6b0bcaf2-ba55-489f-a11a-f3eb6195bcfc": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_10",
+  "width": 1356
+ },
+ "6b408360-7edd-42c6-aa9b-171d07fa916f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_resonant-chamber_08",
+  "width": 2143
+ },
+ "6c07003f-6a87-4ea2-809e-a48845f62525": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2009_twenty-change-02",
+  "width": 9000
+ },
+ "6c12de72-6228-4da7-ba3f-10d6f0504151": {
+  "height": 2723,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_montreal_07",
+  "width": 3840
+ },
+ "6ca6ba82-da9d-4919-8f7c-5e8d47bebc79": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1446
+  ],
+  "stem": "rvtr_stratus-project_06",
+  "width": 1446
+ },
+ "6ceec0fc-7ef6-4622-a6b1-14a21e0075fc": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_conduit-urbanism_20",
+  "width": 3600
+ },
+ "6d02b648-72c6-4966-a5d6-f9dc031839bf": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_protean-prototypes_13",
+  "width": 1972
+ },
+ "6de0e199-6f0f-45c1-a2e3-01fcdc5843ad": {
+  "height": 2412,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infundibuliforms_06",
+  "width": 4288
+ },
+ "6e433cc6-e563-4a77-b6fd-a7b49962cd41": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "frvc_2",
+  "width": 4800
+ },
+ "6ea8b24c-dd68-4cfe-acfe-a8db218cdf2c": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_harmony_01",
+  "width": 2271
+ },
+ "6edf4371-27d4-40da-b7ec-118184a81f87": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2013_usdot-nextrans_cartographies",
+  "width": 9000
+ },
+ "6f94e239-586b-4344-a3ad-a017571cfeff": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2011_canada-council-arts",
+  "width": 9000
+ },
+ "6f9f9e26-843a-40f7-b7a1-6c47219fc8d5": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_latitudo-borealis_i01",
+  "width": 3840
+ },
+ "704bea99-3194-4c23-b3d6-d96cc1888a01": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2013_acsa",
+  "width": 9000
+ },
+ "706f7a01-269b-4a20-b1aa-63537a8a4b23": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1350
+  ],
+  "stem": "rvtr_office-project-project-office_01",
+  "width": 1350
+ },
+ "70da9a16-a5d1-4adb-83d6-70eb8a91178e": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_latitudo-borealis_e02",
+  "width": 3840
+ },
+ "70f81dc3-59dc-4c02-acad-965e74abe3a1": {
+  "height": 1265,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_notion_1",
+  "width": 1950
+ },
+ "7119f80e-141a-49ae-8c1c-b86fc65343f7": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_48",
+  "width": 1080
+ },
+ "71269cb3-429c-4b18-87a5-8984eee9bc39": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   707
+  ],
+  "stem": "rvtr_nervous-ether_03",
+  "width": 707
+ },
+ "7167e813-9f68-4b97-9573-86d875a7566b": {
+  "height": 2550,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_stratus-project_10",
+  "width": 3840
+ },
+ "7172bf69-5a47-4c91-8c70-64c9872b3422": {
+  "height": 2156,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "frvc-comp5",
+  "width": 2800
+ },
+ "71756cc4-93d8-4b35-ac1b-cbb36d1dbd26": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1462
+  ],
+  "stem": "rvtr_stratus-project_01",
+  "width": 1462
+ },
+ "71a58ce1-4017-4533-8bcb-b174490faccc": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1213
+  ],
+  "stem": "rvtr_resonant-chamber_09",
+  "width": 1213
+ },
+ "71ed2104-47d0-4034-8962-e97be83b36cc": {
+  "height": 864,
+  "sizes": [
+   320,
+   640,
+   864
+  ],
+  "stem": "rvtr_sustainable-energy-landscapes",
+  "width": 864
+ },
+ "723224e5-4502-4c8d-87a8-165b77451149": {
+  "height": 372,
+  "sizes": [
+   320,
+   537
+  ],
+  "stem": "lv_50",
+  "width": 537
+ },
+ "735c2e7c-1199-4259-b6cc-fe30b2630459": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1473
+  ],
+  "stem": "rvtr_stratus-project_05",
+  "width": 1473
+ },
+ "737c17f9-9a8a-4ecf-8acc-73c3dab0dbc5": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2008_living-steel",
+  "width": 9000
+ },
+ "750ddf37-2185-404c-bf99-10c8e3d09304": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1350
+  ],
+  "stem": "rvtr_opsys_extraction_16",
+  "width": 1350
+ },
+ "759051d9-93f2-4922-abff-b0ebece68568": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   900
+  ],
+  "stem": "rvtr_opsys_extraction_26",
+  "width": 900
+ },
+ "75a9a8e0-6dd6-42f4-b446-70bf77e36743": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_penser-tout-haut_07",
+  "width": 1356
+ },
+ "763d1459-34cd-4b3f-ae25-26c36d118fb0": {
+  "height": 3850,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190823_notion_siteplan_scaled",
+  "width": 5950
+ },
+ "7657a341-ba7b-4e71-ab06-dbaf39c12096": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2024_nsf-engines-copy",
+  "width": 9000
+ },
+ "768d6eee-976f-4463-9a8e-13cab033a514": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_jalisco-state-library_06",
+  "width": 1205
+ },
+ "7735129a-584f-4c42-8c98-02e671e6a6c2": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30119469663_o",
+  "width": 4512
+ },
+ "779735f1-849b-43cf-b364-55dcb6176a1b": {
+  "height": 1350,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "frvc_3-1",
+  "width": 2400
+ },
+ "7807ce1f-9880-401f-ac94-777b2c7747ed": {
+  "height": 2755,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_swamp-house_02",
+  "width": 4646
+ },
+ "7863b42f-8196-46a2-9a07-a50b35ef27a7": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30454459640_o",
+  "width": 4512
+ },
+ "789b0095-e61a-458f-b04a-bb3753f3cb56": {
+  "height": 1224,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1632
+  ],
+  "stem": "rvtr_ch-jamaica_22",
+  "width": 1632
+ },
+ "78a0f264-4956-4675-b886-9d9120e1df7c": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_grounding_02",
+  "width": 1205
+ },
+ "78ede971-b075-4e3c-8333-33f30f4feeb6": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1414
+  ],
+  "stem": "rvtr_opsys_extraction_14",
+  "width": 1414
+ },
+ "79d3fba2-b2e9-4b87-abb1-77340c356b2f": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1200
+  ],
+  "stem": "rvtr_opsys_extraction_22",
+  "width": 1200
+ },
+ "79fe47d8-c982-4a00-8c82-6dafa8013eb7": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   960,
+   1265
+  ],
+  "stem": "rvtr_mobiprize_02",
+  "width": 1265
+ },
+ "7b140ee6-6c6f-4003-9f7b-9ff4f7358858": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_11",
+  "width": 1356
+ },
+ "7ba48d9b-d0f5-4d63-8aa4-7443caf39ee1": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2010_rtm-stratus",
+  "width": 9000
+ },
+ "7c6c3823-8733-4cc9-8c68-bcedc9f210c0": {
+  "height": 1517,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "240913_axon-biorefinery_sm",
+  "width": 2400
+ },
+ "7c801172-b572-41c2-9df7-9cd18fa60984": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_architecture-and-national-identity",
+  "width": 3600
+ },
+ "7c8986d9-aca9-44e2-b19f-03e3653b1187": {
+  "height": 2231,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_conduit-urbanism_16",
+  "width": 3840
+ },
+ "7cdb2f03-0787-4bf2-a814-a01ec2a913da": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_nervous-ether_02",
+  "width": 2112
+ },
+ "7d6f51ee-0f76-4be9-8e14-6c6a9ab38b62": {
+  "height": 1856,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition_30123625314_o",
+  "width": 2784
+ },
+ "7d763492-7b98-4579-8cbb-78bc6523bf3e": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_performative-materials-in-architecture",
+  "width": 3600
+ },
+ "7d7a152b-cdc0-40ab-924e-2c7ff294f996": {
+  "height": 2412,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infundibuliforms_03",
+  "width": 4288
+ },
+ "7d9d274c-48e9-491b-94ab-548df85c2117": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_hypernatural",
+  "width": 3600
+ },
+ "7dd47c54-93db-4083-b182-7e2d5cfd34f1": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   678
+  ],
+  "stem": "rvtr_jalisco-state-library_04",
+  "width": 678
+ },
+ "7e0d305e-9c6c-41d6-9097-7530fc2ba405": {
+  "height": 2412,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infundibuliforms_05",
+  "width": 4288
+ },
+ "7e3a0050-80ba-4b06-8b6e-7eec5e953921": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1347
+  ],
+  "stem": "rvtr_pneusystems_03",
+  "width": 1347
+ },
+ "7ef21131-e9df-4f4e-9e40-42b526aee2b9": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_acsa_2017",
+  "width": 3600
+ },
+ "7f528420-6cf0-46dd-9f5c-ffca2df00f76": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_08",
+  "width": 1080
+ },
+ "7f9c214b-d9f3-43f2-9d4a-9a9347d009f9": {
+  "height": 685,
+  "sizes": [
+   320,
+   640,
+   960,
+   1024
+  ],
+  "stem": "lv_60",
+  "width": 1024
+ },
+ "7fb91438-e138-4f58-ba4b-f6b442b2ee43": {
+  "height": 1092,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "lv_03-1",
+  "width": 2395
+ },
+ "8044ba5d-834e-421b-9488-88178e9bc115": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2016_randd-award",
+  "width": 9000
+ },
+ "806d85cf-b2d6-4914-9447-3c97d52537ae": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1170
+  ],
+  "stem": "rvtr_protean-prototypes_12",
+  "width": 1170
+ },
+ "8085ac75-efd5-4604-a51b-3157d317185f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1190
+  ],
+  "stem": "rvtr_infundibuliforms_07",
+  "width": 1190
+ },
+ "81142c1d-4506-48c3-9770-14f0eeb0400f": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "chi_circlerenderings",
+  "width": 6000
+ },
+ "811e7ee4-11cf-4ef4-9ec0-adb83e436584": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   684
+  ],
+  "stem": "infra-eco-logi-urbanism_yale_05",
+  "width": 684
+ },
+ "8161eef0-6718-4aac-a180-e58df805d750": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1371
+  ],
+  "stem": "rvtr_opsys_extraction_03",
+  "width": 1371
+ },
+ "817a737c-5da1-476f-9fe7-8bd9a8e8b07a": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1166
+  ],
+  "stem": "rvtr_opsys_extraction_18",
+  "width": 1166
+ },
+ "81aa7efb-0a3f-465b-aeef-f3fe24d2ad38": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "3_maps-2",
+  "width": 4800
+ },
+ "81c69276-542c-4161-b30c-d294464d8f6d": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "edited_rvtr_bothlocations_aa_toronto",
+  "width": 7500
+ },
+ "824181d9-84f5-421f-b889-b0c03edc74f5": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "lv_1",
+  "width": 4800
+ },
+ "825b6db1-1b21-4efa-b528-5dbbe275e2d0": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_jalisco-state-library_05",
+  "width": 1205
+ },
+ "837e6d33-118e-4d83-8bbd-35c4ddd74994": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1410
+  ],
+  "stem": "rvtr_helsinki-south-harbor_07",
+  "width": 1410
+ },
+ "838f4177-e40e-4e56-8ca1-497430fc58db": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_34",
+  "width": 1080
+ },
+ "847a6ba5-08d5-4228-82a6-520ca15fd7a7": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1183
+  ],
+  "stem": "rvtr_opsys_extraction_25",
+  "width": 1183
+ },
+ "8526ec37-3c59-494e-ad31-9a0e5c65652b": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1438
+  ],
+  "stem": "rvtr_lodge-at-dry-pine-bay_03",
+  "width": 1438
+ },
+ "8547862e-9b9f-48b2-b9ba-6ff10eae3bf5": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_20",
+  "width": 1080
+ },
+ "86430fd8-433f-460d-9fc0-4593c5e0f980": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   891
+  ],
+  "stem": "rvtr_nexus-park-city_05",
+  "width": 891
+ },
+ "86972889-083c-4514-ad6c-7569b4e8c582": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_new-brutalist-image_01",
+  "width": 1205
+ },
+ "86e4138b-ce64-4b4a-8860-a022a1a81e88": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30119519053_o",
+  "width": 4512
+ },
+ "86f3662d-b53c-4a93-867c-8d212856a404": {
+  "height": 1275,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1650
+  ],
+  "stem": "rvtr_protean-prototypes_11",
+  "width": 1650
+ },
+ "86f97573-d001-43b5-8b97-1e7a18d5d6d3": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "dtw-interior-rendering",
+  "width": 3600
+ },
+ "87ba284c-01f2-4578-8e9f-467c75f4a97e": {
+  "height": 1821,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_resonant-chamber_10",
+  "width": 1960
+ },
+ "87cde26e-1728-4fe8-9d1f-f4725d4e2fc5": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2011_strategic-seed-grant",
+  "width": 9000
+ },
+ "87e40079-7744-44fd-b996-726a7910845b": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1200
+  ],
+  "stem": "rvtr_opsys_extraction_27",
+  "width": 1200
+ },
+ "87feff1c-f575-4b61-8c74-7daa5d0fab0f": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1341
+  ],
+  "stem": "rvtr_opsys_extraction_28",
+  "width": 1341
+ },
+ "883fe172-466e-421c-a52a-f81e50d702f6": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_16",
+  "width": 1080
+ },
+ "8894963a-aa11-44e3-89f8-da081bf587e3": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_46",
+  "width": 1080
+ },
+ "88eb03bc-2a41-4155-94b7-2c47aa540d6f": {
+  "height": 2082,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ch-jamaica_03",
+  "width": 3264
+ },
+ "890666bf-aea4-4c1f-a065-a227722ef7e5": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_jalisco-state-library_02",
+  "width": 1989
+ },
+ "8aa4439f-7e91-4386-9d7b-fe9295e1ebe9": {
+  "height": 2412,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infundibuliforms_04",
+  "width": 4288
+ },
+ "8ab3430d-e78a-456b-84a8-681143f2fdff": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_advanced-customization",
+  "width": 3600
+ },
+ "8b822039-ad06-4511-b059-07cb03888e47": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1200
+  ],
+  "stem": "rvtr_opsys_extraction_33",
+  "width": 1200
+ },
+ "8b95be17-9539-4a5e-9d63-e5a692da4b26": {
+  "height": 2001,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190815_eastentrypavilion_section",
+  "width": 3300
+ },
+ "8ba54743-7333-44a5-96a3-73dd081dcbfd": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "8_riperian-buffer",
+  "width": 7050
+ },
+ "8bb77704-1576-4db4-9866-c19edd89d09a": {
+  "height": 1080,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_protean-prototypes_03",
+  "width": 1920
+ },
+ "8c33d789-fb11-4389-bedc-b454b1dc1e85": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_10",
+  "width": 1080
+ },
+ "8cc05535-a9d8-44ba-946a-9d01217ceba6": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_13",
+  "width": 1080
+ },
+ "8cdd4e5c-ee4b-475b-b4c8-2155a0f4b683": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism",
+  "width": 3600
+ },
+ "8d2516f8-1bcb-4b76-ab64-efc80253a15e": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2025_faia-copy",
+  "width": 9000
+ },
+ "8e34c847-3e2e-44b1-ba00-1a8b0e24bfc2": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1349
+  ],
+  "stem": "rvtr_opsys_extraction_23",
+  "width": 1349
+ },
+ "8e92c24e-8481-48d1-91db-71e08675ba3c": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_architectmag_vol105-number7",
+  "width": 3600
+ },
+ "8eb1ebec-a525-4e60-98f3-1501ccebd2e9": {
+  "height": 1003,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1380
+  ],
+  "stem": "fr-river-4",
+  "width": 1380
+ },
+ "8f2804b9-409f-43ed-af5a-b672ec1afe87": {
+  "height": 8250,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "240913_bio_render",
+  "width": 6300
+ },
+ "8f4e020b-2918-4cca-a152-2ea87eedb377": {
+  "height": 1800,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1800
+  ],
+  "stem": "rvtr_proceedings-series-19-1_cover",
+  "width": 1800
+ },
+ "9009e748-a953-481d-bc21-9863b51db437": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30119564763_o",
+  "width": 4512
+ },
+ "903c4469-93a1-4673-a2fd-f84475b59ff5": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2014_rotc",
+  "width": 9000
+ },
+ "905c2050-c60f-451b-a578-829e799a3b68": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1532
+  ],
+  "stem": "rvtr_rtm_stratus-project_04",
+  "width": 1532
+ },
+ "90662c0e-da04-4892-b22d-cea3158dcbb3": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2012_um-pillowcase",
+  "width": 9000
+ },
+ "909efdc4-bcf2-4aa7-934e-5d366e594fb0": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2011_ecostructureevergreen",
+  "width": 9000
+ },
+ "91313fed-a166-4ae4-a30c-ce9140dd95b6": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_bracket_goessoft",
+  "width": 3600
+ },
+ "91697f65-31eb-4807-91a3-cbb8ff8aabc8": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_harmony_06",
+  "width": 2240
+ },
+ "91f8615f-6d80-443f-b77b-2fea004ecb04": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_architect_aug10",
+  "width": 3600
+ },
+ "9276c0d1-ab27-4b86-b826-04caf411f3ca": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2017_csla_award",
+  "width": 9000
+ },
+ "92b5a921-8f64-4028-8669-a6292335a2d8": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_acadia_projects_2017",
+  "width": 3600
+ },
+ "92c985cc-9a7e-44cb-a8aa-cb0345696fc1": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1504
+  ],
+  "stem": "rvtr_buoyant-aquacology_03",
+  "width": 1504
+ },
+ "9300cb49-68ed-44b8-8f40-7feea467e8eb": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   904
+  ],
+  "stem": "rvtr_protean-prototypes_10",
+  "width": 904
+ },
+ "930157e7-a651-4745-832c-91ca6ee0bcb6": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "9_scroll-drawings-x3",
+  "width": 7200
+ },
+ "939f3710-7809-4eb9-93f3-519c69863c2c": {
+  "height": 3964,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_transfewmation-cover",
+  "width": 3964
+ },
+ "94321a72-3a1b-439b-82be-dcc09941b33c": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2013_rtm",
+  "width": 9000
+ },
+ "94414cbb-41c4-4833-9031-39d004f37d80": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1414
+  ],
+  "stem": "rvtr_opsys_extraction_11",
+  "width": 1414
+ },
+ "951d46c8-e4e4-450e-8f88-67943e03ebb6": {
+  "height": 4250,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_det8-1",
+  "width": 2833
+ },
+ "956b467c-1106-481c-9aa1-51eca375815b": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_04",
+  "width": 1205
+ },
+ "95b6f31f-5161-4000-b394-74ad380cf6ef": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   960,
+   1265
+  ],
+  "stem": "rvtr_mobiprize_01",
+  "width": 1265
+ },
+ "95f85f4b-4812-43c7-a054-134596003829": {
+  "height": 1005,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "lv_04",
+  "width": 2500
+ },
+ "96067ac8-28c2-4bbd-87c3-3c36a27cab6d": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30666829411_o",
+  "width": 4512
+ },
+ "9661701c-047f-4eb4-8b28-de7a810baf97": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1670
+  ],
+  "stem": "rvtr_nexus-park-city_02",
+  "width": 1670
+ },
+ "96b0b1a9-d230-446b-8839-5b26ab04c49b": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   904
+  ],
+  "stem": "rvtr_protean-prototypes_18",
+  "width": 904
+ },
+ "971bd4a0-a2ee-4555-9fd1-d45361f7bfdb": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2018_breathing-territories",
+  "width": 9000
+ },
+ "97a0a824-e02e-40ba-99f8-56197cc53999": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1199
+  ],
+  "stem": "rvtr_stratus-project_09",
+  "width": 1199
+ },
+ "97a3eb60-db7a-4d19-842c-19b1861abd7e": {
+  "height": 2700,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "7_blackwalnut-forest-farm",
+  "width": 7200
+ },
+ "97fa43ab-5b94-407d-9781-5ad9d0f66b72": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1514
+  ],
+  "stem": "rvtr_nervous-ether_06",
+  "width": 1514
+ },
+ "98107603-90c6-4025-9bc5-5a93ad3eade1": {
+  "height": 1275,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1650
+  ],
+  "stem": "rvtr_protean-prototypes_19",
+  "width": 1650
+ },
+ "9835b532-4562-4d08-96dd-2640cfd3961a": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_canadian-architect-jan-10",
+  "width": 3600
+ },
+ "98e1dee3-4f5b-421e-b85e-c1042f4d053d": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1645
+  ],
+  "stem": "rvtr_seasons-house_03",
+  "width": 1645
+ },
+ "990590f7-01ef-4e18-97fb-404fd2f916f1": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_toronto_09",
+  "width": 1356
+ },
+ "9a6f512d-a106-43bd-96aa-4e7d1b4a5deb": {
+  "height": 1743,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_det2",
+  "width": 3000
+ },
+ "9aa0468b-d61a-400e-996a-ec7b4466b2f9": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280
+  ],
+  "stem": "rvtr_buoyant-aquacology_01",
+  "width": 1280
+ },
+ "9acee66a-5139-44a1-8b77-5f3c821f0587": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_fuel",
+  "width": 3600
+ },
+ "9b687806-7d3c-4099-88a9-bdeafea7ee37": {
+  "height": 571,
+  "sizes": [
+   320,
+   571
+  ],
+  "stem": "plasticfutures-cover",
+  "width": 571
+ },
+ "9d0b502f-c634-4790-b4c3-ae1cc8193ea7": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_10",
+  "width": 1205
+ },
+ "9d660f12-7253-4dab-a9c4-96301cbe6545": {
+  "height": 4613,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190823_sp_cistern-athena",
+  "width": 7200
+ },
+ "9d860b7e-e3fc-4275-8a8c-142b81243b7d": {
+  "height": 866,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1919
+  ],
+  "stem": "lv_02",
+  "width": 1919
+ },
+ "9dbb922f-fba2-4862-aade-b5bca9332845": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_03",
+  "width": 1205
+ },
+ "9e00c42f-07d0-4a85-92f0-a41804fa9089": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1378
+  ],
+  "stem": "rvtr_beirut-house-of-arts-culture_02",
+  "width": 1378
+ },
+ "9e4c0104-2e3f-4b6b-95ce-f7a0bfd55ebf": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1403
+  ],
+  "stem": "rvtr_opsys_extraction_01",
+  "width": 1403
+ },
+ "9eff5835-709c-46f8-bee8-e00d58bb92a7": {
+  "height": 1275,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1650
+  ],
+  "stem": "rvtr_protean-prototypes_15",
+  "width": 1650
+ },
+ "9f2f294e-9646-487a-be77-b2b6f179a477": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "west-entry_1",
+  "width": 3840
+ },
+ "a0ce4b38-2c0c-4b71-92ea-d619b76e337f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1266
+  ],
+  "stem": "rvtr_harmony_05",
+  "width": 1266
+ },
+ "a1ac58de-0380-4088-a302-c24454661d73": {
+  "height": 433,
+  "sizes": [
+   320,
+   640,
+   650
+  ],
+  "stem": "lv_51",
+  "width": 650
+ },
+ "a1dad407-c9bd-4fe9-a3d0-7d18f271378c": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2007_9th-annual-arquine",
+  "width": 9000
+ },
+ "a1fc4102-5807-4540-bde4-d0ccfcbced22": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_harmony_02",
+  "width": 2477
+ },
+ "a340bf04-b197-41d1-a3ea-bc312559ebc0": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_toronto_04",
+  "width": 1356
+ },
+ "a46465c0-cb87-49a4-b182-d699ad0321d7": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1266
+  ],
+  "stem": "rvtr_lodge-at-dry-pine-bay_04",
+  "width": 1266
+ },
+ "a4b47458-3ece-4be0-9c71-2e11b7b80ca5": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_specifics",
+  "width": 3600
+ },
+ "a4de58cc-6c69-4190-885b-f27e8d5bb810": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1170
+  ],
+  "stem": "rvtr_protean-prototypes_20",
+  "width": 1170
+ },
+ "a5025d51-e610-46d8-90e3-2b101cf21603": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1276
+  ],
+  "stem": "rvtr_rtm_stratus-project_03",
+  "width": 1276
+ },
+ "a5668718-3e6d-4fbc-a7d4-b58036f1a5ca": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   711
+  ],
+  "stem": "rvtr_nexus-park-city_06",
+  "width": 711
+ },
+ "a5d87bb1-b8ce-4a82-ac6e-b94213b2008d": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_extraction_exhibition-catalog",
+  "width": 3600
+ },
+ "a5de6972-6825-4285-9552-2a7c2f750e74": {
+  "height": 2556,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_montreal_01",
+  "width": 3840
+ },
+ "a624d861-697e-4db7-8ede-7b3bb04adf0f": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_11",
+  "width": 1080
+ },
+ "a6a362dc-45d8-4695-8183-46c1edff2562": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1350
+  ],
+  "stem": "rvtr_opsys_extraction_37",
+  "width": 1350
+ },
+ "a706b908-6e82-4a93-b507-65e25a284214": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1301
+  ],
+  "stem": "rvtr_beirut-house-of-arts-culture_04",
+  "width": 1301
+ },
+ "a73dea1c-1cc2-4023-833e-ab3a5401ca5a": {
+  "height": 6600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190816_dighouse_elevations",
+  "width": 10200
+ },
+ "a84748eb-9054-4517-a147-9be9693432d4": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2011_rtm_resonant-chamber",
+  "width": 9000
+ },
+ "a8ae40a3-e229-4f69-ba7f-5c0f583741dc": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_06",
+  "width": 1356
+ },
+ "a91f5104-943e-413f-9359-916781ddcfdb": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_protean-prototypes_17",
+  "width": 1972
+ },
+ "a93b1422-1c05-454f-8b77-6f5f746da436": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_jae_65_issue_02",
+  "width": 3600
+ },
+ "a9c2e5a5-c91a-4200-be5d-8d9ba2c91966": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_whats-the-matter",
+  "width": 3600
+ },
+ "aa0f29d3-4cc8-4cf3-9035-7523e73a148f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_12",
+  "width": 1205
+ },
+ "aa1fcc37-86b0-4fd6-a2f5-631eda7dbda6": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_15",
+  "width": 1205
+ },
+ "abea6e21-cdde-4ce8-a1dc-2639c2d35237": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_leonardo_vol-45",
+  "width": 3600
+ },
+ "ac7d8ca3-3e3e-4fca-94a6-edf9a619661f": {
+  "height": 4320,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "entrance",
+  "width": 7680
+ },
+ "ac9014f6-f1a5-4dad-8445-50282bc55862": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_oase-96",
+  "width": 3600
+ },
+ "ad661d75-edd2-4088-b315-f67f92c98590": {
+  "height": 2128,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_montreal_05",
+  "width": 3840
+ },
+ "ad94c518-fa0f-4952-944d-aba97003aded": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1229
+  ],
+  "stem": "rvtr_rtm_resonant-chamber_05",
+  "width": 1229
+ },
+ "ae162e28-af87-4b7c-927e-bba13741e9f5": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_penser-tout-haut_04",
+  "width": 1205
+ },
+ "afd1d089-52a5-450a-bc47-cc965c0d3403": {
+  "height": 749,
+  "sizes": [
+   320,
+   498
+  ],
+  "stem": "rvtr_det10-1",
+  "width": 498
+ },
+ "b01ba36c-9c90-4550-ba8a-d8aa238ac1b8": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "yyz-interior-rendering",
+  "width": 3600
+ },
+ "b0336a02-e499-44be-8541-1bd2e028e9f7": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2024_nfwf-copy",
+  "width": 9000
+ },
+ "b0d312cb-5e7d-43da-9d95-13166f8e9f3a": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1210
+  ],
+  "stem": "rvtr_opsys_extraction_02",
+  "width": 1210
+ },
+ "b1031d69-10d7-45df-b53d-be819d57eb11": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1440
+  ],
+  "stem": "rvtr_lodge-at-dry-pine-bay_06",
+  "width": 1440
+ },
+ "b110e5be-3d2e-4b76-8caf-1e1f7ac7c697": {
+  "height": 970,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "frvc_4",
+  "width": 2048
+ },
+ "b119ee55-8ce8-4cba-8ed4-6b0282d3065b": {
+  "height": 960,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1500
+  ],
+  "stem": "rvtr_opsys_extraction_15",
+  "width": 1500
+ },
+ "b14596f0-822e-4f15-9b72-386e346f3e95": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_31",
+  "width": 1080
+ },
+ "b1cb43fb-9741-4256-9470-0d933e63f6ac": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1220
+  ],
+  "stem": "rvtr_infographic-center_06",
+  "width": 1220
+ },
+ "b22ca310-1280-4dec-8ee0-fef76f688c7e": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1808
+  ],
+  "stem": "rvtr_helsinki-south-harbor_03",
+  "width": 1808
+ },
+ "b29150a5-d148-4505-9d8e-19f99e504f6a": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1607
+  ],
+  "stem": "rvtr_jalisco-state-library_03",
+  "width": 1607
+ },
+ "b2f97f93-88b0-421f-8445-ac7d0c88b9c2": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1361
+  ],
+  "stem": "rvtr_rtm_stratus-project_01",
+  "width": 1361
+ },
+ "b342f507-f84a-4b41-ad72-5adcc79144b2": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1274
+  ],
+  "stem": "rvtr_north-house_04",
+  "width": 1274
+ },
+ "b373d525-10aa-4efb-a015-9e15cc4d2e7f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   900
+  ],
+  "stem": "rvtr_research-through-making-v-pneus_04",
+  "width": 900
+ },
+ "b387326d-2285-436c-8c4f-826e429f65ff": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_in-place-of-sound",
+  "width": 3600
+ },
+ "b3a89772-b0e5-48b3-b95c-3848b57aa357": {
+  "height": 2865,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "map-conduit-urbanism_notext",
+  "width": 3820
+ },
+ "b56018ac-d0f7-49fd-99c0-070d18cf8d5f": {
+  "height": 2998,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_lodge-at-dry-pine-bay_07",
+  "width": 4949
+ },
+ "b602c22b-aec9-499e-9904-c16733edb5ed": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1714
+  ],
+  "stem": "rvtr_seasons-house_01",
+  "width": 1714
+ },
+ "b612fffa-c51d-4c03-a29a-c768fe2e1756": {
+  "height": 2848,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_latitudo-borealis_01",
+  "width": 4288
+ },
+ "b61b8296-6edf-4ecc-b949-be6040e7cf18": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1040
+  ],
+  "stem": "rvtr_convenience-gallery_02",
+  "width": 1040
+ },
+ "b643f39a-e855-418e-aeec-2f9ddf3c1a4f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "infra-eco-logi-urbanism_yale_03",
+  "width": 1356
+ },
+ "b69400cb-ccc5-489f-adcd-05a2a18eadcd": {
+  "height": 1793,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "frvc-comp7",
+  "width": 3600
+ },
+ "b74b55f9-d9cb-4e37-9198-92c454164c28": {
+  "height": 2001,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190815_westentrypavilion_section",
+  "width": 3300
+ },
+ "b75f661a-22d5-448b-84e0-9ef7232d17b5": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_north-house_09",
+  "width": 2458
+ },
+ "b7610879-67b9-45aa-b703-cd19091e7a0c": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30122948894_o",
+  "width": 4512
+ },
+ "b7a806f7-af75-4fc6-83b8-425e2671a51b": {
+  "height": 3046,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_det5-1",
+  "width": 2805
+ },
+ "b7d2eda8-79b0-40b4-bf4b-22ff9cc2e073": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1359
+  ],
+  "stem": "rvtr_rtm_resonant-chamber_10",
+  "width": 1359
+ },
+ "b803c6a5-d32c-434c-9397-5c1ae9f00942": {
+  "height": 2247,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_protean-prototypes_04",
+  "width": 3995
+ },
+ "b819c09c-b6ab-4cdd-99ed-8fe09ee46766": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_toronto_05",
+  "width": 1356
+ },
+ "b84bd488-7878-4e23-b1e6-e41d83a04b51": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1385
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_01",
+  "width": 1385
+ },
+ "b87a93a0-62ca-4303-a538-53b15dbd5c3f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1808
+  ],
+  "stem": "rvtr_helsinki-south-harbor_04",
+  "width": 1808
+ },
+ "b8c3b5c0-daa5-46cb-8100-f18a5fbb39cf": {
+  "height": 3964,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_buildingmetabolism_cover",
+  "width": 3964
+ },
+ "b924564d-1cd4-49e9-a7c7-80ba4eb6c490": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   707
+  ],
+  "stem": "rvtr_nervous-ether_05",
+  "width": 707
+ },
+ "b98304d9-7714-4833-91f3-f754c0ec5376": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1309
+  ],
+  "stem": "rvtr_rotc-protean-prototypes_02",
+  "width": 1309
+ },
+ "ba64e290-0662-4021-a101-f7fe0bb65d7e": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_latitudo-borealis_e04",
+  "width": 3840
+ },
+ "ba945df7-e956-4ce7-a3af-827ee38a4cbf": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2018_innovacity",
+  "width": 9000
+ },
+ "babadf6b-342b-4e3e-acf6-6187da29007d": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1406
+  ],
+  "stem": "infra-eco-logi-urbanism_yale_06",
+  "width": 1406
+ },
+ "bbc3daff-3896-496c-9a59-3ad16007cd39": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1180
+  ],
+  "stem": "rvtr_protean-prototypes_09",
+  "width": 1180
+ },
+ "bc463c01-8215-49e7-866e-4ee5beed249b": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "tad_2-2",
+  "width": 3600
+ },
+ "be02cd59-bc6b-47cf-ac86-1e3129b08f0b": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1361
+  ],
+  "stem": "rvtr_helsinki-south-harbor_05",
+  "width": 1361
+ },
+ "be71a1aa-4717-402c-9882-ed3fb5690647": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1212
+  ],
+  "stem": "rvtr_opsys_extraction_13",
+  "width": 1212
+ },
+ "be99e201-a65b-438f-ac6d-8d4e1e2ffb95": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1422
+  ],
+  "stem": "rvtr_grounding_07",
+  "width": 1422
+ },
+ "becb1b4a-0551-4b9f-8fa9-78a8e3f99e4b": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   683
+  ],
+  "stem": "rvtr_nexus-park-city_04",
+  "width": 683
+ },
+ "bef04de5-5795-4c1b-9e9f-2f2eeb285602": {
+  "height": 2340,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_montreal_02",
+  "width": 3300
+ },
+ "c047e733-017b-4d82-b4a3-4af9ef946204": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1514
+  ],
+  "stem": "rvtr_nervous-ether_08",
+  "width": 1514
+ },
+ "c0798d4d-7c8c-4279-b716-a9993ea5232b": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_constructing-green",
+  "width": 3600
+ },
+ "c11ed82b-f822-4ff4-82c5-743d5a282fa0": {
+  "height": 464,
+  "sizes": [
+   320,
+   640,
+   739
+  ],
+  "stem": "lv_58",
+  "width": 739
+ },
+ "c19e2b1a-ff29-413f-970b-ac9523e97227": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_conduit-urbanism_06",
+  "width": 1205
+ },
+ "c22358cc-cde0-4dbd-9006-3d3ae729d5e7": {
+  "height": 1856,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition_30639022112_o",
+  "width": 2784
+ },
+ "c317ebbe-bd74-4524-960f-0567c3ed0065": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1506
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_aa_03",
+  "width": 1506
+ },
+ "c3b0781f-1617-4fd6-afba-6bb741b7b9fc": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "west-entry_2",
+  "width": 3840
+ },
+ "c3b477d1-e07e-4050-9064-76c8af0dd426": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2008_us-dept-energy",
+  "width": 9000
+ },
+ "c48c62a8-b7aa-4ad9-889b-d1e118b29584": {
+  "height": 560,
+  "sizes": [
+   320,
+   640,
+   740
+  ],
+  "stem": "pev_5",
+  "width": 740
+ },
+ "c4b1537b-da37-4ac8-a1c0-53aba605e35d": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_toronto_01",
+  "width": 1356
+ },
+ "c4fc1daf-077c-4bba-bf15-a264bda84420": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_north-house_10",
+  "width": 2001
+ },
+ "c57392cc-4c6c-4d49-8bf2-adb6e53abdd2": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1200
+  ],
+  "stem": "rvtr_opsys_extraction_38",
+  "width": 1200
+ },
+ "c5b4165c-7390-426b-9eab-e09ca7b17749": {
+  "height": 1275,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1650
+  ],
+  "stem": "rvtr_protean-prototypes_15",
+  "width": 1650
+ },
+ "c6383423-8752-4049-965a-79dd5ced14b5": {
+  "height": 2198,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ch-jamaica_11",
+  "width": 3819
+ },
+ "c6dc3be8-3dee-4b70-a084-b7bb2fe4b26a": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2011_research-creation",
+  "width": 9000
+ },
+ "c6eb26ae-df22-4954-81db-2602d5d7b6ea": {
+  "height": 2257,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "yyz-exterior-rendering",
+  "width": 3600
+ },
+ "c70d2f45-80fe-4fe5-af6b-5d099f85a21a": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1379
+  ],
+  "stem": "rvtr_pneusystems_02",
+  "width": 1379
+ },
+ "c75b0593-fbe4-4960-8d62-4e233912d9c0": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_latitudo-borealis_i03",
+  "width": 3840
+ },
+ "c7c44a35-8af3-4c15-8c5f-f2e55d8e47c5": {
+  "height": 2340,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_montreal_03",
+  "width": 3300
+ },
+ "c8097205-10da-4304-9ece-2a25def96da2": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30638504232_o",
+  "width": 4512
+ },
+ "c834033e-b6ff-46ca-89d1-715e985fd3f4": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infrastructurespace",
+  "width": 3600
+ },
+ "c8994f96-b221-4770-8628-f44840241fe8": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1284
+  ],
+  "stem": "rvtr_stratus-project_02",
+  "width": 1284
+ },
+ "c89bab12-4c8d-450a-a791-30e5bd7ed95b": {
+  "height": 1856,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition_30455259770_o",
+  "width": 2784
+ },
+ "c933483e-c36b-4fba-b33d-54e20d9033da": {
+  "height": 2288,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ch-jamaica_04",
+  "width": 3051
+ },
+ "c9979ecc-c1b8-451b-96e4-4277afd957a9": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   905
+  ],
+  "stem": "rvtr_helsinki-south-harbor_09",
+  "width": 905
+ },
+ "c9c878da-6750-4244-bd08-8fe8d47916b4": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2018_sugi_fwe",
+  "width": 9000
+ },
+ "ca2c2a2c-e8ca-4ce1-86f6-a383c51e10e5": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1245
+  ],
+  "stem": "rvtr_grounding_04",
+  "width": 1245
+ },
+ "ca380299-d866-4bef-af18-fb6c6c4ac1f7": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2011_guardian",
+  "width": 9000
+ },
+ "ca919370-bda2-498f-b226-e343b197a760": {
+  "height": 2000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "frvc_5",
+  "width": 3008
+ },
+ "cad83579-e76c-469d-9cb5-32b7aa17c57e": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_water",
+  "width": 3600
+ },
+ "caf45717-c5b9-4f1f-93a8-7a02e6316f14": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1223
+  ],
+  "stem": "rvtr_rtm_stratus-project_07",
+  "width": 1223
+ },
+ "cb210803-8eef-42f5-a6e7-9a5a213b211a": {
+  "height": 4320,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "private-courtyard",
+  "width": 7680
+ },
+ "cc49198b-a800-482a-b2da-bc6123f45f0a": {
+  "height": 1365,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "lv_52",
+  "width": 2048
+ },
+ "cce41a2a-8d05-4fba-b036-5ffa0ee01d74": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2008_cca-practitioners",
+  "width": 9000
+ },
+ "ccfede45-a276-47cc-a58b-224344eb0061": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1284
+  ],
+  "stem": "rvtr_stratus-project_03",
+  "width": 1284
+ },
+ "cd31c152-6988-4f37-a803-e7b0461c4a15": {
+  "height": 6300,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "posters-copy",
+  "width": 2325
+ },
+ "cdf3cdef-88c5-411c-9df0-fbabea182c8d": {
+  "height": 4320,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "birdseye",
+  "width": 7532
+ },
+ "cdfd10f3-6105-40ba-ac63-1f4c2b99b5b6": {
+  "height": 2824,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_resonant-chamber_small_02",
+  "width": 3840
+ },
+ "cedb6dfa-c383-45cb-86f4-d2cc637cfbb3": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2017_az_award",
+  "width": 9000
+ },
+ "cedeef1d-3c30-4569-a39e-a2226c6f6e1c": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30119597723_o",
+  "width": 4512
+ },
+ "d11c0f1f-edde-4818-853e-63af816a9690": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1270
+  ],
+  "stem": "rvtr_rtm_stratus-project_05",
+  "width": 1270
+ },
+ "d25b7c8e-559c-441c-8835-d2f313f55e34": {
+  "height": 1364,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "infra-eco-logi-urbanism_yale_01",
+  "width": 2000
+ },
+ "d368183b-4af4-4311-a7c2-7670855659aa": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1410
+  ],
+  "stem": "rvtr_office-project-project-office_02",
+  "width": 1410
+ },
+ "d3e0d162-62a4-4fea-ac22-e8a0ac9d1705": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2010_r-and-d-award",
+  "width": 9000
+ },
+ "d402af61-65ed-4130-ae31-17757e2576b5": {
+  "height": 843,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1333
+  ],
+  "stem": "rvtr_mobiprize_05",
+  "width": 1333
+ },
+ "d5479b28-e5ad-44eb-9373-56873aa2a40f": {
+  "height": 1800,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_stratus-project_20",
+  "width": 3600
+ },
+ "d550ed3f-ae0e-4f29-b000-b4a08a8e69d9": {
+  "height": 2623,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_det11-1",
+  "width": 3920
+ },
+ "d619b5aa-7bad-4b87-991f-4fa26c85ef62": {
+  "height": 1443,
+  "sizes": [
+   320,
+   640,
+   960,
+   1086
+  ],
+  "stem": "fr-river-15",
+  "width": 1086
+ },
+ "d6825b58-93c6-455e-b92e-03a2913aebdf": {
+  "height": 3000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_lodge-at-dry-pine-bay_02",
+  "width": 6000
+ },
+ "d6a599f5-c437-47d4-8885-bd415f7cf37f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1294
+  ],
+  "stem": "rvtr_grounding_01",
+  "width": 1294
+ },
+ "d6a6554a-d02a-46da-b5a4-f4514179c4b6": {
+  "height": 4538,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "map-casediagram",
+  "width": 7238
+ },
+ "d721b2da-ee24-487c-b872-80c472fb3e3e": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1266
+  ],
+  "stem": "rvtr_resonant-chamber_06",
+  "width": 1266
+ },
+ "d735077a-0197-477a-9a32-ae4517006bdc": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_opsys_extraction_34",
+  "width": 2078
+ },
+ "d7775728-b766-4216-aa60-ee28023e1fda": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "dtw_ant_slide",
+  "width": 6000
+ },
+ "d77b708b-c644-4e5d-b93b-6c4d9ba0ba56": {
+  "height": 1446,
+  "sizes": [
+   320,
+   640,
+   960,
+   1086
+  ],
+  "stem": "fr-river-14",
+  "width": 1086
+ },
+ "d9751f4f-54a9-4fe7-8c17-60f9121637ae": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_nervous-ether_07",
+  "width": 1942
+ },
+ "d9ab0ed9-649e-4bb0-9a73-aef09e6aaa14": {
+  "height": 1800,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1800
+  ],
+  "stem": "rvtr_routledge_edt_cover",
+  "width": 1800
+ },
+ "da736b71-37fd-406f-b697-bd6d4430a81e": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2009_royal-arch-institute",
+  "width": 9000
+ },
+ "da92cab4-1916-4134-b6d1-4a290c8fdc71": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1706
+  ],
+  "stem": "rvtr_infundibuliforms_08",
+  "width": 1706
+ },
+ "db07cd09-74a7-40e3-a80d-294797b814af": {
+  "height": 3300,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190826_notion_system-stack",
+  "width": 5100
+ },
+ "db276156-ad0f-4f76-9323-26bac16af193": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1200
+  ],
+  "stem": "rvtr_opsys_extraction_30",
+  "width": 1200
+ },
+ "db2d44f8-d93c-4c53-a7c3-c405fcbe96d1": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1517
+  ],
+  "stem": "rvtr_swamp-house_01",
+  "width": 1517
+ },
+ "db619ab1-3a84-499f-b85a-c9ba3ca080a6": {
+  "height": 2040,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_swamp-house_05",
+  "width": 4891
+ },
+ "dbee446a-6186-4b19-b131-837dba51f344": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1165
+  ],
+  "stem": "rvtr_opsys_extraction_17",
+  "width": 1165
+ },
+ "dc253d3c-b4eb-4c7f-a08b-e7cba6c1c91a": {
+  "height": 949,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1584
+  ],
+  "stem": "lv_30",
+  "width": 1584
+ },
+ "dc31e2ea-7fdf-472c-94cb-ad68c4291e0e": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_penser-tout-haut_01",
+  "width": 1205
+ },
+ "dcb19cbc-a46a-46a5-82cb-ee938269d761": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1158
+  ],
+  "stem": "rvtr_north-house_05",
+  "width": 1158
+ },
+ "dcbfa3c0-a4a4-447e-97d7-ff669905b7d3": {
+  "height": 1485,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infra-eco-logi-urbanism_montreal_04",
+  "width": 2298
+ },
+ "dd9caab7-4473-42d5-8fb8-22792ee24154": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_52",
+  "width": 1080
+ },
+ "de1ec291-c5b4-4cc2-93e9-849dde4b89e1": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1391
+  ],
+  "stem": "infra-eco-logi-urbanism_yale_09",
+  "width": 1391
+ },
+ "de9535cd-82c2-47bc-bf8b-f8f4f4a1a06d": {
+  "height": 2412,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infundibuliforms_02",
+  "width": 4288
+ },
+ "dee491be-18ff-4a7f-9b6d-bec4d7e0784c": {
+  "height": 833,
+  "sizes": [
+   320,
+   640,
+   688
+  ],
+  "stem": "rvtr_lodge-at-dry-pine-bay_05",
+  "width": 688
+ },
+ "df1ee9ad-6c33-4909-8c7b-8210019307a3": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1557
+  ],
+  "stem": "rvtr_research-through-making-v-pneus_01",
+  "width": 1557
+ },
+ "df3ad766-1681-49ca-a476-e4961f8ce893": {
+  "height": 500,
+  "sizes": [
+   320,
+   500
+  ],
+  "stem": "rvtr_design-and-construction",
+  "width": 500
+ },
+ "df75dfb9-5161-4c1c-ba1c-efb314826665": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "yyz_circlemap",
+  "width": 6000
+ },
+ "df84e37d-6907-4a8f-aadc-315e8e6a11b8": {
+  "height": 4561,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190823_sp_bouleuterion",
+  "width": 7200
+ },
+ "dfd82140-5951-41ad-8989-25bedeb31bed": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1808
+  ],
+  "stem": "rvtr_helsinki-south-harbor_02",
+  "width": 1808
+ },
+ "e135dac2-caa6-42ea-96fa-286064c765fe": {
+  "height": 6275,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_cosmo",
+  "width": 11154
+ },
+ "e1a3f473-145c-4843-944a-da904e6525d5": {
+  "height": 726,
+  "sizes": [
+   320,
+   640,
+   726
+  ],
+  "stem": "rvtrweb_jae-78-2-worlding-cover-flat",
+  "width": 726
+ },
+ "e218d251-9873-49c3-b5b3-234b7f68353d": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1336
+  ],
+  "stem": "rvtr_grounding_08",
+  "width": 1336
+ },
+ "e241a4b0-6b22-410c-ba47-c133ee293816": {
+  "height": 4032,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "model1_1",
+  "width": 3024
+ },
+ "e26906b3-0d5b-42e3-9931-dd3e972b999b": {
+  "height": 5761,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "20190823_dighouse-site-plan_750",
+  "width": 9323
+ },
+ "e2c3fd29-d157-41ea-b0d0-451724ee51b4": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30122920434_o",
+  "width": 4512
+ },
+ "e379deeb-1fc2-481d-8c1b-8dd21e35cfa0": {
+  "height": 437,
+  "sizes": [
+   320,
+   640
+  ],
+  "stem": "lv_56",
+  "width": 640
+ },
+ "e4862d0c-6227-4a30-a2b9-89c34961e75b": {
+  "height": 3964,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_jae_74_1",
+  "width": 3964
+ },
+ "e4eee5b1-da52-4749-9002-1f68abaa6981": {
+  "height": 8850,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "24_0925_actornetwork_notitle",
+  "width": 7500
+ },
+ "e5c28bcd-c109-46d4-bf66-90853886f43e": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1687
+  ],
+  "stem": "rvtr_helsinki-south-harbor_01",
+  "width": 1687
+ },
+ "e5d97fa7-3125-42f8-86b3-acae2a6eede2": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2000_toronto-society-of-arch",
+  "width": 9000
+ },
+ "e5f22c20-59e5-4b83-a6f3-f7232ccb1bc8": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   958
+  ],
+  "stem": "rvtr_buoyant-aquacology_05",
+  "width": 958
+ },
+ "e66bb2d0-4119-46d0-87cf-aa89b7ac4eae": {
+  "height": 1350,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "frvc_1",
+  "width": 2400
+ },
+ "e761b0ce-c18c-4eba-bf0c-4e5f8b7f6fa7": {
+  "height": 1224,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1632
+  ],
+  "stem": "rvtr_ch-jamaica_21",
+  "width": 1632
+ },
+ "e803dc97-706b-476e-9e99-9d918a6be5ff": {
+  "height": 598,
+  "sizes": [
+   320,
+   640,
+   692
+  ],
+  "stem": "rvtr_conduit-urbanism_01alt",
+  "width": 692
+ },
+ "e83444ea-7805-46a2-b569-9c5eba97226b": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1608
+  ],
+  "stem": "rvtr_rotc-protean-prototypes_04",
+  "width": 1608
+ },
+ "e91fe4ed-ab36-4019-8729-e18305939aee": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1200
+  ],
+  "stem": "rvtr_opsys_extraction_20",
+  "width": 1200
+ },
+ "e95b8362-405d-41b9-904a-01a13d6bf3aa": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "tcl_12x12in",
+  "width": 3600
+ },
+ "e9bf04c6-e230-4335-9ac2-d8d929b3894c": {
+  "height": 2875,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "model2_1",
+  "width": 2014
+ },
+ "ea8a7b9b-043d-4109-a4e9-648e2e4c86aa": {
+  "height": 768,
+  "sizes": [
+   320,
+   640,
+   768
+  ],
+  "stem": "rvtrweb_cleaner-environmental-systems",
+  "width": 768
+ },
+ "eaa024e6-f658-4e07-87da-522d414c8998": {
+  "height": 1275,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1650
+  ],
+  "stem": "rvtr_protean-prototypes_08",
+  "width": 1650
+ },
+ "eae5c6ba-05c7-4226-9e36-522e47682cd8": {
+  "height": 1856,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition_30639029472_o",
+  "width": 2784
+ },
+ "eb0fc7ba-770d-4bbc-8150-0251da51d4b4": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1446
+  ],
+  "stem": "rvtr_jalisco-state-library_07",
+  "width": 1446
+ },
+ "eb68d714-1281-43ed-b208-e796aa41515b": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infrastructure-as-architecture",
+  "width": 3600
+ },
+ "eb816034-225c-4b8c-8d03-f1523860fbdd": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "dtw_circlemap",
+  "width": 6000
+ },
+ "ebdde05b-541d-4e26-8d7d-9ee029e01e81": {
+  "height": 2156,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "frvc-comp5",
+  "width": 2800
+ },
+ "ebe399aa-8281-45a8-b192-c8544891cbda": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1531
+  ],
+  "stem": "rvtr_lodge-at-dry-pine-bay_08",
+  "width": 1531
+ },
+ "ebfec555-93ce-459f-a566-581f37b9883e": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_resonant-chamber_04",
+  "width": 1356
+ },
+ "ec5a54f0-46e2-4a93-9fdb-bb9c04b2e10c": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1359
+  ],
+  "stem": "rvtr_rtm_resonant-chamber_01",
+  "width": 1359
+ },
+ "ec5de6ca-6a13-4eaa-bad1-0e9711acc0d4": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1808
+  ],
+  "stem": "rvtr_jalisco-state-library_01",
+  "width": 1808
+ },
+ "ecbcf613-47de-4a67-ba8d-5cfe08aceeb9": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infographic-center_02",
+  "width": 2325
+ },
+ "ed64ad61-0253-4b6c-9d40-17c211098472": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_infundibuliforms_12",
+  "width": 1205
+ },
+ "edafa749-7603-40ef-84ea-179b8ffd05b3": {
+  "height": 4250,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_det9",
+  "width": 2834
+ },
+ "ee5a55b6-21fb-4414-8642-27e4e90bfec0": {
+  "height": 2333,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_rotc-protean-prototypes_03",
+  "width": 4512
+ },
+ "efa3b144-384d-4fef-9604-711f74967165": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_27",
+  "width": 1080
+ },
+ "effc8229-ed00-4908-8df1-c7bbc0190c74": {
+  "height": 3008,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2016-acadia-exhibition-opening_30718433276_o",
+  "width": 4512
+ },
+ "f0143d58-9fdd-4c3e-bfeb-be6e7bb9c822": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "chi_circlemap",
+  "width": 6000
+ },
+ "f0392ad3-35b0-4a17-b95b-6537e9865a0f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1359
+  ],
+  "stem": "rvtr_resonant-chamber_01",
+  "width": 1359
+ },
+ "f08986c4-4334-4c45-97e2-18cf036b1638": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "2018_michigan-mellon",
+  "width": 9000
+ },
+ "f0ba8cab-f0b3-4c5c-9439-5ae227899992": {
+  "height": 800,
+  "sizes": [
+   320,
+   640,
+   800
+  ],
+  "stem": "rvtrweb_design-for-rethinking-resources_2024_sm",
+  "width": 800
+ },
+ "f0e9db66-48a2-499b-b4ed-5f124d11456a": {
+  "height": 1897,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_cenote_2",
+  "width": 3334
+ },
+ "f107c4f1-dd17-4735-8b43-5255bbc762fd": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_infundibuliforms_14",
+  "width": 2015
+ },
+ "f1b28108-e2d3-409a-99bc-89e3de135d27": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "east-entry_2",
+  "width": 3840
+ },
+ "f24d52f0-b744-45b0-9d63-da48a2643c64": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1598
+  ],
+  "stem": "rvtr_opsys_extraction_31",
+  "width": 1598
+ },
+ "f295897c-d33f-4429-ab4b-eba4bb3f7b94": {
+  "height": 2182,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_conduit-urbanism_19",
+  "width": 3840
+ },
+ "f2f1e101-6464-49d9-a2d0-86743be57ea5": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_ad_smart04",
+  "width": 3600
+ },
+ "f3ca7941-78af-4cd7-93b3-9553dbbdd428": {
+  "height": 2848,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_stratus-project_16",
+  "width": 3772
+ },
+ "f3d0d4bb-eafc-49a4-af2e-3f7d326ace4e": {
+  "height": 2956,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "frvc-comp6",
+  "width": 6800
+ },
+ "f49b5f62-242e-484c-899e-db23600f7bdf": {
+  "height": 4500,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "yyz_ant_slide",
+  "width": 6000
+ },
+ "f4c1c74b-1f2a-4187-b726-dba4fe5cfe55": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_latitude_06",
+  "width": 2200
+ },
+ "f57e7209-baa8-425a-bb8b-e62ca88e0b5d": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_young-architects",
+  "width": 3600
+ },
+ "f63f8776-cd06-4f5f-940e-74a341e0cc54": {
+  "height": 853,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1516
+  ],
+  "stem": "rvtr_north-house_01",
+  "width": 1516
+ },
+ "f654f04e-f697-4058-9903-167a273fa278": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_rtm_resonant-chamber_02",
+  "width": 1989
+ },
+ "f85a02fe-a9f9-484a-90a6-8822783c8f1f": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "infra-eco-logi-urbanism_yale_07",
+  "width": 1356
+ },
+ "f8a7d877-3349-4ac0-b87d-749c42cf5101": {
+  "height": 1800,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1800
+  ],
+  "stem": "rvtr_web_nature-of-enclosure",
+  "width": 1800
+ },
+ "f9207eff-9293-4af3-b3df-eab29ae641f3": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1200
+  ],
+  "stem": "rvtr_opsys_extraction_08",
+  "width": 1200
+ },
+ "f9d91f9d-d8b0-447a-95a9-ddd65dfd8b1d": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1214
+  ],
+  "stem": "rvtr_convenience-gallery_01",
+  "width": 1214
+ },
+ "fadbf579-643b-4b0e-9c84-c11333784a19": {
+  "height": 4245,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_det7-1",
+  "width": 2690
+ },
+ "fb0812d7-4c6e-46a7-a9ee-cf28b01278e9": {
+  "height": 2160,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "restaurant_2",
+  "width": 3840
+ },
+ "fbba31fb-c8ca-4247-bca2-54d1d3ce5d28": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1356
+  ],
+  "stem": "rvtr_resonant-chamber_03",
+  "width": 1356
+ },
+ "fd1b5a0b-6572-48cb-a22e-ca92637a7499": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1390
+  ],
+  "stem": "rvtr_opsys_extraction_35",
+  "width": 1390
+ },
+ "fdab198b-0342-4082-84af-75f29da66f7a": {
+  "height": 6000,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_2015_dot-nextrans",
+  "width": 9000
+ },
+ "fdf371f3-51f0-4048-997c-5174b62c5e42": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   699
+  ],
+  "stem": "rvtr_rtm_resonant-chamber_07",
+  "width": 699
+ },
+ "fe08ae2d-688a-489f-8c0d-2a807ccd6fee": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1350
+  ],
+  "stem": "rvtr_opsys_extraction_09",
+  "width": 1350
+ },
+ "fe1fdad8-e37c-497c-a41e-097331ade63a": {
+  "height": 3600,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1920
+  ],
+  "stem": "rvtr_monu-15",
+  "width": 3600
+ },
+ "fe257371-6378-4204-8c82-c645fed93753": {
+  "height": 720,
+  "sizes": [
+   320,
+   640,
+   960,
+   1080
+  ],
+  "stem": "rvtr_jack-layton-ferry-terminal_50",
+  "width": 1080
+ },
+ "fe4ebc50-9cd5-4e25-84df-504a28a0ff5c": {
+  "height": 677,
+  "sizes": [
+   320,
+   640,
+   677
+  ],
+  "stem": "ambiguous_territory_final_rgb",
+  "width": 677
+ },
+ "fea59227-2274-4e0d-9df1-b136a04a0636": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1233
+  ],
+  "stem": "rvtr_opsys_extraction_24",
+  "width": 1233
+ },
+ "feb056a4-daba-491c-bff8-5fb469b5a2bc": {
+  "height": 900,
+  "sizes": [
+   320,
+   640,
+   960,
+   1280,
+   1349
+  ],
+  "stem": "rvtr_opsys_extraction_04",
+  "width": 1349
+ },
+ "ffce6fa8-8e9c-4071-81b1-27d6faec0e7a": {
+  "height": 904,
+  "sizes": [
+   320,
+   640,
+   960,
+   1205
+  ],
+  "stem": "rvtr_rtm_resonant-chamber_06",
+  "width": 1205
+ }
+}
