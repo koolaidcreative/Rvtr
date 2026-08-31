@@ -1,0 +1,26 @@
+/* Site overrides layered on top of the scraped Monograph stylesheet.
+   Kept in a separate file so the hashed vendor bundle stays pristine and
+   these changes are easy to find, tune, or revert. */
+
+/* Carousel height.
+
+   The original rule is:
+
+       @media only screen and (min-width: 40.063em) {
+         .carousel__viewport { height: 0 !important; padding-bottom: 37.5% }
+       }
+
+   Because the box is the padding-bottom aspect-ratio trick, its height is
+   37.5% of the FULL page width with no upper bound. That is fine on a laptop
+   but grows without limit on a wide monitor -- 713px tall at 1900px wide,
+   960px at 2560px -- so the carousel swallows the whole viewport and the
+   project text is pushed entirely below the fold.
+
+   min() keeps the original proportional behaviour until it would exceed 48%
+   of the viewport height, then holds. Scoped to the same breakpoint as the
+   rule it overrides, so the separate mobile treatment is untouched. */
+@media only screen and (min-width: 40.063em) {
+  .carousel__viewport {
+    padding-bottom: min(37.5%, 48vh) !important;
+  }
+}
