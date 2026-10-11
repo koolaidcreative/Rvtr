@@ -1,0 +1,108 @@
+<!--
+  RVTR LIST ROWS ENTRANCE (append to the site's custom code, after rv-covers)
+
+  For a text-only CMS list (Recognition: year · award · awarding body).
+  Name the collection list layer "… rv-rows" (word match; do NOT also tag it
+  rv-stagger or rv-reveal, and give its rows no Framer Appear effect).
+
+  As each row comes into view, in reading order, 45ms apart:
+  - a hairline draws across the top of the row, left to right (0.9s);
+  - each line of text rises out of a mask, as if from behind that line:
+    the year first, then the title, then the awarding body, 70ms apart;
+  - nothing moves the layout: only clip-path, translate and opacity change,
+    and the space every row takes is fixed from the first frame, so the page
+    never jumps.
+  Rows already on screen at load start together after a 150ms beat, so the
+  first view settles as one gesture instead of popping in.
+  Hover (devices with a pointer): the row's hairline darkens and the title
+  shifts 4px right.
+  Reduced motion: rows simply fade.
+
+  If a row already has its own top border or line layer, set
+  --rvr-line: none on the list (or remove that border) so lines don't double.
+-->
+<style>
+[data-framer-name~="rv-rows"] > * { position: relative; }
+html.rv-js [data-framer-name~="rv-rows"] > *::before {
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 1px; pointer-events: none;
+  background: var(--rvr-line, var(--rv-rule, rgba(37,35,36,.16)));
+  transform-origin: 0 50%; scale: 0 1;
+  transition: scale .9s cubic-bezier(.65,0,.15,1) var(--rvr-delay, 0ms), background-color .3s ease;
+}
+html.rv-js [data-framer-name~="rv-rows"] > [data-rvr-in]::before { scale: 1 1; }
+
+html.rv-js [data-framer-name~="rv-rows"] > * [data-framer-component-type="RichTextContainer"] {
+  clip-path: inset(-2px -2px 102% -2px);
+  translate: 0 .55em;
+  opacity: 0;
+  transition: clip-path .85s cubic-bezier(.22,.61,.36,1) calc(var(--rvr-delay, 0ms) + 120ms + var(--rvr-k, 0) * 70ms),
+              translate .85s cubic-bezier(.22,.61,.36,1) calc(var(--rvr-delay, 0ms) + 120ms + var(--rvr-k, 0) * 70ms),
+              opacity .6s ease calc(var(--rvr-delay, 0ms) + 120ms + var(--rvr-k, 0) * 70ms);
+}
+html.rv-js [data-framer-name~="rv-rows"] > [data-rvr-in] [data-framer-component-type="RichTextContainer"] {
+  clip-path: inset(-2px -2px -12% -2px); translate: 0 0; opacity: 1;
+}
+/* after the entrance, drop the clip so descenders, focus rings and hover never get cut */
+html.rv-js [data-framer-name~="rv-rows"] > [data-rvr-done] [data-framer-component-type="RichTextContainer"] { clip-path: none; transition: none; }
+
+@media (hover: hover) {
+  [data-framer-name~="rv-rows"] > [data-rvr-done] [data-framer-component-type="RichTextContainer"] { transition: translate .45s cubic-bezier(.22,.61,.36,1); }
+  [data-framer-name~="rv-rows"] > [data-rvr-done]:hover::before { background: var(--rv-ink, #252324); }
+  [data-framer-name~="rv-rows"] > [data-rvr-done]:hover [data-rvr-title] { translate: 4px 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.rv-js [data-framer-name~="rv-rows"] > *::before { scale: 1 1; transition: none; }
+  html.rv-js [data-framer-name~="rv-rows"] > * [data-framer-component-type="RichTextContainer"] { clip-path: none; translate: none; transition: opacity .3s linear; }
+}
+</style>
+<script>
+(function () {
+  if (window.__rvr) return; window.__rvr = true;
+  var SEL = '[data-framer-name~="rv-rows"]';
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var first = true;
+
+  function prep(row) {
+    // order the text blocks by reading position: year, title, awarding body…
+    var texts = Array.prototype.slice.call(row.querySelectorAll('[data-framer-component-type="RichTextContainer"]'));
+    texts.sort(function (a, b) {
+      var ra = a.getBoundingClientRect(), rb = b.getBoundingClientRect();
+      return Math.abs(ra.top - rb.top) > 6 ? ra.top - rb.top : ra.left - rb.left;
+    });
+    texts.forEach(function (t, i) { t.style.setProperty('--rvr-k', i); });
+    // the longest text is the title (it gets the hover shift)
+    var longest = texts.reduce(function (m, t) { return (t.textContent || '').length > (m ? m.textContent.length : -1) ? t : m; }, null);
+    if (longest) longest.setAttribute('data-rvr-title', '');
+  }
+
+  var batch = [], raf = 0;
+  function flush() {
+    raf = 0;
+    batch.sort(function (a, b) { return a.getBoundingClientRect().top - b.getBoundingClientRect().top; });
+    var lead = first ? 150 : 0; first = false;
+    batch.forEach(function (row, i) {
+      var d = reduce ? 0 : lead + Math.min(i, 12) * 45;
+      row.style.setProperty('--rvr-delay', d + 'ms');
+      row.setAttribute('data-rvr-in', '');
+      setTimeout(function () { row.setAttribute('data-rvr-done', ''); }, d + 1300);
+    });
+    batch = [];
+  }
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      io.unobserve(e.target); prep(e.target); batch.push(e.target);
+    });
+    if (batch.length && !raf) raf = requestAnimationFrame(flush);
+  }, { rootMargin: '0px 0px -4% 0px', threshold: 0 });
+
+  function scan() {
+    document.querySelectorAll(SEL + ' > *:not([data-rvr-seen])').forEach(function (r) {
+      r.setAttribute('data-rvr-seen', ''); io.observe(r);
+    });
+  }
+  var t = 0;
+  new MutationObserver(function () { clearTimeout(t); t = setTimeout(scan, 80); }).observe(document.documentElement, { childList: true, subtree: true });
+  scan();
+})();
+</script>
