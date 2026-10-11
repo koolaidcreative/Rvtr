@@ -1,0 +1,112 @@
+<!--
+  RVTR COVER GRID LOADING (append to the site's custom code, after the photo viewer)
+
+  For a CMS grid of covers (Publications). Name the collection list layer
+  "… rv-covers" (word match, like rv-stagger; do NOT also tag it rv-stagger).
+
+  Each card is watched on its own, so the grid fills in row by row as you
+  scroll instead of all 73 at once:
+  - a card rises 14px and fades in when it enters the view, left to right
+    across its row (70ms apart);
+  - its cover waits on a soft tone with a blurred tiny copy of the image
+    (a ~1 KB thumbnail from Framer's image CDN), then comes into focus and
+    settles from 103% to 100% once the full image has loaded and decoded.
+  Reduced motion: no rise or zoom; covers simply fade.
+-->
+<style>
+html.rv-js [data-framer-name~="rv-covers"] > * {
+  opacity: 0;
+  translate: 0 14px;
+  transition: opacity .7s var(--rv-reveal-ease, cubic-bezier(.44,.13,.56,1)) var(--rvc-delay, 0ms),
+              translate .9s var(--rv-reveal-ease, cubic-bezier(.44,.13,.56,1)) var(--rvc-delay, 0ms);
+}
+html.rv-js [data-framer-name~="rv-covers"] > [data-rvc-in] { opacity: 1; translate: 0 0; }
+
+html.rv-js [data-framer-name~="rv-covers"] [data-framer-background-image-wrapper] {
+  overflow: hidden;
+  background: var(--rv-placeholder, #efece6) var(--rvc-lqip, none) center / cover no-repeat;
+}
+html.rv-js [data-framer-name~="rv-covers"] [data-framer-background-image-wrapper][data-rvc-lqip]::before {
+  content: ""; position: absolute; inset: -10%; z-index: 0; pointer-events: none;
+  background: var(--rvc-lqip) center / cover no-repeat; filter: blur(14px) saturate(1.05);
+  transition: opacity 1s ease .15s;
+}
+html.rv-js [data-framer-name~="rv-covers"] [data-framer-background-image-wrapper][data-rvc-lqip] { background-image: none; }
+html.rv-js [data-framer-name~="rv-covers"] [data-framer-background-image-wrapper] > img {
+  position: relative; z-index: 1;
+  opacity: 0 !important;
+  scale: 1.03;
+  filter: blur(6px);
+  transition: opacity .9s var(--rv-reveal-ease, cubic-bezier(.44,.13,.56,1)) var(--rvc-delay, 0ms),
+              scale 1.4s cubic-bezier(.22,.61,.36,1) var(--rvc-delay, 0ms),
+              filter .9s ease var(--rvc-delay, 0ms) !important;
+}
+html.rv-js [data-framer-name~="rv-covers"] > [data-rvc-in] [data-framer-background-image-wrapper] > img[data-rvc-ok] {
+  opacity: 1 !important; scale: 1; filter: none;
+}
+html.rv-js [data-framer-name~="rv-covers"] > [data-rvc-in] [data-framer-background-image-wrapper]:has(> img[data-rvc-ok])::before { opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  html.rv-js [data-framer-name~="rv-covers"] > * { translate: none; transition: opacity .3s linear; }
+  html.rv-js [data-framer-name~="rv-covers"] [data-framer-background-image-wrapper] > img { scale: 1; filter: none; transition: opacity .3s linear !important; }
+}
+</style>
+<script>
+(function () {
+  if (window.__rvc) return; window.__rvc = true;
+  var SEL = '[data-framer-name~="rv-covers"]';
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var base = function (u) { return (u || '').split('?')[0]; };
+  var cdn = function (u) { return /framerusercontent\.com\/images\//.test(u); };
+
+  function ready(img) {
+    if (img.hasAttribute('data-rvc-ok')) return;
+    var done = function () { img.setAttribute('data-rvc-ok', ''); };
+    if (img.complete && img.naturalWidth) { (img.decode ? img.decode().catch(function(){}) : Promise.resolve()).then(done); return; }
+    img.addEventListener('load', function () { (img.decode ? img.decode().catch(function(){}) : Promise.resolve()).then(done); }, { once: true });
+    img.addEventListener('error', done, { once: true });
+    setTimeout(done, 6000); // never leave a cover hidden
+  }
+
+  function prep(card) {
+    card.querySelectorAll('[data-framer-background-image-wrapper] > img').forEach(function (img) {
+      var w = img.parentElement, src = img.currentSrc || img.src;
+      if (!w.hasAttribute('data-rvc-lqip') && cdn(src)) {
+        w.style.setProperty('--rvc-lqip', 'url("' + base(src) + '?scale-down-to=64")');
+        w.setAttribute('data-rvc-lqip', '');
+      }
+      ready(img);
+    });
+  }
+
+  // Cards that come into view together are released left to right by their position in the row.
+  var batch = [], timer = 0;
+  function flush() {
+    timer = 0;
+    var rows = {};
+    batch.forEach(function (c) { var t = Math.round(c.getBoundingClientRect().top / 40); (rows[t] = rows[t] || []).push(c); });
+    Object.keys(rows).forEach(function (k) {
+      rows[k].sort(function (a, b) { return a.getBoundingClientRect().left - b.getBoundingClientRect().left; })
+        .forEach(function (c, i) { c.style.setProperty('--rvc-delay', reduce ? '0ms' : (i * 70) + 'ms'); c.setAttribute('data-rvc-in', ''); });
+    });
+    batch = [];
+  }
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      io.unobserve(e.target); prep(e.target); batch.push(e.target);
+    });
+    if (batch.length && !timer) timer = requestAnimationFrame(flush);
+  }, { rootMargin: '0px 0px -6% 0px', threshold: 0.01 });
+
+  function scan() {
+    document.querySelectorAll(SEL + ' > *:not([data-rvc-seen])').forEach(function (c) {
+      c.setAttribute('data-rvc-seen', '');
+      io.observe(c);
+    });
+  }
+  var t = 0;
+  new MutationObserver(function () { clearTimeout(t); t = setTimeout(scan, 120); }).observe(document.documentElement, { childList: true, subtree: true });
+  scan();
+})();
+</script>
