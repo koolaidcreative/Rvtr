@@ -433,6 +433,35 @@ He shared in RVTR's recognition, including the 2009 Professional Prix de Rome in
 
 ---
 
+### 8.5 Team page, revised layout (Sasha, 2026-10-11 05:47Z: rebuild on the Archline studio page)
+
+Order follows archline.framer.website/studio. Text below is drawn from the old rvtr.com/about page, minus anything already on Home.
+
+**Hero kicker:** Team
+**Hero heading:** An experimental platform for architecture and urban design research.
+**Hero image:** lab panorama IMG_4581, alt "The RVTR lab, Ann Arbor"
+
+**About (two paragraphs):**
+RVTR's work operates across scales to position design as an active agent in continually evolving ecologies: biotic, social, environmental, technological and cultural. Projects range from the urban futures of regional territories, to high-performance building design, to prototype-based research in responsive envelope systems and digitally crafted objects. A complex systems approach ties these scales together, along with a belief in the power of design to change the world for the better.
+
+Since 2007 the directors have brought design research into practice, to advance both professional and disciplinary discourse and the depth of thinking in the work. The lab operates as an experimental think tank with national funding agencies, philanthropic foundations and industry partners, and works with multidisciplinary teams of academic, scientific and industry partners and professional consultants.
+
+**Numbers row:** 2007 / Founded in Toronto · 80+ / Researchers since 2007 · 57 / Awards and grants · 73 / Publications
+
+**Recognition line:** The lab's work has received the Architectural League Prize for Young Architects + Designers (2008) and Architect magazine R+D Awards in 2010 and 2016. In 2016 RVTR represented Canada at the Venice Architecture Biennale as part of EXTRACTION, led by curator Pierre Bélanger.
+
+**Directors:** side by side on desktop; portrait, name, role, first bio paragraph, then "Read full bio +" / "Close bio −" reveals the rest of the bio and the selected lists. Taubman College profile link.
+
+**Funding and collaboration:** use 3.9.
+
+**Research associates:** Ehsan Alam, Research Associate.
+
+**Alumni (heading):** Alumni
+**Alumni intro:** Everyone who has worked in RVTR since 2007, with their years in the lab. Links lead to their current work.
+List: every Team item in Group Alumni, in Sasha's order (old About page order), name linked where a link exists, then years. Paul Raff and Colin Ripley carry "Director" in their years line. Spellings follow the linked sources: Maya Przybylski, Zain AbuSeir, Lisa Sauvé, David Weinreich.
+
+---
+
 ## 9. Footer (every page)
 
 ### 9.1 Contact (section id `contact`)
