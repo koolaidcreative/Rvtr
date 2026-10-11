@@ -445,7 +445,7 @@ Taubman College of Architecture and Urban Planning
 University of Michigan
 305 W Liberty St, Ann Arbor, MI 48103
 +1 (734) 834-9385
-[email to confirm]
+geoff@rvtr.com
 
 **Link:** Taubman College →  [https://taubmancollege.umich.edu]
 
