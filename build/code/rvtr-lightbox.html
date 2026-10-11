@@ -1,0 +1,219 @@
+<!--
+  RVTR PHOTO VIEWER (append to the site's custom code, end of <head> or <body>)
+
+  Click or tap any photo inside a layer whose name contains "rv-gallery" and it
+  opens large on a dark ground. Every photo in the page's rv-gallery layers is
+  in the set, in page order, so you can move through the whole project:
+  arrows, keyboard (left, right, Esc), swipe, or a two-finger scroll.
+  CLOSE, Esc or a click beside the photo closes it, and the focus returns to
+  the photo.
+
+  Ported from the KLD Milieu viewer (JournalGallery.tsx, 2026-10-02) as plain
+  script, so it works on any layout without replacing Framer layers.
+  Sasha, 2026-10-11: "all the images are clickable and enlarge into a gallery
+  like the one we made for … milieu".
+
+  Tagging in Framer: add " rv-gallery" to the layer name of each section on the
+  project template that holds photos (hero, details photo, Image 1–3, Gallery
+  1–4, the gallery list). Photos inside links (next-project cards) are skipped.
+-->
+<style>
+[data-framer-name~="rv-gallery"] [data-framer-background-image-wrapper] { cursor: zoom-in; }
+[data-framer-name~="rv-gallery"] a [data-framer-background-image-wrapper] { cursor: pointer; }
+[data-rvlb-item]:focus-visible { outline: 1px solid var(--rv-ink, #252324); outline-offset: 3px; }
+
+.rvlb { position: fixed; inset: 0; z-index: 2147483000; background: var(--rv-ink, #252324); color: var(--rv-paper, #fffdfa);
+  opacity: 0; transition: opacity .35s ease; outline: none; font-size: 12px; line-height: 16px; letter-spacing: .02em;
+  -webkit-font-smoothing: antialiased; }
+.rvlb[data-in] { opacity: 1; }
+.rvlb-track { position: absolute; inset: 0; display: flex; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory;
+  overscroll-behavior: contain; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.rvlb-track::-webkit-scrollbar { display: none; }
+.rvlb-slide { flex: 0 0 100%; width: 100%; height: 100%; scroll-snap-align: center; scroll-snap-stop: always; display: flex;
+  flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; padding: 72px 96px 64px; }
+.rvlb-slide img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain;
+  cursor: default; user-select: none; -webkit-user-drag: none; }
+.rvlb-bar { position: absolute; left: 0; right: 0; top: 0; display: flex; justify-content: space-between; align-items: center;
+  padding: 22px 40px; pointer-events: none; }
+.rvlb-btn { all: unset; cursor: pointer; pointer-events: auto; padding: 14px 0 14px 14px; color: inherit; opacity: .82;
+  transition: opacity .25s ease; -webkit-tap-highlight-color: transparent; font: inherit; }
+.rvlb-btn:hover, .rvlb-btn:focus-visible { opacity: 1; }
+.rvlb-btn:focus-visible { outline: 1px solid rgba(255,253,250,.6); outline-offset: 2px; }
+.rvlb-count { opacity: .62; font-variant-numeric: tabular-nums; }
+.rvlb-arrow { position: absolute; top: 50%; transform: translateY(-50%); padding: 28px 26px; font-size: 22px; line-height: 1; letter-spacing: 0; }
+.rvlb-prev { left: 14px; } .rvlb-next { right: 14px; }
+.rvlb-arrow[disabled] { opacity: .18; cursor: default; }
+@media (max-width: 809.98px) {
+  .rvlb-slide { padding: 64px 0 56px; }
+  .rvlb-bar { padding: 12px 20px; }
+  .rvlb-arrow { display: none; }
+}
+@media (prefers-reduced-motion: reduce) { .rvlb { transition: none; } }
+</style>
+<script>
+(function () {
+  if (window.__rvlb) return; window.__rvlb = true;
+  var SCOPE = '[data-framer-name~="rv-gallery"]';
+  var WRAP = '[data-framer-background-image-wrapper]';
+
+  function base(u) { return (u || '').split('?')[0]; }
+  function visible(el) { if (!el.getClientRects().length) return false; var s = getComputedStyle(el); return s.visibility !== 'hidden' && s.display !== 'none'; }
+  function imgOf(w) { return w.tagName === 'IMG' ? w : w.querySelector('img'); }
+
+  // Every visible photo in the page's rv-gallery layers, in page order, one per file.
+  function collect() {
+    var out = [], seen = {};
+    document.querySelectorAll(SCOPE).forEach(function (scope) {
+      if (!visible(scope)) return;
+      scope.querySelectorAll(WRAP).forEach(function (w) {
+        if (w.closest('a[href]') || !visible(w)) return;
+        var img = imgOf(w); if (!img) return;
+        var src = img.currentSrc || img.src; if (!src) return;
+        var r = w.getBoundingClientRect(); if (r.width < 80 || r.height < 60) return;
+        var k = base(src); if (seen[k]) return; seen[k] = 1;
+        out.push({ wrap: w, src: img.src || src, srcset: img.getAttribute('srcset') || '', alt: img.alt || '' });
+      });
+    });
+    return out;
+  }
+
+  // Keyboard and screen-reader access: photos act as buttons.
+  function tag() {
+    document.querySelectorAll(SCOPE + ' ' + WRAP).forEach(function (w) {
+      if (w.hasAttribute('data-rvlb-item') || w.closest('a[href]')) return;
+      var img = imgOf(w); if (!img) return;
+      w.setAttribute('data-rvlb-item', '');
+      w.setAttribute('role', 'button');
+      w.setAttribute('tabindex', '0');
+      w.setAttribute('aria-label', 'Enlarge photo' + (img.alt ? ': ' + img.alt : ''));
+    });
+  }
+  var tagTimer = 0;
+  function soon() { clearTimeout(tagTimer); tagTimer = setTimeout(tag, 250); }
+  new MutationObserver(soon).observe(document.documentElement, { childList: true, subtree: true });
+  soon();
+
+  function open(photos, start, opener) {
+    var n = photos.length, at = start, aim = start, html = document.documentElement, before = html.style.overflow;
+    var root = document.createElement('div');
+    root.className = 'rvlb'; root.setAttribute('role', 'dialog'); root.setAttribute('aria-modal', 'true');
+    root.setAttribute('aria-label', 'Photo viewer'); root.tabIndex = -1; root.setAttribute('data-lenis-prevent', '');
+    var track = document.createElement('div'); track.className = 'rvlb-track'; root.appendChild(track);
+    var slides = photos.map(function (p) {
+      var s = document.createElement('div'); s.className = 'rvlb-slide';
+      s.addEventListener('click', function (e) { if (e.target === s) close(); });
+      track.appendChild(s); return s;
+    });
+    function fill(i) {
+      var s = slides[i]; if (!s || s.firstChild) return; var p = photos[i];
+      var img = document.createElement('img');
+      img.decoding = 'async'; img.alt = p.alt; img.draggable = false; img.sizes = '100vw';
+      if (p.srcset) img.srcset = p.srcset;
+      img.src = p.srcset ? p.src : base(p.src);
+      s.appendChild(img);
+    }
+    var bar = document.createElement('div'); bar.className = 'rvlb-bar';
+    var count = document.createElement('span'); count.className = 'rvlb-count'; count.setAttribute('aria-live', 'polite');
+    var shut = document.createElement('button'); shut.type = 'button'; shut.className = 'rvlb-btn'; shut.textContent = 'Close';
+    bar.appendChild(count); bar.appendChild(shut); root.appendChild(bar);
+    var prev = document.createElement('button'); prev.type = 'button'; prev.className = 'rvlb-btn rvlb-arrow rvlb-prev';
+    prev.setAttribute('aria-label', 'Previous photo'); prev.textContent = '‹';
+    var next = document.createElement('button'); next.type = 'button'; next.className = 'rvlb-btn rvlb-arrow rvlb-next';
+    next.setAttribute('aria-label', 'Next photo'); next.textContent = '›';
+    root.appendChild(prev); root.appendChild(next);
+
+    function show(k) {
+      at = k; count.textContent = (k + 1) + ' / ' + n;
+      prev.disabled = k === 0; next.disabled = k === n - 1;
+      fill(k); fill(k - 1); fill(k + 1);
+    }
+    function go(i, smooth) {
+      var k = Math.max(0, Math.min(n - 1, i));
+      aim = k;
+      var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      track.scrollTo({ left: k * track.clientWidth, behavior: smooth !== false && !reduce ? 'smooth' : 'auto' });
+    }
+    track.addEventListener('scroll', function () {
+      if (!track.clientWidth) return;
+      var k = Math.max(0, Math.min(n - 1, Math.round(track.scrollLeft / track.clientWidth)));
+      if (k !== at) show(k);
+      if (Math.abs(track.scrollLeft - aim * track.clientWidth) < 2 || !isFinite(aim)) aim = k;
+    }, { passive: true });
+    // a swipe ends somewhere the arrows didn't ask for: follow it
+    track.addEventListener('touchend', function () { setTimeout(function () { aim = at; }, 400); }, { passive: true });
+    var lastWheel = 0;
+    root.addEventListener('wheel', function (e) {
+      if (Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+      e.preventDefault();
+      var now = Date.now(), fresh = now - lastWheel > 200; lastWheel = now;
+      if (fresh && Math.abs(e.deltaY) >= 4) go(aim + (e.deltaY > 0 ? 1 : -1));
+    }, { passive: false });
+    prev.addEventListener('click', function () { go(aim - 1); });
+    next.addEventListener('click', function () { go(aim + 1); });
+    shut.addEventListener('click', close);
+
+    function onKey(e) {
+      if (e.key === 'Escape') { e.preventDefault(); close(); }
+      else if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === 'PageDown') { e.preventDefault(); go(aim + 1); }
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp' || e.key === 'PageUp') { e.preventDefault(); go(aim - 1); }
+      else if (e.key === 'Tab') {
+        var f = Array.prototype.filter.call(root.querySelectorAll('button'), function (b) { return !b.disabled && b.offsetParent !== null; });
+        if (!f.length) return;
+        var a = document.activeElement;
+        if (e.shiftKey && (a === f[0] || a === root)) { e.preventDefault(); f[f.length - 1].focus(); }
+        else if (!e.shiftKey && a === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+      }
+    }
+    function onResize() { go(at, false); }
+    function close() {
+      window.removeEventListener('keydown', onKey, true);
+      window.removeEventListener('resize', onResize);
+      window.removeEventListener('popstate', close);
+      html.style.overflow = before;
+      root.removeAttribute('data-in');
+      setTimeout(function () { root.remove(); }, matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 350);
+      var back = photos[at] && photos[at].wrap;
+      var target = back && back.isConnected ? back : opener;
+      if (target && target.focus) target.focus({ preventScroll: true });
+    }
+
+    html.style.overflow = 'hidden';
+    document.body.appendChild(root);
+    show(start);
+    track.scrollLeft = start * track.clientWidth;
+    requestAnimationFrame(function () { root.setAttribute('data-in', ''); });
+    root.focus({ preventScroll: true });
+    window.addEventListener('keydown', onKey, true);
+    window.addEventListener('resize', onResize);
+    window.addEventListener('popstate', close);
+  }
+
+  function launch(w) {
+    var photos = collect(); if (!photos.length) return;
+    var k = 0;
+    for (var i = 0; i < photos.length; i++) if (photos[i].wrap === w) { k = i; break; }
+    if (photos[k].wrap !== w) {
+      var img = imgOf(w), b = img && base(img.currentSrc || img.src);
+      for (var j = 0; j < photos.length; j++) if (base(photos[j].src) === b) { k = j; break; }
+    }
+    open(photos, k, w);
+  }
+
+  document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    var t = e.target; if (!t || !t.closest) return;
+    if (t.closest('a[href],button,.rvlb')) return;
+    var scope = t.closest(SCOPE); if (!scope) return;
+    var w = t.closest(WRAP);
+    if (!w) { var box = t.querySelector && t.querySelector(WRAP); if (box && box.contains(t) === false && t.contains(box) && t.children.length === 1) w = box; }
+    if (!w || !scope.contains(w)) return;
+    e.preventDefault();
+    launch(w);
+  }, true);
+  document.addEventListener('keydown', function (e) {
+    if ((e.key === 'Enter' || e.key === ' ') && e.target && e.target.hasAttribute && e.target.hasAttribute('data-rvlb-item')) {
+      e.preventDefault(); launch(e.target);
+    }
+  });
+})();
+</script>
