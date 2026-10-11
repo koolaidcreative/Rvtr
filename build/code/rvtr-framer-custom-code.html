@@ -1,0 +1,1536 @@
+<!--
+  ============================================================================
+  RVTR — Framer custom code (site-wide)
+  Forked 2026-10-11 from kld-framer-custom-code.html (kimlambertdesign.com),
+  with every "kld-" keyword renamed "rv-" and everything RVTR does not use
+  removed (loading curtain, carousel delay and preloading, brightness sampler,
+  split-page logic, photo tone, typography overrides, drift, progress bar,
+  project-gallery sizes, Lenis hand-off).
+  ----------------------------------------------------------------------------
+  INSTALL
+    Framer > Site Settings > General > Custom Code > "End of <head> tag",
+    all pages, run "Once". (Every script below also guards against running
+    twice, so "On every page visit" would not double it up.)
+    Custom code runs only in Preview / on a published site, never on the
+    editor canvas. Set the four tokens marked SET in section 1 first.
+
+  HOW IT HOOKS IN
+    Framer publishes each layer's name as data-framer-name. Put a keyword
+    anywhere in a layer's name, separated by spaces, e.g.
+    "Hero rv-hero" or "All projects rv-link". A keyword never changes layout;
+    it only adds the behaviour listed here. README.md (same folder) says which
+    layer gets which keyword.
+
+  KEYWORDS
+    Navigation (the Navigation component, in each variant)
+      rv-bar           desktop variant name (the horizontal bar)
+      rv-closed        phone/iPad closed variant name (logo + MENU)
+      rv-open          phone/iPad open variant name (the full-screen sheet)
+      rv-nav           the stack of page links (in every variant)
+      rv-sheet         optional: the full-screen sheet frame, if it is a
+                       separate frame around rv-nav
+      rv-menu          the MENU / CLOSE toggle
+      rv-logo-white    logo image for over the hero (M maize, "rvtr" white)
+      rv-logo-colour   logo image for the band and light pages (also
+                       accepted: rv-logo-color)
+      rv-hero          the full-bleed photo at the very top of a page, under
+                       the nav. Its presence turns the nav white at the top of
+                       that page, and its photo opens with a blurred preview.
+    Links
+      rv-link          text link: thin arrow after the label, slides 4px on
+                       hover, hairline underline draws in (no fill, no pill)
+      rv-back          with rv-link: arrow before the label, pointing left
+                       ("Previous")
+      rv-arrow         optional: a drawn arrow layer inside an rv-link; the
+                       code arrow then steps aside and this layer slides
+      rv-row           list row (a link frame ending in a 1px line layer): a
+                       darker line draws along it on hover
+      rv-pager         the Previous / All / Next row: bigger tap areas
+    Photos
+      rv-zoom          photo (or the link frame holding it): slow 2% push-in
+                       under a pale veil on hover
+    Reveal (one reveal for everything: fade + rise 24px, 0.6s, once)
+      (automatic)      every text layer, button and framed photo
+      rv-reveal        reveal this layer as one piece (waits for its photos)
+      rv-intro         same, straight away (top of page); rv-d1 … rv-d5 add
+                       90ms steps
+      rv-stagger       on a stack or CMS list: children rise one after another
+      rv-rule          a 1px line that draws itself left to right; rv-slow
+                       for a long full-width line (1.4s)
+      rv-no-reveal     leave this layer and everything in it still (use on
+                       any layer that keeps an Archline effect)
+    Footer
+      rv-footer        footer root (or give the frame the <footer> tag): its
+                       own text stays still; tagged blocks in it still reveal
+      rv-insta         the Instagram tile grid (6 tiles; CMS fallback inside)
+    Contact
+      a Scroll Section named "contact" on the footer's contact block; links
+      to "Home > contact" (/#contact) are handled in script 2.
+
+  Don't combine these with Framer's own Appear / Scroll / Hover effects on the
+  same layer: they animate the same properties. Layers Framer itself animates
+  (data-framer-appear-id) are skipped by the automatic reveal.
+  ============================================================================
+-->
+
+<style>
+/* ---------------------------------------------------------------------------
+   1. Tokens
+   SET the first four from the Archline inventory (Phase 1). Framer publishes
+   colour styles as CSS variables (--token-<id>); paste them with the hex as
+   fallback, e.g.  --rv-paper: var(--token-1a2b3c, #f5f5f2);
+   ------------------------------------------------------------------------ */
+:root {
+  --rv-paper: #f5f5f2;       /* SET: Archline page background (band, sheet, veil) */
+  --rv-ink: #161616;         /* SET: Archline dark ink (nav on the band, lines) */
+  --rv-band-extra: 0px;      /* SET: how far the band reaches below the bar (desktop) */
+  --rv-underline-offset: 0px;/* SET if needed: lifts/lowers link underlines (px) */
+
+  /* Brand (plan section 3): maize only as accent, blue only in the logo */
+  --rv-white: #ffffff;
+  --rv-maize: #ffcb05;
+  --rv-blue: #7bafd4;
+
+  /* Derived */
+  --rv-hairline: color-mix(in srgb, var(--rv-ink) 14%, transparent);
+  --rv-band: color-mix(in srgb, var(--rv-paper) 92%, transparent);
+  --rv-placeholder: color-mix(in srgb, var(--rv-ink) 5%, var(--rv-paper));
+  --rv-veil: color-mix(in srgb, var(--rv-paper) 20%, transparent);
+  --rv-line: var(--rv-ink);
+
+  /* Nav tone: dark by default; section 4 flips it to white over a hero */
+  --rv-nav-fg: var(--rv-ink);
+  --rv-nav-shadow: none;
+  --rv-logo-white: 0;
+  --rv-dot: 5px;             /* current-page dot */
+
+  /* Text links */
+  --rv-arrow-w: 0.9em;
+  --rv-arrow-h: 0.65em;
+  --rv-arrow-gap: 0.5em;
+  --rv-link-arrow-hover: var(--rv-maize);  /* plan section 3; "currentColor" keeps the text colour */
+  --rv-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 10'%3E%3Cpath d='M0 5h12.6M8.6 1l4 4-4 4' fill='none' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E");
+
+  /* Motion (KLD house values) */
+  --rv-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --rv-ease-link: cubic-bezier(0.215, 0.61, 0.355, 1);   /* 0.35s link ease-out */
+  --rv-ease-arch: cubic-bezier(0.76, 0, 0.24, 1);
+  --rv-rise: 24px;
+  --rv-reveal-time: 0.6s;
+  --rv-reveal-ease: cubic-bezier(0.44, 0.13, 0.56, 1);
+  --rv-zoom: 1.02;
+  --rv-zoom-in: cubic-bezier(0.3, 0.6, 0.1, 1);
+  --rv-zoom-out: cubic-bezier(0.31, 0, 0.35, 1);
+}
+@supports (transition-timing-function: linear(0, 1)) {
+  :root {
+    /* Framer's "Spring, 1s, no bounce" as a curve (critically damped) */
+    --rv-zoom-in: linear(0, 0.0088 1.5%, 0.032 3%, 0.0788 5%, 0.1694 8%, 0.4346 16%, 0.5509 20%, 0.6493 24%, 0.7298 28%, 0.801 32.5%, 0.8601 37.5%, 0.9062 43%, 0.9445 50%, 0.9722 59%, 0.9908 73%, 1);
+  }
+}
+@supports not (color: color-mix(in srgb, red, blue)) {
+  :root {
+    --rv-hairline: rgba(0, 0, 0, 0.12);
+    --rv-band: var(--rv-paper);
+    --rv-placeholder: var(--rv-paper);
+    --rv-veil: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   2. Base (Archline's fonts and colours stay; only quiet refinements)
+   ------------------------------------------------------------------------ */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::selection {
+  background: var(--rv-ink);
+  color: var(--rv-paper);
+}
+:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 4px;
+}
+/* Headings that wrap get balanced lines. Only text-wrap-style, never the
+   text-wrap shorthand (it would let one-line labels wrap). */
+h1.framer-text, h2.framer-text, h3.framer-text,
+h4.framer-text, h5.framer-text, h6.framer-text {
+  text-wrap-style: balance;
+}
+
+/* ---------------------------------------------------------------------------
+   3. Text links (rv-link)
+   Layer: the link frame (or the Button component's root, or the label's text
+   layer) named "… rv-link". The label is Archline's body text style; the
+   code adds a thin arrow after it and a hairline under it. Type the label
+   WITHOUT "→": the arrow is drawn here.
+   The arrow is an inline SVG drawn as a CSS mask in the text's own colour, so
+   nothing is inserted into Framer's markup (an inserted element would break
+   React's hydration of the page).
+   ------------------------------------------------------------------------ */
+[data-framer-name~="rv-link"] {
+  cursor: pointer;
+  background-color: transparent !important;   /* no fill, no pill, ever */
+  background-image: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+a[data-framer-name~="rv-link"]:not([href]) { cursor: default; }
+
+/* The label: the last paragraph of the text layer inside (or that is) rv-link */
+:is([data-framer-name~="rv-link"] [data-framer-component-type="RichTextContainer"],
+    [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"]) > .framer-text:last-child {
+  position: relative;
+}
+/* arrow */
+:is([data-framer-name~="rv-link"] [data-framer-component-type="RichTextContainer"],
+    [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"]) > .framer-text:last-child::after {
+  content: "";
+  display: inline-block;
+  width: var(--rv-arrow-w);
+  height: var(--rv-arrow-h);
+  margin-left: var(--rv-arrow-gap);
+  vertical-align: -0.05em;
+  background-color: currentColor;
+  -webkit-mask: var(--rv-arrow) center / 100% 100% no-repeat;
+  mask: var(--rv-arrow) center / 100% 100% no-repeat;
+  transition: translate 0.35s var(--rv-ease-link), background-color 0.35s var(--rv-ease-link);
+  pointer-events: none;
+}
+/* underline: under the words only, not the arrow */
+:is([data-framer-name~="rv-link"] [data-framer-component-type="RichTextContainer"],
+    [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"]) > .framer-text:last-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: calc(var(--rv-arrow-w) + var(--rv-arrow-gap));
+  bottom: var(--rv-underline-offset);
+  height: 1px;
+  background-color: currentColor;
+  transform-origin: 100% 50%;
+  scale: 0 1;
+  transition: scale 0.35s var(--rv-ease-link);
+  pointer-events: none;
+}
+/* rv-back: arrow before the label, pointing left; underline after it */
+:is([data-framer-name~="rv-link"][data-framer-name~="rv-back"] [data-framer-component-type="RichTextContainer"],
+    [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"][data-framer-name~="rv-back"]) > .framer-text:last-child::before {
+  content: "";
+  position: static;
+  display: inline-block;
+  width: var(--rv-arrow-w);
+  height: var(--rv-arrow-h);
+  margin-right: var(--rv-arrow-gap);
+  vertical-align: -0.05em;
+  background-color: currentColor;
+  -webkit-mask: var(--rv-arrow) center / 100% 100% no-repeat;
+  mask: var(--rv-arrow) center / 100% 100% no-repeat;
+  transform-origin: 50% 50%;
+  scale: -1 1;
+  transition: translate 0.35s var(--rv-ease-link), background-color 0.35s var(--rv-ease-link);
+}
+:is([data-framer-name~="rv-link"][data-framer-name~="rv-back"] [data-framer-component-type="RichTextContainer"],
+    [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"][data-framer-name~="rv-back"]) > .framer-text:last-child::after {
+  position: absolute;
+  display: block;
+  left: calc(var(--rv-arrow-w) + var(--rv-arrow-gap));
+  right: 0;
+  bottom: var(--rv-underline-offset);
+  width: auto;
+  height: 1px;
+  margin: 0;
+  -webkit-mask: none;
+  mask: none;
+  transform-origin: 100% 50%;
+  scale: 0 1;
+  transition: scale 0.35s var(--rv-ease-link);
+}
+/* A drawn rv-arrow layer replaces the code arrow */
+[data-framer-name~="rv-link"]:has([data-framer-name~="rv-arrow"]) [data-framer-component-type="RichTextContainer"] > .framer-text:last-child::after {
+  content: none;
+}
+[data-framer-name~="rv-link"]:has([data-framer-name~="rv-arrow"]) [data-framer-component-type="RichTextContainer"] > .framer-text:last-child::before {
+  right: 0;
+}
+[data-framer-name~="rv-link"] [data-framer-name~="rv-arrow"] {
+  transition: translate 0.35s var(--rv-ease-link);
+}
+
+/* Hover / keyboard focus: on the link itself, or anywhere on a link that
+   contains it (a card with "View project" inside it). */
+@media (hover: hover) {
+  :is(a[href]:hover, [data-framer-name~="rv-link"]:not(a):hover) :is([data-framer-name~="rv-link"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"]) > .framer-text:last-child::after,
+  a[href][data-framer-name~="rv-link"]:hover [data-framer-component-type="RichTextContainer"] > .framer-text:last-child::after {
+    translate: 4px 0;
+    background-color: var(--rv-link-arrow-hover);
+  }
+  :is(a[href]:hover, [data-framer-name~="rv-link"]:not(a):hover) :is([data-framer-name~="rv-link"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"]) > .framer-text:last-child::before {
+    transform-origin: 0 50%;
+    scale: 1 1;
+  }
+  :is(a[href]:hover, [data-framer-name~="rv-link"]:not(a):hover) [data-framer-name~="rv-link"]:not([data-framer-name~="rv-back"]) [data-framer-name~="rv-arrow"],
+  a[href][data-framer-name~="rv-link"]:not([data-framer-name~="rv-back"]):hover [data-framer-name~="rv-arrow"] {
+    translate: 4px 0;
+  }
+  /* rv-back: the arrow moves left, the underline (now ::after) draws */
+  :is(a[href]:hover, [data-framer-name~="rv-link"]:not(a):hover) :is([data-framer-name~="rv-link"][data-framer-name~="rv-back"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"][data-framer-name~="rv-back"]) > .framer-text:last-child::before {
+    translate: -4px 0;
+    scale: -1 1;
+    transform-origin: 50% 50%;
+    background-color: var(--rv-link-arrow-hover);
+  }
+  :is(a[href]:hover, [data-framer-name~="rv-link"]:not(a):hover) :is([data-framer-name~="rv-link"][data-framer-name~="rv-back"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"][data-framer-name~="rv-back"]) > .framer-text:last-child::after {
+    translate: 0 0;
+    background-color: currentColor;
+    transform-origin: 0 50%;
+    scale: 1 1;
+  }
+  :is(a[href]:hover, [data-framer-name~="rv-link"]:not(a):hover) [data-framer-name~="rv-link"][data-framer-name~="rv-back"] [data-framer-name~="rv-arrow"],
+  a[href][data-framer-name~="rv-link"][data-framer-name~="rv-back"]:hover [data-framer-name~="rv-arrow"] {
+    translate: -4px 0;
+  }
+}
+a[href]:focus-visible :is([data-framer-name~="rv-link"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"]) > .framer-text:last-child::before,
+a[href][data-framer-name~="rv-link"]:focus-visible [data-framer-component-type="RichTextContainer"] > .framer-text:last-child::before {
+  transform-origin: 0 50%;
+  scale: 1 1;
+}
+/* A link whose CMS link field is empty renders as <a> without href: plain text */
+a[data-framer-name~="rv-link"]:not([href]):not([data-framer-name~="rv-back"]) [data-framer-component-type="RichTextContainer"] > .framer-text:last-child::before,
+a[data-framer-name~="rv-link"][data-framer-name~="rv-back"]:not([href]) [data-framer-component-type="RichTextContainer"] > .framer-text:last-child::after {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------------
+   3b. Rows, pager, photo hover
+   ------------------------------------------------------------------------ */
+/* rv-row: a list row (link frame) ending in its own 1px line layer. On hover
+   a darker line draws over that hairline from the left, leaves to the right.
+   Rows without a link stay still. (A layer, not a border: Framer draws
+   borders with ::after.) */
+[data-framer-name~="rv-row"] { position: relative; }
+a[href][data-framer-name~="rv-row"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--rv-line);
+  opacity: 0.72;
+  transform-origin: 100% 50%;
+  scale: 0 1;
+  transition: scale 0.7s var(--rv-ease-arch);
+  pointer-events: none;
+}
+@media (hover: hover) {
+  a[href][data-framer-name~="rv-row"]:hover::after { transform-origin: 0 50%; scale: 1 1; }
+}
+a[href][data-framer-name~="rv-row"]:focus-visible::after { transform-origin: 0 50%; scale: 1 1; }
+
+/* rv-pager: Previous / All projects / Next. Small labels get a larger
+   invisible tap area. */
+[data-framer-name~="rv-pager"] a[href] { position: relative; }
+[data-framer-name~="rv-pager"] a[href]::before {
+  content: "";
+  position: absolute;
+  inset: -18px -14px;
+}
+
+/* rv-zoom: KLD's photo-link hover. Slow 2% push-in (spring in, 0.6s out)
+   under a pale veil. It moves the photo's wrapper, not the <img> (the reveal
+   switches the img's own transitions off). Don't also give the layer a Framer
+   Hover effect, and give it no border (the veil uses ::after). */
+[data-framer-name~="rv-zoom"] { overflow: hidden; }
+[data-framer-name~="rv-zoom"] [data-framer-background-image-wrapper] {
+  transition: transform 0.6s var(--rv-zoom-out);
+}
+[data-framer-name~="rv-zoom"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: var(--rv-veil);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s var(--rv-ease-out);
+}
+@media (hover: hover) {
+  [data-framer-name~="rv-zoom"]:hover::after { opacity: 1; }
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  [data-framer-name~="rv-zoom"]:hover [data-framer-background-image-wrapper] {
+    transform: scale(var(--rv-zoom));
+    transition: transform 1s var(--rv-zoom-in);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   4. Navigation
+   Variant names in the Navigation component carry rv-bar (desktop),
+   rv-closed (phone/iPad, menu closed) and rv-open (phone/iPad, menu open).
+   Tone: one tone for the whole bar at any moment, no pixel reading.
+     - White (logo white, links white, faintest shadow) while the page has an
+       rv-hero and the page is within the first 48px of scrolling.
+     - Dark ink and the colour logo otherwise (band on, no hero, menu open).
+   The white state is pure CSS (:has), so it is right on the first paint;
+   script 2 only sets data-rv-band on <html> from the scroll position.
+   ------------------------------------------------------------------------ */
+html:has([data-framer-name~="rv-hero"]):not([data-rv-band="on"]):not([data-rv-menu]) {
+  --rv-nav-fg: var(--rv-white);
+  --rv-nav-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+  --rv-logo-white: 1;
+}
+[data-framer-name~="rv-open"] {
+  --rv-nav-fg: var(--rv-ink);
+  --rv-nav-shadow: none;
+  --rv-logo-white: 0;
+}
+:is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) .framer-text {
+  color: var(--rv-nav-fg) !important;
+  text-shadow: var(--rv-nav-shadow);
+  transition: color 0.45s var(--rv-ease-out), text-shadow 0.45s var(--rv-ease-out) !important;
+}
+:is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) [data-framer-name~="rv-logo-white"] {
+  opacity: var(--rv-logo-white) !important;
+  transition: opacity 0.45s var(--rv-ease-out) !important;
+}
+:is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) :is([data-framer-name~="rv-logo-colour"], [data-framer-name~="rv-logo-color"]) {
+  opacity: calc(1 - var(--rv-logo-white)) !important;
+  transition: opacity 0.45s var(--rv-ease-out) !important;
+}
+/* During a page change (Framer's view transition) and while a tapped menu is
+   held, colours switch instantly: the page cross-fade carries the change. */
+html:is([data-rv-vt], [data-rv-menu]) :is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) :is(.framer-text, [data-framer-name~="rv-logo-white"], [data-framer-name~="rv-logo-colour"], [data-framer-name~="rv-logo-color"]) {
+  transition: none !important;
+}
+
+/* Links: their box hugs the label; the dot and the underline hang outside it */
+:is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) [data-framer-name~="rv-nav"] a[href] {
+  position: relative !important;
+  overflow: visible !important;
+  -webkit-tap-highlight-color: transparent;
+}
+/* Desktop gaps: 24px at 1200, about 32px at 1325, 44px from about 1410 up */
+@media (min-width: 1200px) {
+  [data-framer-name~="rv-bar"] [data-framer-name~="rv-nav"] {
+    gap: clamp(24px, calc((100vw - 1100px) / 7), 44px) !important;
+  }
+}
+/* Current page (desktop): a small maize dot, 7px left of the label */
+[data-framer-name~="rv-bar"] [data-framer-name~="rv-nav"] a[data-rv-current]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: var(--rv-dot);
+  height: var(--rv-dot);
+  margin: calc(var(--rv-dot) / -2) 7px 0 0;
+  border-radius: 50%;
+  background: var(--rv-maize);
+  pointer-events: none;
+}
+/* Hover (desktop): the others fade to 55%, a hairline draws under this one */
+[data-framer-name~="rv-bar"] [data-framer-name~="rv-nav"] a[href]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 1px;
+  background: var(--rv-nav-fg);
+  transform-origin: 100% 50%;
+  scale: 0 1;
+  transition: scale 0.5s var(--rv-ease-arch), background-color 0.45s var(--rv-ease-out);
+  pointer-events: none;
+}
+@media (hover: hover) {
+  [data-framer-name~="rv-bar"] [data-framer-name~="rv-nav"] a[href] {
+    transition: opacity 0.35s var(--rv-ease-out);
+  }
+  [data-framer-name~="rv-bar"] [data-framer-name~="rv-nav"]:has(a[href]:hover) a[href]:not(:hover) {
+    opacity: 0.55;
+  }
+  [data-framer-name~="rv-bar"] [data-framer-name~="rv-nav"] a[href]:hover::after {
+    transform-origin: 0 50%;
+    scale: 1 1;
+  }
+}
+[data-framer-name~="rv-bar"] [data-framer-name~="rv-nav"] a[href]:focus-visible::after {
+  transform-origin: 0 50%;
+  scale: 1 1;
+}
+
+/* The band: over the first 96px of scrolling a band in the page colour (a
+   light blur and a hairline) fades in behind the bar, so page text never runs
+   through the links. Tied to the scroll position, not a timer, so nothing
+   animates during page changes. Browsers without scroll-linked CSS (Firefox,
+   iOS before 26) get the same fade from script 2 through --rv-top.
+   The variant roots must have no border (Framer draws borders with ::after). */
+@keyframes rv-nav-veil { to { opacity: 1; } }
+:is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) {
+  isolation: isolate;
+}
+:is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"])::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(100% + var(--rv-band-extra));
+  z-index: -1;
+  background: var(--rv-band);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  opacity: 0;
+  pointer-events: none;
+}
+:is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"])::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + var(--rv-band-extra));
+  left: 0;
+  right: 0;
+  height: 1px;
+  z-index: -1;
+  background: var(--rv-hairline);
+  opacity: 0;
+  transform-origin: 0 50%;
+  pointer-events: none;
+}
+/* The phone/iPad band is exactly the bar */
+:is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"])::before { height: 100%; }
+:is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"])::after { top: 100%; }
+@supports (animation-timeline: scroll()) {
+  :is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"])::before,
+  :is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"])::after {
+    animation: rv-nav-veil linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0px 96px;
+  }
+}
+@supports not (animation-timeline: scroll()) {
+  :is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"])::before,
+  :is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"])::after {
+    opacity: calc(1 - var(--rv-top, 1));
+  }
+}
+/* Once the band is on (48px), its hairline draws itself in from the left like
+   the site's long lines; back at the top it resets, ready to draw again. */
+@media (prefers-reduced-motion: no-preference) {
+  html[data-rv-band="off"] :is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"])::after {
+    scale: 0 1;
+  }
+  html[data-rv-band="on"] :is([data-framer-name~="rv-bar"], [data-framer-name~="rv-closed"], [data-framer-name~="rv-open"])::after {
+    scale: 1 1;
+    transition: scale 1.4s var(--rv-reveal-ease) 120ms;
+  }
+}
+
+/* MENU / CLOSE: a tap area much bigger than the small label */
+:is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) [data-framer-name~="rv-menu"] {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+:is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) [data-framer-name~="rv-menu"]::before {
+  content: "";
+  position: absolute;
+  inset: -14px -20px -14px -28px;
+}
+
+/* ---------------------------------------------------------------------------
+   5. Phone and iPad menu sheet
+   Framer's Open variant shows the full-screen sheet (page colour) with the
+   links; CLOSE replaces MENU. Here: a hairline under each row, the current
+   page's dot at the right end of its row, and as the sheet opens the rows
+   arrive one after another while their lines draw in. Script 2 adds: tap
+   outside a link or Esc closes; a tapped link holds the sheet until the page
+   change has taken its picture, so the menu cross-fades into the new page.
+   ------------------------------------------------------------------------ */
+:is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) :is([data-framer-name~="rv-sheet"], [data-framer-name~="rv-nav"]) {
+  touch-action: none;   /* a drag on the open sheet doesn't scroll the page behind */
+  -webkit-tap-highlight-color: transparent;
+}
+[data-framer-name~="rv-closed"] :is([data-framer-name~="rv-sheet"], [data-framer-name~="rv-nav"]) {
+  visibility: hidden;                         /* closed: out of reach of keyboard and screen readers */
+  transition: visibility 0s linear 0.45s;     /* …once Framer's fade-out has finished */
+}
+:is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) [data-framer-name~="rv-nav"] a[href] {
+  width: 100% !important;
+  justify-content: flex-start !important;
+}
+:is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) [data-framer-name~="rv-nav"] a[href]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--rv-hairline);
+  transform-origin: 0 50%;
+  pointer-events: none;
+}
+:is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) [data-framer-name~="rv-nav"] > a[href]:first-child::before,
+:is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) [data-framer-name~="rv-nav"] > :first-child:not(a) a[href]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: var(--rv-hairline);
+  transform-origin: 0 50%;
+  pointer-events: none;
+}
+:is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) [data-framer-name~="rv-nav"] a[data-rv-current] {
+  background-image: radial-gradient(circle at calc(100% - 6px) 50%, var(--rv-maize) calc(var(--rv-dot) / 2 - 0.4px), transparent calc(var(--rv-dot) / 2 + 0.4px)) !important;
+  background-repeat: no-repeat !important;
+}
+[data-framer-name~="rv-nav"] > :nth-child(1) { --rv-i: 0; }
+[data-framer-name~="rv-nav"] > :nth-child(2) { --rv-i: 1; }
+[data-framer-name~="rv-nav"] > :nth-child(3) { --rv-i: 2; }
+[data-framer-name~="rv-nav"] > :nth-child(4) { --rv-i: 3; }
+[data-framer-name~="rv-nav"] > :nth-child(5) { --rv-i: 4; }
+[data-framer-name~="rv-nav"] > :nth-child(6) { --rv-i: 5; }
+[data-framer-name~="rv-nav"] > :nth-child(7) { --rv-i: 6; }
+[data-framer-name~="rv-nav"] > :nth-child(8) { --rv-i: 7; }
+[data-framer-name~="rv-nav"] > :nth-child(9) { --rv-i: 8; }
+@keyframes rv-menu-sheet { from { opacity: 0; } }
+@keyframes rv-menu-row { from { opacity: 0; translate: 0 10px; } }
+@keyframes rv-menu-line { from { scale: 0 1; } }
+@media (prefers-reduced-motion: no-preference) {
+  /* Framer fades the sheet out on CLOSE (the Closed variant's transition);
+     the way in is faded here so it never pops. */
+  [data-framer-name~="rv-open"] :is([data-framer-name~="rv-sheet"], [data-framer-name~="rv-nav"]) {
+    animation: rv-menu-sheet 0.5s var(--rv-reveal-ease) both;
+  }
+  [data-framer-name~="rv-open"] [data-framer-name~="rv-nav"] a[href] > * {
+    animation: rv-menu-row 0.6s var(--rv-reveal-ease) both;
+    animation-delay: calc(140ms + var(--rv-i, 0) * 45ms);
+  }
+  [data-framer-name~="rv-open"] [data-framer-name~="rv-nav"] a[href]::after,
+  [data-framer-name~="rv-open"] [data-framer-name~="rv-nav"] > a[href]:first-child::before,
+  [data-framer-name~="rv-open"] [data-framer-name~="rv-nav"] > :first-child:not(a) a[href]::before {
+    animation: rv-menu-line 0.9s var(--rv-reveal-ease) both;
+    animation-delay: calc(100ms + var(--rv-i, 0) * 45ms);
+  }
+}
+/* A link was tapped (script 2 sets data-rv-menu on <html>):
+   hold    = the sheet stays up until the page change has taken its picture
+   gone    = picture taken: the sheet is removed, the cross-fade carries it
+   leaving = no page change followed (Contact, or this page): it fades away */
+html[data-rv-menu="hold"] :is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) :is([data-framer-name~="rv-sheet"], [data-framer-name~="rv-nav"]) {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+html[data-rv-menu="gone"] :is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) :is([data-framer-name~="rv-sheet"], [data-framer-name~="rv-nav"]) {
+  opacity: 0 !important;
+}
+html[data-rv-menu="leaving"] :is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) :is([data-framer-name~="rv-sheet"], [data-framer-name~="rv-nav"]) {
+  opacity: 0 !important;
+  visibility: visible !important;
+  transition: opacity 0.4s var(--rv-reveal-ease) !important;
+}
+/* Very short screens (a phone held sideways): the sheet scrolls if needed */
+@media (max-height: 540px) {
+  :is([data-framer-name~="rv-closed"], [data-framer-name~="rv-open"]) :is([data-framer-name~="rv-sheet"], [data-framer-name~="rv-nav"]) {
+    overflow-y: auto !important;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   6. Photos: each waits on a quiet placeholder until fully downloaded and
+   decoded, then fades in. Only while script 1 runs (html.rv-js), so photos
+   can never stay hidden if it doesn't.
+   ------------------------------------------------------------------------ */
+html.rv-js [data-framer-background-image-wrapper]:has(> img:not([src*=".svg"])) {
+  background-color: var(--rv-placeholder);
+}
+html.rv-js [data-framer-background-image-wrapper] > img {
+  opacity: 0;
+  transition: opacity var(--rv-reveal-time) var(--rv-reveal-ease);
+}
+html.rv-js [data-framer-background-image-wrapper] > img[data-rv-in] {
+  opacity: 1;
+}
+html.rv-js [data-framer-background-image-wrapper] > img[data-rv-instant],
+html.rv-js [data-rv-instant] {
+  transition: none !important;
+}
+/* rv-hero: a ~1 KB blurred copy of the hero photo (Framer's image CDN) sits
+   underneath from the first frame; the sharp photo comes into focus over it. */
+html.rv-js [data-rv-lqip] { isolation: isolate; }
+html.rv-js [data-rv-lqip]::before {
+  content: "";
+  position: absolute;
+  inset: -8%;
+  z-index: 0;
+  background: var(--rv-lqip) center / cover no-repeat;
+  filter: blur(26px) saturate(1.05);
+  pointer-events: none;
+}
+html.rv-js [data-rv-lqip] > img { position: relative; z-index: 1; }
+
+/* ---------------------------------------------------------------------------
+   7. One reveal for everything (skipped entirely with reduced motion).
+   Script 1 adds data-rv-seen once a layer is in view and its photos have
+   loaded. Uses the individual `translate` property, never `transform`, so it
+   never overwrites the transforms Framer uses for layout.
+   ------------------------------------------------------------------------ */
+@media (prefers-reduced-motion: no-preference) {
+  html.rv-js :is([data-framer-name~="rv-reveal"], [data-framer-name~="rv-intro"], [data-rv-photo], [data-rv-auto]),
+  html.rv-js [data-framer-name~="rv-stagger"] > *,
+  html.rv-js [data-rv-item] {
+    translate: 0 0;
+    will-change: transform;
+    transition:
+      opacity var(--rv-reveal-time) var(--rv-reveal-ease),
+      translate var(--rv-reveal-time) var(--rv-reveal-ease);
+    transition-delay: var(--rv-delay, 0ms);
+  }
+  /* Waiting to appear. Opacity is !important because Framer components write
+     their own inline opacity; once revealed each returns to its own. */
+  html.rv-js :is([data-framer-name~="rv-reveal"], [data-framer-name~="rv-intro"], [data-rv-photo], [data-rv-auto]):not([data-rv-seen]),
+  html.rv-js [data-framer-name~="rv-stagger"]:not([data-rv-seen]) > *,
+  html.rv-js [data-framer-name~="rv-stagger"]:not([data-rv-seen]) [data-rv-item] {
+    opacity: 0 !important;
+    translate: 0 var(--rv-rise);
+  }
+  /* A full-width photo at the very top of a page only fades (rising would
+     open a gap above it). Script 1 marks it. */
+  [data-rv-still] { --rv-rise: 0px; }
+  [data-framer-name~="rv-intro"] { --rv-delay: calc(var(--rv-i, 0) * 90ms); }
+  [data-framer-name~="rv-d1"] { --rv-i: 1; }
+  [data-framer-name~="rv-d2"] { --rv-i: 2; }
+  [data-framer-name~="rv-d3"] { --rv-i: 3; }
+  [data-framer-name~="rv-d4"] { --rv-i: 4; }
+  [data-framer-name~="rv-d5"] { --rv-i: 5; }
+  [data-framer-name~="rv-stagger"] > :nth-child(2) { --rv-delay: 90ms; }
+  [data-framer-name~="rv-stagger"] > :nth-child(3) { --rv-delay: 180ms; }
+  [data-framer-name~="rv-stagger"] > :nth-child(4) { --rv-delay: 270ms; }
+  [data-framer-name~="rv-stagger"] > :nth-child(5) { --rv-delay: 360ms; }
+  [data-framer-name~="rv-stagger"] > :nth-child(n+6) { --rv-delay: 450ms; }
+
+  /* Lines draw themselves left to right */
+  html.rv-js [data-framer-name~="rv-rule"] {
+    transform-origin: 0 50%;
+    scale: 0 1;
+    transition: scale var(--rv-rule-time, var(--rv-reveal-time)) var(--rv-reveal-ease) var(--rv-rule-delay, 0ms);
+  }
+  html.rv-js [data-framer-name~="rv-rule"][data-rv-seen] { scale: 1 1; }
+  [data-framer-name~="rv-rule"][data-framer-name~="rv-slow"] {
+    --rv-rule-time: 1.4s;
+    --rv-rule-delay: 120ms;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   8. Reduced motion: nothing slides, draws or zooms; states still change.
+   ------------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html.rv-js [data-framer-background-image-wrapper] > img { transition: opacity 0.2s linear; }
+  :is([data-framer-name~="rv-link"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"]) > .framer-text:last-child::before,
+  :is([data-framer-name~="rv-link"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"]) > .framer-text:last-child::after,
+  [data-framer-name~="rv-link"] [data-framer-name~="rv-arrow"],
+  a[href][data-framer-name~="rv-row"]::after,
+  [data-framer-name~="rv-bar"] [data-framer-name~="rv-nav"] a[href]::after {
+    transition: opacity 0.2s linear, background-color 0.2s linear !important;
+    translate: none !important;
+  }
+  :is([data-framer-name~="rv-link"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"]) > .framer-text:last-child::before,
+  a[href][data-framer-name~="rv-row"]::after,
+  [data-framer-name~="rv-bar"] [data-framer-name~="rv-nav"] a[href]::after {
+    scale: 1 1 !important;
+    opacity: 0;
+  }
+  :is(a[href]:hover, a[href]:focus-visible, [data-framer-name~="rv-link"]:not(a):hover) :is([data-framer-name~="rv-link"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"]) > .framer-text:last-child::before,
+  a[href][data-framer-name~="rv-link"]:is(:hover, :focus-visible) [data-framer-component-type="RichTextContainer"] > .framer-text:last-child::before,
+  a[href][data-framer-name~="rv-row"]:is(:hover, :focus-visible)::after,
+  [data-framer-name~="rv-bar"] [data-framer-name~="rv-nav"] a[href]:is(:hover, :focus-visible)::after {
+    opacity: 1;
+  }
+  /* rv-back's underline is its ::after */
+  :is([data-framer-name~="rv-link"][data-framer-name~="rv-back"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"][data-framer-name~="rv-back"]) > .framer-text:last-child::before {
+    opacity: 1;
+    scale: -1 1 !important;
+  }
+  :is([data-framer-name~="rv-link"][data-framer-name~="rv-back"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"][data-framer-name~="rv-back"]) > .framer-text:last-child::after {
+    scale: 1 1 !important;
+    opacity: 0;
+  }
+  :is(a[href]:hover, a[href]:focus-visible, [data-framer-name~="rv-link"]:not(a):hover) :is([data-framer-name~="rv-link"][data-framer-name~="rv-back"] [data-framer-component-type="RichTextContainer"], [data-framer-component-type="RichTextContainer"][data-framer-name~="rv-link"][data-framer-name~="rv-back"]) > .framer-text:last-child::after {
+    opacity: 1;
+  }
+  [data-framer-name~="rv-zoom"] [data-framer-background-image-wrapper] { transition: none; }
+}
+</style>
+
+<script>
+/* ===========================================================================
+   SCRIPT 0 — shared core (window.__rv)
+   - whenIdle(fn): runs fn now, or once Framer's page change has finished.
+     Framer changes pages with the browser's View Transitions: for about 0.4s
+     the screen shows a picture of the new page cross-fading in. Safari does
+     not play animations inside that picture, so anything started underneath
+     restarts when the picture is removed. Reveals, photo fades and the menu
+     hand-off therefore wait. <html data-rv-vt> is set meanwhile.
+   - on(name, fn): "route" (a client-side page change has finished),
+     "hash", "vt-start", "vt-snapshot" (the old page's picture was taken),
+     "vt-done".
+   =========================================================================== */
+(function () {
+  var RV = window.__rv = window.__rv || {};
+  if (RV.core) return;
+  RV.core = true;
+  var root = document.documentElement;
+
+  var mq = window.matchMedia ? window.matchMedia("(prefers-reduced-motion: reduce)") : null;
+  RV.reduce = !!(mq && mq.matches);
+  if (mq) {
+    var onMq = function () { RV.reduce = mq.matches; };
+    if (mq.addEventListener) mq.addEventListener("change", onMq);
+    else if (mq.addListener) mq.addListener(onMq);
+  }
+
+  var handlers = {};
+  RV.on = function (name, fn) { (handlers[name] = handlers[name] || []).push(fn); };
+  RV.emit = function (name) {
+    (handlers[name] || []).slice().forEach(function (fn) {
+      try { fn(); } catch (e) { if (window.RV_DEBUG) console.warn("rv:", name, e); }
+    });
+  };
+
+  // ---- page changes (view transitions) -------------------------------------
+  var busy = 0, queue = [];
+  RV.whenIdle = function (fn) { if (busy) queue.push(fn); else fn(); };
+  if (typeof document.startViewTransition === "function") {
+    var nativeVT = document.startViewTransition;
+    document.startViewTransition = function (cb) {
+      var args = Array.prototype.slice.call(arguments);
+      var update = typeof cb === "function" ? cb : (cb && cb.update);
+      var wrapped = function () {
+        RV.emit("vt-snapshot");
+        return update ? update.apply(this, arguments) : undefined;
+      };
+      if (cb && typeof cb === "object") {
+        var o = {};
+        for (var k in cb) o[k] = cb[k];
+        o.update = wrapped;
+        args[0] = o;
+      } else {
+        args[0] = wrapped;
+      }
+      busy++;
+      root.setAttribute("data-rv-vt", "");
+      RV.emit("vt-start");
+      var finished = false;
+      var done = function () {
+        if (finished) return;
+        finished = true;
+        busy = Math.max(0, busy - 1);
+        if (!busy) {
+          root.removeAttribute("data-rv-vt");
+          var q = queue; queue = [];
+          q.forEach(function (fn) { fn(); });
+        }
+        RV.emit("vt-done");
+      };
+      var vt;
+      try { vt = nativeVT.apply(document, args); } catch (e) { done(); throw e; }
+      if (vt && vt.finished) vt.finished.then(done, done); else done();
+      setTimeout(done, 2000); // never hold reveals back longer than this
+      return vt;
+    };
+  }
+
+  // ---- route changes (Framer navigates client-side with pushState) ----------
+  var lastPath = location.pathname;
+  function checkRoute() {
+    if (location.pathname === lastPath) return;
+    lastPath = location.pathname;
+    RV.whenIdle(function () { RV.emit("route"); });
+  }
+  ["pushState", "replaceState"].forEach(function (m) {
+    var orig = history[m];
+    if (typeof orig !== "function") return;
+    history[m] = function () {
+      var r = orig.apply(this, arguments);
+      setTimeout(checkRoute, 0);
+      return r;
+    };
+  });
+  window.addEventListener("popstate", function () { setTimeout(checkRoute, 0); });
+  window.addEventListener("hashchange", function () { RV.emit("hash"); });
+})();
+</script>
+
+<script>
+/* ===========================================================================
+   SCRIPT 1 — one reveal for everything (KLD script 1, minus the loading
+   curtain and the project-gallery sizes).
+   Expects: rv-reveal, rv-intro (+ rv-d1…5), rv-stagger, rv-rule (+ rv-slow),
+   rv-no-reveal, rv-hero; nav variants rv-bar / rv-closed / rv-open; the
+   footer as rv-footer or a <footer> tag.
+   Every text layer, button and framed photo starts hidden (CSS section 7) and
+   gets data-rv-seen once in view, its photos loaded, and any page change
+   finished. Watches for new content, so it also works after Framer's
+   client-side page changes. With reduced motion the CSS shows everything at
+   once; this script then only fades photos in as they load.
+   =========================================================================== */
+(function () {
+  var RV = window.__rv;
+  if (!RV || RV.reveal) return;
+  RV.reveal = true;
+  var root = document.documentElement;
+
+  var AUTO = true;            // false: only rv- tagged layers reveal (texts and photos stay still)
+  var PHOTO_WAIT_MS = 1800;   // a block waits at most this long for its photos
+  var RECENT_MS = 4000;       // a photo Framer re-creates within this time shows at once
+  function now() { return performance.now(); }
+  function N(k) { return '[data-framer-name~="' + k + '"]'; }
+
+  var RULE = N("rv-rule"), STAGGER = N("rv-stagger"), HERO = N("rv-hero"), INTRO = N("rv-intro");
+  var HOST = [N("rv-reveal"), INTRO, STAGGER].join(", ");
+  var BLOCK = HOST + ", " + RULE;
+  // The nav never animates; the footer's own text stays still too, but a
+  // block tagged inside the footer (the Instagram tiles) still reveals.
+  var NAV = [N("rv-bar"), N("rv-closed"), N("rv-open"), N("rv-no-reveal")].join(", ");
+  var FOOTER = "footer, " + N("rv-footer");
+  var CHROME = NAV + ", " + FOOTER;
+  var FRAMER_FX = "[data-framer-appear-id]";   // layers Framer animates itself
+  var SLIDES = '[class*="slideshow"]';
+  var SKIP = [HOST, "[data-rv-photo]", "[data-rv-auto]", HERO, FRAMER_FX, SLIDES, CHROME].join(", ");
+  var IMG = "[data-framer-background-image-wrapper] > img";
+  var TEXT = '[data-framer-component-type="RichTextContainer"]';
+
+  var whenIdle = RV.whenIdle;
+  function key(img) { return (img.currentSrc || img.src || "").split("?")[0]; }
+  var recent = {};
+
+  // Hide a layer without animating the hide itself.
+  function hideQuietly(el, attr) {
+    var prev = el.style.transition;
+    el.style.transition = "none";
+    el.setAttribute(attr, "");
+    void el.offsetWidth;
+    el.style.transition = prev;
+  }
+
+  // ---- revealing -------------------------------------------------------------
+  function reveal(el, instant) {
+    if (el._rvDone) return;
+    el._rvDone = true;
+    if (instant) el.setAttribute("data-rv-instant", "");
+    el.setAttribute("data-rv-seen", "");
+  }
+  // Photos in a block that are showing but not loaded yet (counted live, so a
+  // photo Framer removes, e.g. another breakpoint's copy, never holds it back).
+  function pendingPhotos(el) {
+    var n = 0;
+    el.querySelectorAll(IMG).forEach(function (img) {
+      if (!img.hasAttribute("data-rv-in") && img.getClientRects().length) n++;
+    });
+    return n;
+  }
+  function ready(el) {
+    if (!el._rvSeen || el._rvDone) return;
+    var waited = now() - el._rvSeenAt;
+    var waiting = el.matches(HOST) ? pendingPhotos(el) : (el._rvWaiting || 0);
+    if (waiting > 0 && waited < PHOTO_WAIT_MS) {
+      clearTimeout(el._rvTimer);
+      el._rvTimer = setTimeout(function () { ready(el); }, PHOTO_WAIT_MS - waited + 20);
+      return;
+    }
+    whenIdle(function () { reveal(el); });
+  }
+  function markSeen(el) {
+    if (el._rvSeen) return;
+    el._rvSeen = true;
+    el._rvSeenAt = now();
+    ready(el);
+  }
+
+  // ---- in view? --------------------------------------------------------------
+  // Anything that has reached the lower 94% of the window, or been scrolled
+  // past, counts as seen, so fast scrolls and anchor jumps never leave gaps.
+  var pending = [];
+  function reached(el) {
+    var r = el.getBoundingClientRect();
+    if (!r.width && !r.height) return false; // hidden (another breakpoint)
+    var lift = parseFloat((getComputedStyle(el).translate || "").split(" ")[1]) || 0;
+    return r.top - lift < window.innerHeight * 0.94;
+  }
+  // Lines wait until they are well inside the window, below the nav, and the
+  // page has nearly stopped: a Safari trackpad flick can carry a line from the
+  // bottom of the window to under the nav in a fraction of a second.
+  var lastY = window.scrollY, lastT = now(), speed = 0; // px per ms
+  function calm() { return now() - lastT > 120 || speed < 0.3; }
+  function lineReady(el) {
+    var r = el.getBoundingClientRect();
+    if (!r.width && !r.height) return false;
+    var h = window.innerHeight, y = window.scrollY;
+    var edge = y < 1 || y + h >= root.scrollHeight - 2;
+    var top = edge ? 0 : 96, bottom = edge ? h : h * 0.88;
+    return r.top >= top && r.top < bottom && calm();
+  }
+  function sweep() {
+    // Measure everything first, then reveal: one layout per sweep.
+    var hit = [];
+    for (var i = pending.length - 1; i >= 0; i--) {
+      var el = pending[i];
+      if (!el.isConnected) { pending.splice(i, 1); continue; }
+      if (el._rvRule ? lineReady(el) : reached(el)) { hit.push(el); pending.splice(i, 1); }
+    }
+    hit.forEach(markSeen);
+  }
+  var queued = false;
+  function queueSweep() {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(function () { queued = false; sweep(); });
+  }
+  var calmTimer;
+  window.addEventListener("scroll", function () {
+    var t = now(), y = window.scrollY, dt = t - lastT;
+    if (dt > 0) {
+      var v = Math.abs(y - lastY) / dt;
+      speed = dt > 100 ? v : speed * 0.6 + v * 0.4;
+    }
+    lastY = y; lastT = t;
+    clearTimeout(calmTimer);
+    calmTimer = setTimeout(queueSweep, 140); // one more look once it settles
+    queueSweep();
+  }, { passive: true });
+  window.addEventListener("resize", queueSweep, { passive: true });
+  window.addEventListener("load", queueSweep);
+  var io = "IntersectionObserver" in window && new IntersectionObserver(function (entries) {
+    for (var i = 0; i < entries.length; i++) if (entries[i].isIntersecting) { queueSweep(); return; }
+  }, { threshold: 0 });
+  function watch(el) { pending.push(el); if (io) io.observe(el); queueSweep(); }
+
+  // The footer belongs to the layout, so Framer keeps it across page changes
+  // and its lines would stay drawn. On every page change they are put back,
+  // quietly, to draw again when they come into view.
+  function resetFooterLines() {
+    document.querySelectorAll(FOOTER.split(", ").map(function (f) { return f + " " + RULE; }).join(", ")).forEach(function (el) {
+      if (!el._rv || !el._rvSeen) return;
+      clearTimeout(el._rvTimer);
+      el._rvSeen = false;
+      el._rvDone = false;
+      var prev = el.style.transition;
+      el.style.transition = "none";
+      el.removeAttribute("data-rv-seen");
+      el.removeAttribute("data-rv-instant");
+      void el.offsetWidth;
+      el.style.transition = prev;
+      if (pending.indexOf(el) < 0) watch(el);
+    });
+  }
+  RV.on("route", function () { resetFooterLines(); queueSweep(); });
+
+  // ---- photos ----------------------------------------------------------------
+  function trackImg(img) {
+    if (img._rv) return;
+    img._rv = true;
+    var k = key(img), wrap = img.parentElement, frame = wrap && wrap.parentElement;
+    var again = recent[k] && now() - recent[k] < RECENT_MS;
+    var hero = img.closest(HERO);
+    var still = !hero && img.closest(SLIDES + ", " + FRAMER_FX);
+    var host = !hero && !still && !img.closest(NAV) && img.closest(HOST);
+    var chrome = !host && img.closest(CHROME);
+    var framed = AUTO && !hero && !still && !chrome && !host && frame && frame !== document.body;
+
+    if (hero) {
+      if (again || (img.complete && img.naturalWidth)) {
+        img.setAttribute("data-rv-instant", "");
+        img.setAttribute("data-rv-in", "");
+        recent[k] = now();
+        return;
+      }
+      if (k.indexOf("framerusercontent.com/images/") > -1 && wrap) {
+        var tiny = k + "?scale-down-to=64";
+        new Image().src = tiny; // start the ~1 KB request at once
+        wrap.style.setProperty("--rv-lqip", 'url("' + tiny + '")');
+        wrap.setAttribute("data-rv-lqip", "");
+      }
+    }
+    if (framed) {
+      frame._rvWaiting = 1;
+      var fr = frame.getBoundingClientRect();
+      if (fr.top + window.scrollY < 2 && fr.width >= window.innerWidth * 0.8) frame.setAttribute("data-rv-still", "");
+      hideQuietly(frame, "data-rv-photo");
+      if (again) reveal(frame, true); else watch(frame);
+    }
+    var done = false;
+    function loaded() {
+      if (done) return;
+      done = true;
+      var go = function () {
+        // When the frame or block around the photo is about to fade in, that
+        // one fade is enough: the photo appears at once inside it.
+        if (again || (framed && !frame._rvDone) || (host && !host._rvDone)) img.setAttribute("data-rv-instant", "");
+        img.setAttribute("data-rv-in", "");
+        recent[k] = now();
+        if (framed) { frame._rvWaiting = 0; ready(frame); }
+        if (host) ready(host);
+      };
+      var goWhenIdle = function () { whenIdle(go); };
+      if (img.decode) img.decode().then(goWhenIdle, goWhenIdle); else goWhenIdle();
+    }
+    if (img.complete && img.naturalWidth) loaded();
+    else { img.addEventListener("load", loaded); img.addEventListener("error", loaded); }
+  }
+
+  // ---- tagged blocks and every other text layer ------------------------------
+  // A stagger's items are normally its direct children (the CSS handles those).
+  // Framer sometimes wraps each item of a CMS list in an invisible
+  // (display: contents) element; those items are marked here with their delay.
+  function markItems(host) {
+    var i = 0;
+    (function walk(el) {
+      for (var c = el.firstElementChild; c; c = c.nextElementSibling) {
+        var d = getComputedStyle(c).display;
+        if (d === "none") continue;
+        if (d === "contents") { walk(c); continue; }
+        if (el !== host && !c.hasAttribute("data-rv-item")) {
+          c.style.setProperty("--rv-delay", Math.min(i, 5) * 90 + "ms");
+          hideQuietly(c, "data-rv-item");
+        }
+        i++;
+      }
+    })(host);
+  }
+  function trackBlock(el) {
+    if (el._rv) return;
+    el._rv = true;
+    el._rvRule = el.matches(RULE);
+    if (el.closest(NAV)) { reveal(el, true); return; }
+    if (el.matches(STAGGER)) markItems(el);
+    if (el.matches(INTRO)) setTimeout(function () { markSeen(el); }, 0); // top of page: no need to wait for the viewport
+    else watch(el);
+  }
+  function trackText(t) {
+    if (t._rv) return;
+    t._rv = true;
+    if (!AUTO || !t.parentElement || t.parentElement.closest(SKIP)) return;
+    var target = t.closest("a") || t;  // a text inside a link moves with the whole link
+    if (target !== t && target.closest(SKIP)) return;
+    if (target._rvAuto) return;
+    target._rvAuto = true;
+    hideQuietly(target, "data-rv-auto");
+    watch(target);
+  }
+
+  function scan(node) {
+    if (node.nodeType !== 1) return;
+    if (node.matches(BLOCK)) trackBlock(node);
+    node.querySelectorAll(BLOCK).forEach(trackBlock);
+    if (node.matches(IMG)) trackImg(node);
+    node.querySelectorAll(IMG).forEach(trackImg);
+    if (node.matches(TEXT)) trackText(node);
+    node.querySelectorAll(TEXT).forEach(trackText);
+    // items Framer re-renders inside a stagger (a CMS list) are marked again
+    var host = node.parentElement && node.parentElement.closest(STAGGER);
+    if (host && host._rv && !host.closest(NAV)) markItems(host);
+  }
+  new MutationObserver(function (records) {
+    for (var i = 0; i < records.length; i++) records[i].addedNodes.forEach(scan);
+  }).observe(root, { childList: true, subtree: true });
+  document.addEventListener("DOMContentLoaded", function () { scan(document.body); });
+
+  // Last, so nothing is ever hidden by CSS unless this script is running.
+  root.classList.add("rv-js");
+})();
+</script>
+
+<script>
+/* ===========================================================================
+   SCRIPT 2 — navigation (KLD script 2, steady tone only)
+   Expects, in the Navigation component: variant names with rv-bar /
+   rv-closed / rv-open; the link stack rv-nav; the toggle rv-menu (falls back
+   to the link without href, as on KLD); optional rv-sheet. In the footer: a
+   Scroll Section named "contact".
+   1. Band: <html data-rv-band="on|off"> from the scroll position (48px). The
+      CSS turns the bar dark and draws the band's hairline from it.
+   2. Current page: data-rv-current on the matching link (a project page
+      lights PROJECTS, a news post NEWS, and so on). Contact never lights.
+   3. Phone/iPad sheet: tap outside a link or Esc closes it; a tapped link
+      holds the sheet until the page change has taken its picture.
+   4. Contact: on Home, the Contact link glides to the footer's contact
+      block. From other pages Framer opens /#contact and this script settles
+      the block exactly in place once the page has loaded.
+   All of it re-runs on Framer's client-side page changes.
+   =========================================================================== */
+(function () {
+  var RV = window.__rv;
+  if (!RV || RV.nav) return;
+  RV.nav = true;
+  var root = document.documentElement;
+
+  var BAND_AT = 48;          // px of scrolling: the band is mostly in, the bar turns dark
+  var BAND_RANGE = 96;       // px over which the band fades in (matches the CSS)
+  var CONTACT_ID = "contact";
+  var CONTACT_MODE = "home"; // "home": glide on Home, open /#contact elsewhere (plan section 5)
+                             // "here": glide to this page's own footer from any page
+
+  function N(k) { return '[data-framer-name~="' + k + '"]'; }
+  var ANY = [N("rv-bar"), N("rv-closed"), N("rv-open")].join(", ");
+  var OPEN = N("rv-open");
+  var LINKS = N("rv-nav") + " a[href]";
+
+  // ---- 1. band ---------------------------------------------------------------
+  var timeline = !!(window.CSS && CSS.supports && CSS.supports("animation-timeline: scroll()"));
+  var ticking = false;
+  function band() {
+    ticking = false;
+    var y = window.scrollY || 0;
+    var on = y > BAND_AT ? "on" : "off";
+    if (root.getAttribute("data-rv-band") !== on) root.setAttribute("data-rv-band", on);
+    if (!timeline) root.style.setProperty("--rv-top", Math.max(0, Math.min(1, 1 - y / BAND_RANGE)).toFixed(3));
+  }
+  function queueBand() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(band);
+  }
+  window.addEventListener("scroll", queueBand, { passive: true });
+  window.addEventListener("pageshow", band);
+  RV.on("route", band);
+  band();
+
+  // ---- 2. current page -------------------------------------------------------
+  function clean(p) { return p.replace(/\/+$/, "") || "/"; }
+  function markCurrent() {
+    var here = clean(location.pathname);
+    document.querySelectorAll(LINKS).forEach(function (a) {
+      if (!a.closest(ANY)) return;
+      var on = false;
+      try {
+        var u = new URL(a.getAttribute("href"), location.href);
+        if (u.origin === location.origin && !u.hash) {
+          var t = clean(u.pathname);
+          on = t === here || (t !== "/" && here.indexOf(t + "/") === 0);
+        }
+      } catch (e) {}
+      if (on !== a.hasAttribute("data-rv-current")) {
+        if (on) a.setAttribute("data-rv-current", ""); else a.removeAttribute("data-rv-current");
+      }
+    });
+  }
+  var markQueued = false;
+  function queueMark() {
+    if (markQueued) return;
+    markQueued = true;
+    requestAnimationFrame(function () { markQueued = false; markCurrent(); });
+  }
+  // Framer re-renders the nav when its variant changes: mark again then.
+  new MutationObserver(queueMark).observe(root, {
+    childList: true, subtree: true, attributes: true, attributeFilter: ["href", "data-framer-name"]
+  });
+  RV.on("route", markCurrent);
+  document.addEventListener("DOMContentLoaded", markCurrent);
+
+  // ---- 3. phone / iPad sheet -------------------------------------------------
+  function shown(el) { var r = el.getBoundingClientRect(); return r.width > 0 && r.height > 0; }
+  function openMenu() {
+    var list = document.querySelectorAll(OPEN);
+    for (var i = 0; i < list.length; i++) if (shown(list[i])) return list[i];
+    return null;
+  }
+  function toggleOf(nav) { return nav.querySelector(N("rv-menu")) || nav.querySelector("a:not([href])"); }
+  // Framer's On Tap listens to pointer events, so that is what the toggle gets.
+  function tapToggle(nav) {
+    var el = toggleOf(nav);
+    if (!el || !window.PointerEvent) return;
+    var r = el.getBoundingClientRect();
+    var o = { bubbles: true, cancelable: true, composed: true, view: window, pointerId: 1, isPrimary: true,
+              pointerType: "touch", button: 0, buttons: 1, clientX: r.left + r.width / 2, clientY: r.top + r.height / 2 };
+    el.dispatchEvent(new PointerEvent("pointerdown", o));
+    o.buttons = 0;
+    el.dispatchEvent(new PointerEvent("pointerup", o));
+    el.dispatchEvent(new MouseEvent("click", o));
+  }
+
+  var holdTimer = 0, holdVT = false, down = null, swallowUntil = 0, contactTap = 0;
+  function setMenu(v) { if (v) root.setAttribute("data-rv-menu", v); else root.removeAttribute("data-rv-menu"); }
+  function release() { clearTimeout(holdTimer); holdVT = false; setMenu(null); }
+  function leave() {  // no page change followed: fade the held sheet away
+    if (root.getAttribute("data-rv-menu") !== "hold") return;
+    setMenu("leaving");
+    clearTimeout(holdTimer);
+    holdTimer = setTimeout(release, 450);
+  }
+  function startHold() {
+    clearTimeout(holdTimer);
+    holdVT = false;
+    setMenu("hold");
+    holdTimer = setTimeout(release, 1500); // no click followed (a scroll, a cancelled tap)
+  }
+  RV.on("vt-start", function () {
+    if (root.getAttribute("data-rv-menu") !== "hold") return;
+    holdVT = true;
+    clearTimeout(holdTimer);
+  });
+  RV.on("vt-snapshot", function () { if (holdVT) setMenu("gone"); });
+  RV.on("vt-done", function () {
+    if (!holdVT) return;
+    clearTimeout(holdTimer);
+    holdTimer = setTimeout(release, 150);
+  });
+
+  document.addEventListener("pointerdown", function (e) {
+    down = null;
+    if (!e.isTrusted) return;
+    var nav = openMenu();
+    if (!nav) return;
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (a && nav.contains(a)) {
+      startHold();
+      contactTap = contactHere(a) ? Date.now() : 0;
+      return;
+    }
+    var t = toggleOf(nav);
+    if (t && t.contains(e.target)) return; // CLOSE itself: Framer handles that tap
+    down = { x: e.clientX, y: e.clientY, t: Date.now() };
+  }, true);
+  document.addEventListener("pointerup", function (e) {
+    // Contact tapped in the sheet: if Framer closes the sheet on this pointerup
+    // and the click then lands on the page underneath, scroll anyway.
+    if (contactTap && e.isTrusted) {
+      var at = contactTap;
+      setTimeout(function () { if (contactTap === at) { contactTap = 0; goContact(); } }, 250);
+    }
+    var d = down;
+    down = null;
+    if (!d || !e.isTrusted) return;
+    var nav = openMenu();
+    if (!nav) return;
+    if (Math.abs(e.clientX - d.x) > 10 || Math.abs(e.clientY - d.y) > 10 || Date.now() - d.t > 600) return; // a scroll
+    swallowUntil = Date.now() + 500; // the click that follows mustn't act on what's underneath
+    tapToggle(nav);
+  }, true);
+  document.addEventListener("click", function (e) {
+    if (!e.isTrusted) return;
+    if (Date.now() < swallowUntil) {
+      swallowUntil = 0;
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+    if (root.getAttribute("data-rv-menu") === "hold" && e.target.closest && e.target.closest("a[href]")) {
+      // a page change normally starts within a frame or two; if none does, fade the sheet
+      clearTimeout(holdTimer);
+      holdTimer = setTimeout(function () { if (!holdVT) leave(); }, 160);
+    }
+  }, true);
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    var nav = openMenu();
+    if (nav) tapToggle(nav);
+  });
+
+  // ---- 4. Contact ------------------------------------------------------------
+  function contactTarget() {
+    var list = document.querySelectorAll('[id="' + CONTACT_ID + '"]');
+    for (var i = 0; i < list.length; i++) if (list[i].getClientRects().length) return list[i];
+    return null;
+  }
+  // Bottom of the visible bar, band included, so the block lands below it.
+  function barBottom() {
+    var list = document.querySelectorAll(ANY);
+    for (var i = 0; i < list.length; i++) {
+      var r = list[i].getBoundingClientRect();
+      if (!r.width || !r.height || r.top > 10) continue;
+      var bandH = parseFloat(getComputedStyle(list[i], "::before").height) || 0;
+      return r.top + Math.max(r.height, bandH);
+    }
+    return 0;
+  }
+  function contactY(t) {
+    var y = t.getBoundingClientRect().top + (window.scrollY || 0) - barBottom() - 24;
+    var max = Math.max(0, root.scrollHeight - window.innerHeight);
+    return Math.round(Math.max(0, Math.min(max, y)));
+  }
+  function jump(y) {
+    var prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    window.scrollTo(0, y);
+    root.style.scrollBehavior = prev;
+  }
+  // A Contact link that should glide on this page (not open another one).
+  function contactHere(a) {
+    var u;
+    try { u = new URL(a.getAttribute("href"), location.href); } catch (err) { return false; }
+    if (u.origin !== location.origin || u.hash !== "#" + CONTACT_ID) return false;
+    if (CONTACT_MODE !== "here" && clean(u.pathname) !== clean(location.pathname)) return false; // Framer opens Home; arrive() settles it
+    return !!contactTarget();
+  }
+  function goContact() {
+    if (openMenu()) {
+      // from the phone/iPad sheet: it fades (leave()); close it if Framer hasn't
+      setTimeout(function () { var still = openMenu(); if (still) tapToggle(still); }, 80);
+    }
+    if (root.getAttribute("data-rv-menu") === "hold") { clearTimeout(holdTimer); holdTimer = setTimeout(leave, 160); }
+    scrollToContact(true);
+  }
+  // Native smooth scrolling only (no library). A long way is shortened first:
+  // the page jumps to just short of the block and glides the last stretch.
+  function scrollToContact(smooth) {
+    var t = contactTarget();
+    if (!t) return false;
+    var y = contactY(t), from = window.scrollY || 0;
+    if (!smooth || RV.reduce || Math.abs(y - from) < 2) { jump(y); return true; }
+    var vh = window.innerHeight;
+    if (Math.abs(y - from) > vh * 1.5) {
+      from = Math.round(y - (y > from ? 1 : -1) * vh * 0.75);
+      jump(from);
+    }
+    window.scrollTo({ top: y, behavior: "smooth" });
+    // Safari can drop a programmatic smooth scroll: if it never started, jump.
+    setTimeout(function () { if (Math.abs((window.scrollY || 0) - from) < 1) jump(y); }, 160);
+    return true;
+  }
+  document.addEventListener("click", function (e) {
+    if (!e.isTrusted || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (!a || !contactHere(a)) return;
+    e.preventDefault();
+    e.stopPropagation();
+    contactTap = 0;
+    goContact();
+  }, true);
+  // Arriving with #contact (from another page, a typed address or a redirect
+  // from the old /contact): once the page has settled, put the block in place.
+  function arrive() {
+    if (location.hash !== "#" + CONTACT_ID) return;
+    setTimeout(function () {
+      RV.whenIdle(function () {
+        var t = contactTarget();
+        if (t && Math.abs(contactY(t) - (window.scrollY || 0)) > 8) scrollToContact(true);
+      });
+    }, 350);
+  }
+  RV.on("route", arrive);
+  RV.on("hash", arrive);
+  window.addEventListener("load", arrive);
+})();
+</script>
+
+<script>
+/* ===========================================================================
+   SCRIPT 3 — Instagram (KLD script 3)
+   Expects: the footer's tile grid named "… rv-insta" (with rv-stagger to make
+   the tiles rise one after another), holding six CMS tiles (Instagram
+   collection: Image + Link), each a link frame with an image fill.
+   Once INSTAGRAM_FEED holds RVTR's Behold JSON feed URL, the visible tiles
+   show the six newest posts, newest first, each linking to its post in a new
+   tab. Until then, or whenever the feed can't be reached, the CMS tiles stay.
+   The post list is kept in this browser for an hour (localStorage), so moving
+   around the site doesn't spend Behold's monthly views.
+   Behold feeds can be locked to domains (KLD's answered 403 on *.framer.app),
+   so the feed is only requested on FEED_HOSTS; previews keep the CMS tiles
+   and stay free of failed requests in the console.
+   Layout (6 in a row on desktop, 3 x 2 on phones, square tiles) is Framer's
+   own grid setting, not code.
+   =========================================================================== */
+(function () {
+  var RV = window.__rv = window.__rv || {};
+  if (RV.insta) return;
+  RV.insta = true;
+
+  var INSTAGRAM_FEED = "";                        // e.g. "https://feeds.behold.so/AbCdEf123456"
+  var FEED_HOSTS = ["rvtr.com", "www.rvtr.com"];  // where the feed may load; [] = everywhere. Add the
+                                                  // framer.app address if Behold's domain list allows it.
+  var LIST = '[data-framer-name~="rv-insta"]';
+  var STORE = "rv-instagram", FAIL = "rv-instagram-fail", KEEP_MS = 60 * 60 * 1000;
+  var override = window.RV_INSTAGRAM_FEED;        // for testing: beats the constant and the host list
+  var feed = override || INSTAGRAM_FEED;
+  var hostOk = !!override || !FEED_HOSTS.length || FEED_HOSTS.indexOf(location.hostname) > -1;
+  var posts = null;
+
+  function firstLine(s) {
+    s = String(s || "").split("\n")[0].replace(/(^|\s)#\S+/g, " ").replace(/\s+/g, " ").trim();
+    if (s.length > 140) s = s.slice(0, 140).replace(/\s+\S*$/, "") + "…";
+    return s;
+  }
+  // What a tile needs from a post: link, image (with sizes) and alt text.
+  function tile(p) {
+    var s = p.sizes || (p.children && p.children[0] && p.children[0].sizes) || {};
+    var set = [];
+    ["small", "medium", "large", "full"].forEach(function (k) {
+      if (s[k] && s[k].mediaUrl && s[k].width) set.push(s[k].mediaUrl + " " + s[k].width + "w");
+    });
+    var src = (s.medium && s.medium.mediaUrl) || (s.large && s.large.mediaUrl) || p.thumbnailUrl || p.mediaUrl;
+    if (!src || !p.permalink) return null;
+    var alt = firstLine(p.prunedCaption || p.caption) || firstLine(p.altText) || "Instagram post by RVTR";
+    return { href: p.permalink, src: src, srcset: set.join(", "), alt: alt };
+  }
+
+  // Each breakpoint's copy of the grid is filled from the newest post on;
+  // tiles are numbered among the visible ones. Every tile opens in a new tab,
+  // CMS fallback tiles included.
+  function apply() {
+    document.querySelectorAll(LIST).forEach(function (list) {
+      var i = 0;
+      list.querySelectorAll("a[href]").forEach(function (a) {
+        if (a.getAttribute("target") !== "_blank") a.setAttribute("target", "_blank");
+        if (a.getAttribute("rel") !== "noopener") a.setAttribute("rel", "noopener");
+        if (!posts || !posts.length || !a.getClientRects().length) return;
+        var p = posts[i++];
+        if (!p) return;
+        if (a.getAttribute("href") !== p.href) a.setAttribute("href", p.href);
+        var img = a.querySelector("[data-framer-background-image-wrapper] > img");
+        if (!img || img.getAttribute("src") === p.src) return;
+        // srcset before src (Safari applies attributes in order)
+        if (p.srcset) img.setAttribute("srcset", p.srcset); else img.removeAttribute("srcset");
+        img.setAttribute("src", p.src);
+        img.setAttribute("alt", p.alt);
+      });
+    });
+  }
+  var queued = false;
+  function queue() {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(function () { queued = false; apply(); });
+  }
+  function use(list) { posts = list; queue(); }
+
+  function read(k) { try { return JSON.parse(localStorage.getItem(k)); } catch (e) { return null; } }
+  function write(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+
+  if (feed && hostOk && window.fetch) {
+    var kept = read(STORE), failed = read(FAIL);
+    var fresh = kept && kept.feed === feed && Date.now() - kept.at < KEEP_MS;
+    if (kept && kept.feed === feed && kept.posts && kept.posts.length) use(kept.posts); // stale copy shows at once
+    var recentlyFailed = failed && failed.feed === feed && Date.now() - failed.at < KEEP_MS;
+    if (!fresh && !recentlyFailed) {
+      fetch(feed, { credentials: "omit" })
+        .then(function (r) { if (!r.ok) throw new Error(String(r.status)); return r.json(); })
+        .then(function (data) {
+          var list = (data && data.posts || []).map(tile).filter(Boolean).slice(0, 12);
+          if (!list.length) throw new Error("empty");
+          write(STORE, { feed: feed, at: Date.now(), posts: list });
+          use(list);
+        })
+        .catch(function () { write(FAIL, { feed: feed, at: Date.now() }); /* keep the CMS tiles (or the kept feed) */ });
+    }
+  }
+
+  // Framer adds the footer after this runs and re-creates it on some page
+  // changes and breakpoint switches: fill the tiles again whenever it does.
+  function touches(n) { return n.nodeType === 1 && (n.closest(LIST) || n.querySelector(LIST)); }
+  new MutationObserver(function (records) {
+    for (var r = 0; r < records.length; r++) {
+      var rec = records[r];
+      if (rec.type === "attributes" ? rec.target.closest && rec.target.closest(LIST) : [].some.call(rec.addedNodes, touches)) { queue(); return; }
+    }
+  }).observe(document.documentElement, { childList: true, subtree: true, attributes: true, attributeFilter: ["src", "srcset", "href"] });
+  window.addEventListener("resize", queue, { passive: true });
+  document.addEventListener("DOMContentLoaded", queue);
+  if (RV.on) RV.on("route", queue);
+})();
+</script>
