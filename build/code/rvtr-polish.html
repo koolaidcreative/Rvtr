@@ -1,0 +1,49 @@
+<!--
+  RVTR POLISH (append to the site's custom code, after rv-rows)
+
+  1. rv-acro: the Home hero headline RESEARCH / VISION / TRANSFORMATION /
+     REALIZATION assembles itself from the acronym. The four initials
+     R · V · T · R rise in first, one after another, so "RVTR" is read before
+     anything else; then each word draws out from its initial, left to right;
+     then the sentence below fades up.
+     Framer layers (no code inserted into Framer's markup, so hydration is safe):
+       "Headline rv-acro rv-no-reveal"   stack holding the four words
+         "Word rv-d1"                    horizontal stack, gap 0, per word (rv-d1 … rv-d4)
+           "R rv-ini"                    text: the initial
+           "ESEARCH rv-rest"             text: the rest of the word
+       "Sentence rv-acro-line rv-no-reveal"   the line below
+  2. rv-hero photo settles: it arrives at 106% and eases to 100% over 2.8s
+     once loaded (under the existing blurred preview), a slow camera settle.
+  3. Paragraphs wrap without orphans (text-wrap-style: pretty).
+  Reduced motion: everything simply appears.
+-->
+<style>
+p.framer-text { text-wrap-style: pretty; }
+
+@media (prefers-reduced-motion: no-preference) {
+  html.rv-js [data-framer-name~="rv-acro"] [data-framer-name~="rv-ini"] {
+    opacity: 0; translate: 0 .32em;
+    animation: rva-ini .95s cubic-bezier(.22,.61,.36,1) forwards;
+    animation-delay: calc(250ms + (var(--rv-i, 1) - 1) * 150ms);
+  }
+  html.rv-js [data-framer-name~="rv-acro"] [data-framer-name~="rv-rest"] {
+    clip-path: inset(-10% 100% -10% 0); opacity: 0;
+    animation: rva-rest 1.15s cubic-bezier(.77,0,.18,1) forwards;
+    animation-delay: calc(1000ms + (var(--rv-i, 1) - 1) * 110ms);
+  }
+  html.rv-js [data-framer-name~="rv-acro-line"] {
+    opacity: 0; translate: 0 14px;
+    animation: rva-line 1s cubic-bezier(.22,.61,.36,1) 1.75s forwards;
+  }
+  @keyframes rva-ini  { to { opacity: 1; translate: 0 0; } }
+  @keyframes rva-rest { 0% { opacity: .0; } 15% { opacity: 1; } to { clip-path: inset(-10% -2% -10% 0); opacity: 1; } }
+  @keyframes rva-line { to { opacity: 1; translate: 0 0; } }
+
+  html.rv-js [data-framer-name~="rv-hero"] [data-framer-background-image-wrapper] { overflow: hidden; }
+  html.rv-js [data-framer-name~="rv-hero"] [data-framer-background-image-wrapper] > img {
+    scale: 1.06;
+    transition: opacity var(--rv-reveal-time, .6s) var(--rv-reveal-ease, ease), scale 2.8s cubic-bezier(.16,1,.3,1) !important;
+  }
+  html.rv-js [data-framer-name~="rv-hero"] [data-framer-background-image-wrapper] > img[data-rv-in] { scale: 1; }
+}
+</style>
