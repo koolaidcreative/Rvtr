@@ -1,0 +1,1234 @@
+{
+ "/": {
+  "seo": {
+   "title": "RVTR | Research lab, Taubman College, University of Michigan",
+   "description": "RVTR is a research-based architecture lab at Taubman College, University of Michigan, directed by Kathy Velikov and Geoffrey Thün since 2007."
+  },
+  "desktop": [
+   {
+    "text": "RVTR: Research, Vision, Transformation, Realization",
+    "layer": "Title rv-sr",
+    "path": "Hero Section/Content/Main Content"
+   },
+   {
+    "text": "R",
+    "layer": "R rv-ini",
+    "path": "Main Content/Headline rv-acro rv-no-reveal/Word rv-d1"
+   },
+   {
+    "text": "ESEARCH",
+    "layer": "ESEARCH rv-rest",
+    "path": "Main Content/Headline rv-acro rv-no-reveal/Word rv-d1"
+   },
+   {
+    "text": "V",
+    "layer": "V rv-ini",
+    "path": "Main Content/Headline rv-acro rv-no-reveal/Word rv-d2"
+   },
+   {
+    "text": "ISION",
+    "layer": "ISION rv-rest",
+    "path": "Main Content/Headline rv-acro rv-no-reveal/Word rv-d2"
+   },
+   {
+    "text": "T",
+    "layer": "T rv-ini",
+    "path": "Main Content/Headline rv-acro rv-no-reveal/Word rv-d3"
+   },
+   {
+    "text": "RANSFORMATION",
+    "layer": "RANSFORMATION rv-rest",
+    "path": "Main Content/Headline rv-acro rv-no-reveal/Word rv-d3"
+   },
+   {
+    "text": "R",
+    "layer": "R rv-ini",
+    "path": "Main Content/Headline rv-acro rv-no-reveal/Word rv-d4"
+   },
+   {
+    "text": "EALIZATION",
+    "layer": "EALIZATION rv-rest",
+    "path": "Main Content/Headline rv-acro rv-no-reveal/Word rv-d4"
+   },
+   {
+    "text": "Reaching beyond the boundaries of what is and exploring the possibilities of what could be.",
+    "layer": "Sentence rv-acro-line rv-no-reveal",
+    "path": "Sub-Content/Description/Text Wrapper"
+   },
+   {
+    "controls": {
+     "content": "All projects",
+     "link": "/projects",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Description/Text Wrapper/Button Container",
+    "component": "Primary Button"
+   },
+   {
+    "cmsList": "Home Hero",
+    "layer": "Hero slides rv-hero-gallery rv-hero",
+    "path": "Main/Hero Section/Background"
+   },
+   {
+    "text": "var(--variable-agOU1dBe0)",
+    "layer": "Project rv-hg-project",
+    "path": "Background/Hero slides rv-hero-gallery rv-hero/Slide rv-hero-slide"
+   },
+   {
+    "text": "Research lab / University of Michigan",
+    "layer": "Text",
+    "path": "Introducing/Main Content/Label"
+   },
+   {
+    "text": "RVTR is a practice-based design research lab led by Geoffrey Thün and Kathy Velikov that serves as a platform for expanding the boundaries of architectural and urban inquiry.",
+    "layer": "Text",
+    "path": "About Us/Introducing/Main Content"
+   },
+   {
+    "alt": "Infra Eco Logi Urbanism, RVTR",
+    "image": "https://framerusercontent.com/images/BP6dJ7kzfZ8iw3fecDMa8lxPIE.jpg",
+    "layer": "Image",
+    "path": "Sub-content/Content/Image"
+   },
+   {
+    "text": "We test what material systems, urban infrastructures, and territories could become through systems-based approaches, prototyping, speculation, and visualization. Our work is funded through federal, institutional, and industry partners. We collaborate with planners, landscape architects, scientists, engineers, archaeologists, industry, and other labs nationally and globally.",
+    "layer": "Text",
+    "path": "Sub-content/Content/Text Wrapper"
+   },
+   {
+    "controls": {
+     "content": "Team",
+     "link": "/team",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Sub-content/Content/Text Wrapper",
+    "component": "Secondary Button"
+   },
+   {
+    "alt": "The Stratus Project, RVTR",
+    "image": "https://framerusercontent.com/images/vcOG6HNETjMKGNRqkxco7gMBc2w.jpg",
+    "layer": "Image",
+    "path": "Introducing/Sub-content/Image"
+   },
+   {
+    "alt": "North House, RVTR",
+    "image": "https://framerusercontent.com/images/KZDOUJvz0JH1Vz9BJ2MEfydNdo.jpg",
+    "layer": "",
+    "path": "Scroller/About Us/North House Front"
+   },
+   {
+    "text": "Selected projects",
+    "layer": "Text",
+    "path": "Title Container/Title/Label"
+   },
+   {
+    "text": "Prototypes, territories, buildings and exhibitions from the lab’s current and recent research.",
+    "layer": "Text",
+    "path": "Content/Title Container/Title"
+   },
+   {
+    "cmsList": "Projects",
+    "layer": "",
+    "path": "Content/Projects rv-bricks/Row rv-stagger"
+   },
+   {
+    "controls": {
+     "projectImage": "var(--variable-IhDBHr31B)",
+     "projectName": "var(--variable-LgWeGE3eL)",
+     "projectYear": "var(--variable-QA7yuUTcp)",
+     "link": "/projects/:slug"
+    },
+    "layer": "",
+    "path": "Row rv-stagger",
+    "component": "Project Card"
+   },
+   {
+    "cmsList": "Projects",
+    "layer": "",
+    "path": "Content/Projects rv-bricks/Row rv-stagger"
+   },
+   {
+    "controls": {
+     "projectImage": "var(--variable-IhDBHr31B)",
+     "projectName": "var(--variable-LgWeGE3eL)",
+     "projectYear": "var(--variable-QA7yuUTcp)",
+     "link": "/projects/:slug"
+    },
+    "layer": "",
+    "path": "Row rv-stagger",
+    "component": "Project Card"
+   },
+   {
+    "cmsList": "Projects",
+    "layer": "",
+    "path": "Content/Projects rv-bricks/Row rv-stagger"
+   },
+   {
+    "controls": {
+     "projectImage": "var(--variable-IhDBHr31B)",
+     "projectName": "var(--variable-LgWeGE3eL)",
+     "projectYear": "var(--variable-QA7yuUTcp)",
+     "link": "/projects/:slug"
+    },
+    "layer": "",
+    "path": "Row rv-stagger",
+    "component": "Project Card"
+   },
+   {
+    "cmsList": "Projects",
+    "layer": "",
+    "path": "Content/Projects rv-bricks/Row rv-stagger"
+   },
+   {
+    "controls": {
+     "projectImage": "var(--variable-IhDBHr31B)",
+     "projectName": "var(--variable-LgWeGE3eL)",
+     "projectYear": "var(--variable-QA7yuUTcp)",
+     "link": "/projects/:slug"
+    },
+    "layer": "",
+    "path": "Row rv-stagger",
+    "component": "Project Card"
+   },
+   {
+    "cmsList": "Projects",
+    "layer": "",
+    "path": "Content/Projects rv-bricks/Row rv-stagger"
+   },
+   {
+    "controls": {
+     "projectImage": "var(--variable-IhDBHr31B)",
+     "projectName": "var(--variable-LgWeGE3eL)",
+     "projectYear": "var(--variable-QA7yuUTcp)",
+     "link": "/projects/:slug"
+    },
+    "layer": "",
+    "path": "Row rv-stagger",
+    "component": "Project Card"
+   },
+   {
+    "cmsList": "Projects",
+    "layer": "",
+    "path": "Content/Projects rv-bricks/Row rv-stagger"
+   },
+   {
+    "controls": {
+     "projectImage": "var(--variable-IhDBHr31B)",
+     "projectName": "var(--variable-LgWeGE3eL)",
+     "projectYear": "var(--variable-QA7yuUTcp)",
+     "link": "/projects/:slug"
+    },
+    "layer": "",
+    "path": "Row rv-stagger",
+    "component": "Project Card"
+   },
+   {
+    "controls": {
+     "content": "All projects",
+     "link": "/projects",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Scroller/Selected Projects/Button Container",
+    "component": "Secondary Button"
+   },
+   {
+    "text": "2025",
+    "layer": "Text",
+    "path": "Process rv-stagger/Process Item/Number"
+   },
+   {
+    "text": "AIA College of Fellows, Kathy Velikov",
+    "layer": "Text",
+    "path": "Content/Process rv-stagger/Process Item"
+   },
+   {
+    "text": "2017",
+    "layer": "Text",
+    "path": "Process rv-stagger/Process Item/Number"
+   },
+   {
+    "text": "AZ Award, Social Good, EXTRACTION",
+    "layer": "Text",
+    "path": "Content/Process rv-stagger/Process Item"
+   },
+   {
+    "text": "2011",
+    "layer": "Text",
+    "path": "Process rv-stagger/Process Item/Number"
+   },
+   {
+    "text": "RAIC Award of Excellence for Innovation, North House",
+    "layer": "Text",
+    "path": "Content/Process rv-stagger/Process Item"
+   },
+   {
+    "text": "2010",
+    "layer": "Text",
+    "path": "Process rv-stagger/Process Item/Number"
+   },
+   {
+    "text": "Architect R+D Award of Excellence, North House",
+    "layer": "Text",
+    "path": "Content/Process rv-stagger/Process Item"
+   },
+   {
+    "text": "2009",
+    "layer": "Text",
+    "path": "Process rv-stagger/Process Item/Number"
+   },
+   {
+    "text": "Professional Prix de Rome in Architecture, Canada Council for the Arts",
+    "layer": "Text",
+    "path": "Content/Process rv-stagger/Process Item"
+   },
+   {
+    "text": "Recognition",
+    "layer": "Text",
+    "path": "Title Container/Content/Label"
+   },
+   {
+    "text": "Awards, prizes, fellowships and funded research.",
+    "layer": "Text",
+    "path": "Title Container/Content/Text Wrapper"
+   },
+   {
+    "controls": {
+     "content": "All recognition",
+     "link": "/recognition",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Our Process/Content/Title Container",
+    "component": "Secondary Button"
+   },
+   {
+    "alt": "Resonant Chamber",
+    "image": "https://framerusercontent.com/images/bsyoNvsH4GZTzdspfDHlmFScvA.jpg",
+    "layer": "Image",
+    "path": "Scroller/Our Process/Image"
+   },
+   {
+    "alt": "North House, 2009 Solar Decathlon, Washington DC",
+    "image": "https://framerusercontent.com/images/EqZ0gF3OWgiI5tFUUcbFIjLroU.jpg",
+    "layer": "Image",
+    "path": "Scroller/Our Process/Image"
+   },
+   {
+    "text": "Publications",
+    "layer": "Text",
+    "path": "Our Insights/Title/Label"
+   },
+   {
+    "text": "Books, journal articles, catalogs and proceedings in which RVTR’s work appears.",
+    "layer": "Text",
+    "path": "Scroller/Our Insights/Title"
+   },
+   {
+    "cmsList": "Publications",
+    "layer": "Publications shelf rv-covers rv-shelf",
+    "path": "Main/Scroller/Our Insights"
+   },
+   {
+    "link": "var(--variable-VOKvFiteP)",
+    "layer": "Book",
+    "path": "Scroller/Our Insights/Publications shelf rv-covers rv-shelf"
+   },
+   {
+    "text": "var(--variable-qqdeFARFW)",
+    "layer": "Title rv-shelf-title",
+    "path": "Our Insights/Publications shelf rv-covers rv-shelf/Book"
+   },
+   {
+    "text": "var(--variable-aviJODuVX)",
+    "layer": "Type",
+    "path": "Publications shelf rv-covers rv-shelf/Book/Meta"
+   },
+   {
+    "text": "var(--variable-tEgPx4JYV)",
+    "layer": "Year",
+    "path": "Publications shelf rv-covers rv-shelf/Book/Meta"
+   },
+   {
+    "controls": {
+     "content": "All publications",
+     "link": "/publications",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Our Insights/Shelf footer/Button Container",
+    "component": "Secondary Button"
+   },
+   {
+    "text": "News",
+    "layer": "Text",
+    "path": "Our Insights/Title/Label"
+   },
+   {
+    "text": "Lectures, exhibitions, appointments and press.",
+    "layer": "Text",
+    "path": "Scroller/Our Insights/Title"
+   },
+   {
+    "cmsList": "News",
+    "layer": "Article",
+    "path": "Scroller/Our Insights/Content rv-stagger"
+   },
+   {
+    "controls": {
+     "imageCover": "var(--variable-g3fI8yjzl)",
+     "articleTitle": "var(--variable-hSrpXsuOF)",
+     "readingTime": "var(--variable-DL1pPqNCN)",
+     "releaseDate": "var(--variable-PYo6Fadnx)",
+     "link": "/news/:slug"
+    },
+    "layer": "",
+    "path": "Content rv-stagger/Article/Article",
+    "component": "Article Card"
+   },
+   {
+    "cmsList": "News",
+    "layer": "Article",
+    "path": "Content rv-stagger/Container/Row"
+   },
+   {
+    "controls": {
+     "imageCover": "var(--variable-g3fI8yjzl)",
+     "articleTitle": "var(--variable-hSrpXsuOF)",
+     "readingTime": "var(--variable-DL1pPqNCN)",
+     "releaseDate": "var(--variable-PYo6Fadnx)",
+     "link": "/news/:slug"
+    },
+    "layer": "",
+    "path": "Row/Article/Article",
+    "component": "Article Card"
+   },
+   {
+    "cmsList": "News",
+    "layer": "Article",
+    "path": "Content rv-stagger/Container/Row"
+   },
+   {
+    "controls": {
+     "imageCover": "var(--variable-g3fI8yjzl)",
+     "articleTitle": "var(--variable-hSrpXsuOF)",
+     "readingTime": "var(--variable-DL1pPqNCN)",
+     "releaseDate": "var(--variable-PYo6Fadnx)",
+     "link": "/news/:slug"
+    },
+    "layer": "",
+    "path": "Row/Article/Article",
+    "component": "Article Card"
+   },
+   {
+    "controls": {
+     "content": "All news",
+     "link": "/news",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Content rv-stagger/Container/Button Container",
+    "component": "Secondary Button"
+   }
+  ],
+  "tablet_only_differences": [],
+  "phone_only_differences": [
+   {
+    "controls": {
+     "content": "See all",
+     "link": "/news",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Scroller/Our Insights/Button Container",
+    "component": "Secondary Button"
+   }
+  ]
+ },
+ "/projects": {
+  "seo": {
+   "title": "Projects | RVTR",
+   "description": "Prototypes, territories, buildings and exhibitions by RVTR, the research lab of Kathy Velikov and Geoffrey Thün at the University of Michigan."
+  },
+  "desktop": [
+   {
+    "text": "Projects",
+    "layer": "Title rv-intro",
+    "path": "Main/Top Section/Title Container"
+   },
+   {
+    "text": "Prototypes, territories, buildings and exhibitions, 2007 to today.",
+    "layer": "Description rv-intro rv-d1",
+    "path": "Main/Top Section/Title Container"
+   },
+   {
+    "text": "Archive",
+    "link": "/projects#archive",
+    "layer": "Archive rv-link rv-intro rv-d2",
+    "path": "Main/Top Section/Title Container"
+   },
+   {
+    "cmsList": "Projects",
+    "layer": "Projects grid rv-stagger",
+    "path": "Desktop/Main"
+   },
+   {
+    "controls": {
+     "projectImage": "var(--variable-IhDBHr31B)",
+     "projectName": "var(--variable-LgWeGE3eL)",
+     "projectYear": "var(--variable-QA7yuUTcp)",
+     "link": "/projects/:slug"
+    },
+    "layer": "",
+    "path": "Main/Projects grid rv-stagger",
+    "component": "Project Card"
+   },
+   {
+    "text": "Archive",
+    "layer": "",
+    "path": "Main/Archive/Label"
+   },
+   {
+    "text": "Earlier work, including houses, competitions and projects by the directors before RVTR, 1995–2015. Kept as a record of the lab’s history.",
+    "layer": "",
+    "path": "Desktop/Main/Archive"
+   },
+   {
+    "cmsList": "Projects",
+    "layer": "Archive list rv-rows rv-under",
+    "path": "Desktop/Main/Archive"
+   },
+   {
+    "controls": {
+     "awardName": "var(--variable-LgWeGE3eL)",
+     "competitionName": "var(--variable-Sc7IHVJJu)",
+     "awardYear": "var(--variable-QA7yuUTcp)",
+     "link": "/projects/:slug"
+    },
+    "layer": "",
+    "path": "Main/Archive/Archive list rv-rows rv-under",
+    "component": "Award Item"
+   }
+  ],
+  "tablet_only_differences": [],
+  "phone_only_differences": []
+ },
+ "/news": {
+  "seo": {
+   "title": "News | RVTR",
+   "description": "Lectures, exhibitions, appointments and press from RVTR, the research lab at Taubman College, University of Michigan."
+  },
+  "desktop": [
+   {
+    "text": "News",
+    "layer": "Title rv-intro",
+    "path": "Main/Top Section/Title Container"
+   },
+   {
+    "text": "Lectures, exhibitions, appointments and press.",
+    "layer": "Description rv-intro rv-d1",
+    "path": "Main/Top Section/Title Container"
+   },
+   {
+    "cmsList": "News",
+    "layer": "News list rv-covers rv-news",
+    "path": "Desktop/Main"
+   },
+   {
+    "link": "/news/:slug",
+    "layer": "News card rv-ncard",
+    "path": "Main/News list rv-covers rv-news"
+   },
+   {
+    "text": "var(--variable-DL1pPqNCN)",
+    "layer": "Category",
+    "path": "News card rv-ncard/Meta"
+   },
+   {
+    "text": "·",
+    "layer": "Dot",
+    "path": "News card rv-ncard/Meta"
+   },
+   {
+    "text": "var(--variable-PYo6Fadnx)",
+    "layer": "Date",
+    "path": "News card rv-ncard/Meta"
+   },
+   {
+    "text": "→",
+    "layer": "Arrow rv-narrow",
+    "path": "News card rv-ncard/Meta"
+   },
+   {
+    "text": "var(--variable-hSrpXsuOF)",
+    "layer": "Title rv-ntitle",
+    "path": "News list rv-covers rv-news/News card rv-ncard"
+   },
+   {
+    "text": "var(--variable-r8WLZrnfk)",
+    "layer": "Teaser rv-nteaser",
+    "path": "News list rv-covers rv-news/News card rv-ncard"
+   }
+  ],
+  "tablet_only_differences": [],
+  "phone_only_differences": []
+ },
+ "/recognition": {
+  "seo": {
+   "title": "Recognition | RVTR",
+   "description": "Awards, prizes, fellowships and funded research received by RVTR, Kathy Velikov and Geoffrey Thün since 2007."
+  },
+  "desktop": [
+   {
+    "text": "Recognition",
+    "layer": "Title rv-intro",
+    "path": "Main/Top Section/Title Container"
+   },
+   {
+    "text": "Awards, prizes, fellowships and funded research, by year.",
+    "layer": "Description rv-intro rv-d1",
+    "path": "Main/Top Section/Title Container"
+   },
+   {
+    "cmsList": "Recognition",
+    "layer": "Recognition rv-rows rv-under",
+    "path": "Desktop/Main"
+   },
+   {
+    "controls": {
+     "awardName": "var(--variable-K93OAU6Tc)",
+     "competitionName": "var(--variable-K5A3Q9bo5)",
+     "awardYear": "var(--variable-qliWZY2gm)",
+     "link": "var(--variable-YPoiAcWDC)"
+    },
+    "layer": "",
+    "path": "Main/Recognition rv-rows rv-under",
+    "component": "Award Item"
+   }
+  ],
+  "tablet_only_differences": [],
+  "phone_only_differences": []
+ },
+ "/publications": {
+  "seo": {
+   "title": "Publications | RVTR",
+   "description": "Books, journal articles, catalogs and proceedings in which the work of RVTR, Kathy Velikov and Geoffrey Thün appears."
+  },
+  "desktop": [
+   {
+    "text": "Publications",
+    "layer": "Title rv-intro",
+    "path": "Main/Top Section/Title Container"
+   },
+   {
+    "text": "Books, journal articles, catalogs and proceedings in which RVTR’s work appears.",
+    "layer": "Description rv-intro rv-d1",
+    "path": "Main/Top Section/Title Container"
+   },
+   {
+    "cmsList": "Publications",
+    "layer": "Publications rv-covers",
+    "path": "Desktop/Main"
+   },
+   {
+    "link": "var(--variable-VOKvFiteP)",
+    "layer": "Publication card",
+    "path": "Main/Publications rv-covers"
+   },
+   {
+    "text": "var(--variable-aviJODuVX)",
+    "layer": "Type",
+    "path": "Publications rv-covers/Publication card"
+   },
+   {
+    "text": "var(--variable-qqdeFARFW)",
+    "layer": "Title",
+    "path": "Publications rv-covers/Publication card"
+   },
+   {
+    "text": "var(--variable-PcgWIn2VE)",
+    "layer": "Venue",
+    "path": "Publications rv-covers/Publication card"
+   },
+   {
+    "text": "var(--variable-tEgPx4JYV)",
+    "layer": "Year",
+    "path": "Publications rv-covers/Publication card"
+   }
+  ],
+  "tablet_only_differences": [],
+  "phone_only_differences": []
+ },
+ "/404": {
+  "seo": {
+   "title": "Page not found | RVTR",
+   "description": "RVTR is a research-based architecture lab at Taubman College, University of Michigan, directed by Kathy Velikov and Geoffrey Thün since 2007."
+  },
+  "desktop": [
+   {
+    "text": "This address is not on the RVTR site. The page may have moved when the site was rebuilt in 2026.",
+    "layer": "Text",
+    "path": "Main/Content/Message rv-intro rv-d1"
+   },
+   {
+    "controls": {
+     "content": "Home",
+     "link": "/",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Main/Content/Message rv-intro rv-d1",
+    "component": "Primary Button"
+   },
+   {
+    "text": "Page not found",
+    "layer": "Title rv-intro",
+    "path": "Desktop/Main/Content"
+   }
+  ],
+  "tablet_only_differences": [],
+  "phone_only_differences": []
+ },
+ "/team": {
+  "seo": {
+   "title": "Team | RVTR",
+   "description": "Kathy Velikov, FAIA, and Geoffrey Thün direct RVTR at Taubman College, University of Michigan, with research associates and alumni."
+  },
+  "desktop": [
+   {
+    "text": "Team",
+    "layer": "Kicker rv-intro",
+    "path": "Top Section/Content/Title Container"
+   },
+   {
+    "text": "An experimental platform for architecture and urban design research.",
+    "layer": "Title rv-intro rv-d1",
+    "path": "Top Section/Content/Title Container"
+   },
+   {
+    "text": "RVTR’s work operates across scales to position design as an active agent in continually evolving ecologies: biotic, social, environmental, technological and cultural. Projects range from the urban futures of regional territories, to high-performance building design, to prototype-based research in responsive envelope systems and digitally crafted objects. A complex systems approach ties these scales together, along with a belief in the power of design to change the world for the better.",
+    "layer": "Content",
+    "path": "Desktop/Main/Introducing"
+   },
+   {
+    "alt": "Kathy Velikov and Geoffrey Thün in the Stubai Alps",
+    "image": "https://framerusercontent.com/images/YOY8hUC04XjNbuQFtFmmN42pQ0Y.jpg",
+    "layer": "",
+    "path": "Desktop/Main/Directors photo"
+   },
+   {
+    "text": "About",
+    "layer": "Text",
+    "path": "Our History/Title Container/Label"
+   },
+   {
+    "text": "Since 2007 the directors have brought design research into practice, to advance both professional and disciplinary discourse and the depth of thinking in the work. The lab operates as an experimental think tank with national funding agencies, philanthropic foundations and industry partners, and works with multidisciplinary teams of academic, scientific and industry partners and professional consultants.",
+    "layer": "Title",
+    "path": "Main/Our History/Title Container"
+   },
+   {
+    "alt": "Resonant Chamber, RVTR",
+    "image": "https://framerusercontent.com/images/bsyoNvsH4GZTzdspfDHlmFScvA.jpg",
+    "layer": "Image",
+    "path": "Our History/Description/Image"
+   },
+   {
+    "alt": "North House, RVTR",
+    "image": "https://framerusercontent.com/images/EqZ0gF3OWgiI5tFUUcbFIjLroU.jpg",
+    "layer": "Image",
+    "path": "Description/Container/Image"
+   },
+   {
+    "text": "The lab’s work has received the Architectural League Prize for Young Architects + Designers (2008) and Architect magazine R+D Awards in 2010 and 2016. In 2016 RVTR represented Canada at the Venice Architecture Biennale as part of EXTRACTION, led by curator Pierre Bélanger.",
+    "layer": "Description",
+    "path": "Description/Container/Content"
+   },
+   {
+    "text": "RVTR",
+    "layer": "Founder Name",
+    "path": "Container/Content/Founder Infomation"
+   },
+   {
+    "text": "Taubman College of Architecture and Urban Planning, University of Michigan",
+    "layer": "Founder Role",
+    "path": "Container/Content/Founder Infomation"
+   },
+   {
+    "text": "Directors",
+    "layer": "Text",
+    "path": "Title Container/Title Wrapper/Label"
+   },
+   {
+    "alt": "Geoffrey Thün",
+    "image": "https://framerusercontent.com/images/Auevx9vaTUNIFgEkoLm9QkN135c.jpg",
+    "layer": "Portrait rv-portrait",
+    "path": "Directors spreads/Spread rv-spread/Portrait column rv-sticky rv-no-reveal"
+   },
+   {
+    "text": "Co-founder of RVTR, Toronto, 2007",
+    "layer": "Fact",
+    "path": "Spread rv-spread/Portrait column rv-sticky rv-no-reveal/Key facts rv-facts"
+   },
+   {
+    "text": "Professor of Architecture, Taubman College",
+    "layer": "Fact",
+    "path": "Spread rv-spread/Portrait column rv-sticky rv-no-reveal/Key facts rv-facts"
+   },
+   {
+    "text": "Associate Vice President for Research, University of Michigan",
+    "layer": "Fact",
+    "path": "Spread rv-spread/Portrait column rv-sticky rv-no-reveal/Key facts rv-facts"
+   },
+   {
+    "text": "Geoffrey Thün",
+    "layer": "Name",
+    "path": "Directors spreads/Spread rv-spread/Text column"
+   },
+   {
+    "text": "Director of Design Research, RVTR. Professor of Architecture, Taubman College; Associate Vice President for Research, University of Michigan",
+    "layer": "Role",
+    "path": "Directors spreads/Spread rv-spread/Text column"
+   },
+   {
+    "text": "Geoffrey Thün is a designer, researcher and educator, and a director of RVTR, which he co-founded in Toronto in 2007 with Kathy Velikov, Colin Ripley and Paul Raff; he leads the lab’s design research. He is Professor of Architecture at Taubman College of Architecture and Urban Planning and Associate Vice President for Research: Social Sciences, Humanities, and the Arts at the University of Michigan, where he is the research office’s liaison to those units. He is also co-director of the university’s Urban Collaboratory.",
+    "layer": "",
+    "path": "Directors spreads/Spread rv-spread/Text column"
+   },
+   {
+    "text": "Taubman College profile",
+    "link": "https://taubmancollege.umich.edu/faculty/directory/geoffrey-thun/",
+    "layer": "Profile rv-link",
+    "path": "Directors spreads/Spread rv-spread/Text column"
+   },
+   {
+    "alt": "Kathy Velikov",
+    "image": "https://framerusercontent.com/images/LvW5dCuxP2UtK1hg1qeCjmpE1hM.jpg",
+    "layer": "Portrait rv-portrait",
+    "path": "Directors spreads/Spread rv-spread/Portrait column rv-sticky rv-no-reveal"
+   },
+   {
+    "text": "AIA College of Fellows, 2025",
+    "layer": "Fact",
+    "path": "Spread rv-spread/Portrait column rv-sticky rv-no-reveal/Key facts rv-facts"
+   },
+   {
+    "text": "President of ACADIA, 2018–2020",
+    "layer": "Fact",
+    "path": "Spread rv-spread/Portrait column rv-sticky rv-no-reveal/Key facts rv-facts"
+   },
+   {
+    "text": "Associate Dean for Research and Creative Practice, Taubman College",
+    "layer": "Fact",
+    "path": "Spread rv-spread/Portrait column rv-sticky rv-no-reveal/Key facts rv-facts"
+   },
+   {
+    "text": "Kathy Velikov, FAIA",
+    "layer": "Name",
+    "path": "Directors spreads/Spread rv-spread/Text column"
+   },
+   {
+    "text": "Director, RVTR. Professor of Architecture and Associate Dean for Research and Creative Practice, Taubman College",
+    "layer": "Role",
+    "path": "Directors spreads/Spread rv-spread/Text column"
+   },
+   {
+    "text": "Kathy Velikov is an architect, researcher and educator, and a director of RVTR, the research lab she co-founded in Toronto in 2007 with Geoffrey Thün, Colin Ripley and Paul Raff. She is Professor of Architecture and Associate Dean for Research and Creative Practice at Taubman College of Architecture and Urban Planning, University of Michigan, and directs the Institute for Advanced Construction Futures, a University of Michigan Impact Institute funded in January 2026 to advance low-carbon construction. She is licensed in Michigan and Ontario. In 2025 she was elevated to the College of Fellows of the American Institute of Architects.",
+    "layer": "",
+    "path": "Directors spreads/Spread rv-spread/Text column"
+   },
+   {
+    "text": "Taubman College profile",
+    "link": "https://taubmancollege.umich.edu/faculty/directory/kathy-velikov/",
+    "layer": "Profile rv-link",
+    "path": "Directors spreads/Spread rv-spread/Text column"
+   },
+   {
+    "text": "Support",
+    "layer": "Text",
+    "path": "Container/Title Container/Label"
+   },
+   {
+    "text": "Funding and collaboration",
+    "layer": "Title",
+    "path": "Awards/Container/Title Container"
+   },
+   {
+    "text": "RVTR is funded by the University of Michigan and by external grants and sponsored research. Funders have included the National Science Foundation, the National Fish and Wildlife Foundation, the U.S. Department of Energy through the National Renewable Energy Laboratory, the U.S. Department of Transportation, the U.S. Environmental Protection Agency, the AIA Upjohn Research Initiative, Bloomberg Philanthropies, the Mellon Foundation through the Michigan-Mellon project, the Belmont Forum’s SUGI Food-Water-Energy Nexus program, the Urban Studies Foundation, Ford Motor Company, Guardian Industries, Wanxiang Group, the Social Sciences and Humanities Research Council of Canada, the Canada Council for the Arts, the National Research Council of Canada and the Ontario Power Authority. The lab’s collaborators include engineers, scientists, archaeologists, landscape architects, fabricators and other research groups, among them the Kelsey Museum of Archaeology, Arup, OPSYS, POST, TU Delft, Purdue University, Michigan State University and Wayne State University.",
+    "layer": "Funding",
+    "path": "Desktop/Main/Awards"
+   },
+   {
+    "text": "People",
+    "layer": "Text",
+    "path": "Container/Title Container/Label"
+   },
+   {
+    "text": "Alumni",
+    "layer": "Title",
+    "path": "Awards/Container/Title Container"
+   },
+   {
+    "text": "Everyone who has worked in RVTR since 2007, with their years in the lab. Links lead to their current work.",
+    "layer": "Description",
+    "path": "Main/Awards/Container"
+   },
+   {
+    "cmsList": "Team",
+    "layer": "Alumni names rv-inline",
+    "path": "Desktop/Main/Awards"
+   },
+   {
+    "text": "var(--variable-X6baokzGP)",
+    "link": "var(--variable-W9IAyBfzA)",
+    "layer": "Name",
+    "path": "Awards/Alumni names rv-inline/Person"
+   },
+   {
+    "text": "var(--variable-UcEEdYkun)",
+    "layer": "Years",
+    "path": "Awards/Alumni names rv-inline/Person"
+   }
+  ],
+  "tablet_only_differences": [],
+  "phone_only_differences": []
+ },
+ "/news/:slug": {
+  "seo": {
+   "title": "{{Title}} | RVTR",
+   "description": "{{Teaser}}"
+  },
+  "desktop": [
+   {
+    "controls": {
+     "content": "All news",
+     "link": "/news"
+    },
+    "layer": "",
+    "path": "Article Infomation/Title Container/Title Wrapper rv-intro",
+    "component": "Back Button"
+   },
+   {
+    "text": "var(--variable-hSrpXsuOF)",
+    "layer": "Article Title",
+    "path": "Article Infomation/Title Container/Title Wrapper rv-intro"
+   },
+   {
+    "text": "Date",
+    "layer": "Label",
+    "path": "Article Infomation/Title Container/Release Date rv-intro rv-d1"
+   },
+   {
+    "text": "var(--variable-PYo6Fadnx)",
+    "layer": "Release Date",
+    "path": "Article Infomation/Title Container/Release Date rv-intro rv-d1"
+   },
+   {
+    "alt": "Cover Image",
+    "layer": "Image",
+    "path": "Top Section/Article Infomation/Article Cover rv-intro rv-d2"
+   },
+   {
+    "text": "Summary",
+    "layer": "Label",
+    "path": "Content/Description Container/Article Overview"
+   },
+   {
+    "text": "var(--variable-r8WLZrnfk)",
+    "layer": "Overview",
+    "path": "Content/Description Container/Article Overview"
+   },
+   {
+    "text": "Category",
+    "layer": "Label",
+    "path": "Description Container/Infomation Container/Reading Time"
+   },
+   {
+    "text": "var(--variable-DL1pPqNCN)",
+    "layer": "Reading Time",
+    "path": "Description Container/Infomation Container/Reading Time"
+   },
+   {
+    "text": "var(--variable-SSsTODI7g)",
+    "layer": "Main Content",
+    "path": "Main/Content/Scroller"
+   },
+   {
+    "text": "var(--variable-qbkvN21Ri)",
+    "link": "var(--variable-EvkEGYnkl)",
+    "layer": "Outbound rv-link",
+    "path": "Main/Content/Scroller"
+   },
+   {
+    "text": "More news",
+    "layer": "Title",
+    "path": "Main/Related Articles/Title Container"
+   },
+   {
+    "controls": {
+     "content": "All news",
+     "link": "/news",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Main/Related Articles/Title Container",
+    "component": "Secondary Button"
+   },
+   {
+    "cmsList": "News",
+    "layer": "More news rv-stagger",
+    "path": "Desktop/Main/Related Articles"
+   },
+   {
+    "controls": {
+     "imageCover": "var(--variable-g3fI8yjzl)",
+     "articleTitle": "var(--variable-hSrpXsuOF)",
+     "readingTime": "var(--variable-DL1pPqNCN)",
+     "releaseDate": "var(--variable-PYo6Fadnx)",
+     "link": "/news/:slug"
+    },
+    "layer": "",
+    "path": "Related Articles/More news rv-stagger",
+    "component": "Article Card"
+   }
+  ],
+  "tablet_only_differences": [],
+  "phone_only_differences": [
+   {
+    "controls": {
+     "content": "See more",
+     "link": "/news",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Main/Related Articles/Button Container",
+    "component": "Secondary Button"
+   }
+  ]
+ },
+ "/projects/:slug": {
+  "seo": {
+   "title": "{{Title}} | RVTR",
+   "description": "{{Meta Description}}"
+  },
+  "desktop": [
+   {
+    "controls": {
+     "content": "All projects",
+     "link": "/projects"
+    },
+    "layer": "",
+    "path": "Project Infomation/Title Container/Title Wrapper rv-intro",
+    "component": "Back Button"
+   },
+   {
+    "text": "var(--variable-LgWeGE3eL)",
+    "layer": "Project Name",
+    "path": "Project Infomation/Title Container/Title Wrapper rv-intro"
+   },
+   {
+    "text": "Typology",
+    "layer": "Label",
+    "path": "Title Container/Client & Location rv-intro rv-d1/Client"
+   },
+   {
+    "text": "var(--variable-NhbCmU7S2)",
+    "layer": "Client",
+    "path": "Title Container/Client & Location rv-intro rv-d1/Client"
+   },
+   {
+    "text": "Location",
+    "layer": "Label",
+    "path": "Title Container/Client & Location rv-intro rv-d1/Location"
+   },
+   {
+    "text": "var(--variable-Sc7IHVJJu)",
+    "layer": "Location",
+    "path": "Title Container/Client & Location rv-intro rv-d1/Location"
+   },
+   {
+    "alt": "Cover Image",
+    "layer": "Image",
+    "path": "Top Section/Project Infomation/Project Cover rv-gallery rv-intro rv-d2"
+   },
+   {
+    "text": "var(--variable-oPG254WxF)",
+    "layer": "Text",
+    "path": "Content/Description Container/Project Description"
+   },
+   {
+    "text": "Status",
+    "layer": "Label",
+    "path": "Description Container/Infomation Container/Status"
+   },
+   {
+    "text": "var(--variable-rHIyxgKBz)",
+    "layer": "Status",
+    "path": "Description Container/Infomation Container/Status"
+   },
+   {
+    "text": "Date",
+    "layer": "Label",
+    "path": "Description Container/Infomation Container/Year"
+   },
+   {
+    "text": "var(--variable-QA7yuUTcp)",
+    "layer": "Year",
+    "path": "Description Container/Infomation Container/Year"
+   },
+   {
+    "text": "Research thread",
+    "layer": "Label",
+    "path": "Description Container/Infomation Container/Type"
+   },
+   {
+    "cmsList": "Research Threads",
+    "layer": "",
+    "path": "Description Container/Infomation Container/Type"
+   },
+   {
+    "text": "var(--variable-SGcS1M0Nv)",
+    "layer": "Expertise Name",
+    "path": "Type"
+   },
+   {
+    "text": "Scale",
+    "layer": "Label",
+    "path": "Description Container/Infomation Container/Size"
+   },
+   {
+    "text": "var(--variable-xNBQjZPr7)",
+    "layer": "Size",
+    "path": "Description Container/Infomation Container/Size"
+   },
+   {
+    "text": "Photography",
+    "layer": "Label",
+    "path": "Description Container/Infomation Container/Size"
+   },
+   {
+    "text": "var(--variable-FTXsGg5rG)",
+    "layer": "Size",
+    "path": "Description Container/Infomation Container/Size"
+   },
+   {
+    "text": "Overview",
+    "layer": "Text",
+    "path": "Scroller/Project Overview/Sub-title"
+   },
+   {
+    "text": "var(--variable-UoiuMIsWA)",
+    "layer": "Content",
+    "path": "Scroller/Project Overview/Content"
+   },
+   {
+    "text": "Credits",
+    "layer": "Text",
+    "path": "Scroller/Design Approach/Sub-title"
+   },
+   {
+    "text": "var(--variable-fmiffToLh)",
+    "layer": "Content",
+    "path": "Scroller/Design Approach/Content"
+   },
+   {
+    "text": "Scope and support",
+    "layer": "Text",
+    "path": "Scroller/Details/Sub-title"
+   },
+   {
+    "text": "var(--variable-VyvTxqKrP)",
+    "layer": "Content",
+    "path": "Scroller/Details/Content"
+   },
+   {
+    "text": "var(--variable-DbRgjFDUr)",
+    "layer": "Content",
+    "path": "Scroller/Lists/Content"
+   },
+   {
+    "text": "Film",
+    "layer": "Text",
+    "path": "Content/Scroller/Sub-title"
+   },
+   {
+    "controls": {
+     "uRL": "var(--variable-JXotoSb_n)",
+     "radius": "0px",
+     "controls": "true",
+     "autoplay": "false",
+     "loop": "false",
+     "mute": "false",
+     "background": "rgba(0, 0, 0, 0)"
+    },
+    "layer": "Vimeo",
+    "path": "Content/Scroller/Film",
+    "component": "Vimeo"
+   },
+   {
+    "controls": {
+     "uRL": "var(--variable-histWWNH0)",
+     "radius": "0px",
+     "controls": "true",
+     "autoplay": "false",
+     "loop": "false",
+     "mute": "false",
+     "background": "rgba(0, 0, 0, 0)"
+    },
+    "layer": "",
+    "path": "Content/Scroller/Film",
+    "component": "Vimeo"
+   },
+   {
+    "text": "Gallery",
+    "layer": "Text",
+    "path": "Scroller/Project Gallery rv-gallery/Sub-title"
+   },
+   {
+    "text": "More projects",
+    "layer": "Title",
+    "path": "Main/Related Works/Title Container"
+   },
+   {
+    "controls": {
+     "content": "All projects",
+     "link": "/projects",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Main/Related Works/Title Container",
+    "component": "Secondary Button"
+   },
+   {
+    "cmsList": "Projects",
+    "layer": "",
+    "path": "Desktop/Main/Related Works"
+   },
+   {
+    "controls": {
+     "projectImage": "var(--variable-IhDBHr31B)",
+     "projectName": "var(--variable-LgWeGE3eL)",
+     "projectYear": "var(--variable-QA7yuUTcp)",
+     "link": "/projects/:slug"
+    },
+    "layer": "",
+    "path": "Related Works",
+    "component": "Project Card"
+   }
+  ],
+  "tablet_only_differences": [],
+  "phone_only_differences": [
+   {
+    "controls": {
+     "content": "See All Projects",
+     "link": "/projects",
+     "newTab": "false"
+    },
+    "layer": "",
+    "path": "Main/Related Works/Button Container",
+    "component": "Secondary Button"
+   }
+  ]
+ }
+}

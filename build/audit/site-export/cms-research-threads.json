@@ -1,0 +1,71 @@
+{
+ "collection": "Research Threads",
+ "items": [
+  {
+   "slug": "territories-and-urban-systems",
+   "Order": 1,
+   "Ordinal Number": "01",
+   "Name": "Territories and Urban Systems",
+   "Image": {
+    "url": "https://framerusercontent.com/images/cJX0McYVTL4UUZounCPqVT1Zyw.jpg",
+    "alt": "Territories and Urban Systems"
+   },
+   "Description": "Design research at the scale of the region: mapping, scenarios and infrastructures for decarbonized and climate-adaptive futures, from the Great Lakes Megaregion to the Tennessee Valley."
+  },
+  {
+   "slug": "responsive-envelopes",
+   "Order": 2,
+   "Ordinal Number": "02",
+   "Name": "Responsive Envelopes and Material Systems",
+   "Image": {
+    "url": "https://framerusercontent.com/images/0eOgB3gj907bjv5LbCDDbq38YM.jpg",
+    "alt": "Responsive Envelopes and Material Systems"
+   },
+   "Description": "Full-scale prototypes of building skins that sense, move and respond to air, light, heat and sound, including Stratus, Resonant Chamber, PneuSystems and Infundibuliforms."
+  },
+  {
+   "slug": "buildings-and-prototypes",
+   "Order": 3,
+   "Ordinal Number": "03",
+   "Name": "Buildings and Prototypes",
+   "Image": {
+    "url": "https://framerusercontent.com/images/EqZ0gF3OWgiI5tFUUcbFIjLroU.jpg",
+    "alt": "Buildings and Prototypes"
+   },
+   "Description": "Building designs, competitions and full-scale building prototypes, from North House at the 2009 Solar Decathlon to visitor facilities at Notion, Turkey."
+  },
+  {
+   "slug": "exhibitions-and-installations",
+   "Order": 4,
+   "Ordinal Number": "04",
+   "Name": "Exhibitions and Installations",
+   "Image": {
+    "url": "https://framerusercontent.com/images/BjGqMBPIvfw3kuITBfFVULBiCQ.jpg",
+    "alt": "Exhibitions and Installations"
+   },
+   "Description": "Exhibition design, installations and touring shows, including EXTRACTION in the Canadian Pavilion at the 2016 Venice Architecture Biennale and New Brutalist Image at Tate Britain."
+  },
+  {
+   "slug": "field-research",
+   "Order": 5,
+   "Ordinal Number": "05",
+   "Name": "Field Research",
+   "Image": {
+    "url": "https://framerusercontent.com/images/VwqNp4I1Z9OKqVTxulXm7MCxw8.jpg",
+    "alt": "Field Research"
+   },
+   "Description": "Fieldwork-based survey, site analysis and planning, led since 2014 at the ancient Ionian city of Notion with archaeologists from the University of Michigan’s Kelsey Museum."
+  },
+  {
+   "slug": "archive",
+   "Order": 6,
+   "Ordinal Number": "06",
+   "Name": "Archive",
+   "Image": {
+    "url": "https://framerusercontent.com/images/eqdH8zobP2R61H2HJKztZsZ4ZI.jpg",
+    "alt": "Archive"
+   },
+   "Description": "Earlier work, including houses, competitions and projects by the directors before RVTR, kept as a record of the lab’s history."
+  }
+ ]
+}

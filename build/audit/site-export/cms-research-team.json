@@ -1,0 +1,50 @@
+{
+ "collection": "Research Team",
+ "items": [
+  {
+   "slug": "research-assistant-1",
+   "Name": "Research Assistant Name",
+   "Role": "Research Assistant",
+   "Program": "M.Arch / M.S. Program, Taubman College",
+   "Years": "2025–",
+   "Photo": {
+    "url": null,
+    "alt": null
+   },
+   "Link": null,
+   "Link Label": "",
+   "Order": 1,
+   "Current": true
+  },
+  {
+   "slug": "research-assistant-2",
+   "Name": "Research Assistant Name",
+   "Role": "Research Assistant",
+   "Program": "M.Arch / M.S. Program, Taubman College",
+   "Years": "2025–",
+   "Photo": {
+    "url": null,
+    "alt": null
+   },
+   "Link": null,
+   "Link Label": "",
+   "Order": 2,
+   "Current": true
+  },
+  {
+   "slug": "research-assistant-3",
+   "Name": "Research Assistant Name",
+   "Role": "Research Assistant",
+   "Program": "M.Arch / M.S. Program, Taubman College",
+   "Years": "2025–",
+   "Photo": {
+    "url": null,
+    "alt": null
+   },
+   "Link": null,
+   "Link Label": "",
+   "Order": 3,
+   "Current": true
+  }
+ ]
+}

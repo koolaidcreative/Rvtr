@@ -1,0 +1,1462 @@
+{
+ "Client Logo": [
+  {
+   "controls": {
+    "speed": "28",
+    "direction": "Right",
+    "align": "center",
+    "gap": "48",
+    "padding": "0px",
+    "sizing": "{\"widthType\":{\"type\":\"boolean\",\"value\":true},\"heightType\":{\"type\":\"boolean\",\"value\":true}}",
+    "clipping": "{\"fadeContent\":{\"type\":\"boolean\",\"value\":true},\"overflow\":{\"type\":\"boolean\",\"value\":false},\"fadeWidth\":{\"type\":\"number\",\"value\":24},\"fadeInset\":{\"type\":\"number\",\"value\":0},\"fadeAlpha\":{\"type\":\"number\",\"value\":0}}",
+    "hover": "1"
+   },
+   "layer": "Desktop",
+   "path": "Our Clients/Client Logo/Desktop",
+   "component": "Ticker"
+  },
+  {
+   "controls": {
+    "speed": "28",
+    "direction": "Right",
+    "align": "center",
+    "gap": "40",
+    "padding": "0px",
+    "sizing": "{\"widthType\":{\"type\":\"boolean\",\"value\":true},\"heightType\":{\"type\":\"boolean\",\"value\":true}}",
+    "clipping": "{\"fadeContent\":{\"type\":\"boolean\",\"value\":true},\"overflow\":{\"type\":\"boolean\",\"value\":false},\"fadeWidth\":{\"type\":\"number\",\"value\":24},\"fadeInset\":{\"type\":\"number\",\"value\":0},\"fadeAlpha\":{\"type\":\"number\",\"value\":0}}",
+    "hover": "1"
+   },
+   "layer": "Tablet",
+   "path": "Our Clients/Client Logo/Tablet",
+   "component": "Ticker"
+  },
+  {
+   "controls": {
+    "speed": "28",
+    "direction": "Right",
+    "align": "center",
+    "gap": "32",
+    "padding": "0px",
+    "sizing": "{\"widthType\":{\"type\":\"boolean\",\"value\":true},\"heightType\":{\"type\":\"boolean\",\"value\":true}}",
+    "clipping": "{\"fadeContent\":{\"type\":\"boolean\",\"value\":true},\"overflow\":{\"type\":\"boolean\",\"value\":false},\"fadeWidth\":{\"type\":\"number\",\"value\":24},\"fadeInset\":{\"type\":\"number\",\"value\":0},\"fadeAlpha\":{\"type\":\"number\",\"value\":0}}",
+    "hover": "1"
+   },
+   "layer": "Mobile",
+   "path": "Our Clients/Client Logo/Mobile",
+   "component": "Ticker"
+  },
+  {
+   "image": "https://framerusercontent.com/images/FYDGbCqeXEWlpNalM2YbVjbXs.svg",
+   "layer": "01",
+   "path": "Our Clients/Client Logo"
+  }
+ ],
+ "Project Card": [
+  {
+   "link": "var(--variable-s86B_Rsmq)",
+   "layer": "Desktop-Explain",
+   "path": "Selected Projects/Project Card"
+  },
+  {
+   "controls": {
+    "opacity": "0.5"
+   },
+   "layer": "",
+   "path": "Selected Projects/Project Card/Desktop-Explain/Project Image rv-zoom",
+   "component": "Grain"
+  },
+  {
+   "text": "var(--variable-usnFVl50i)",
+   "layer": "Project Name",
+   "path": "Selected Projects/Project Card/Desktop-Explain/Content"
+  },
+  {
+   "text": "var(--variable-AyapV8jZu)",
+   "layer": "Project Year",
+   "path": "Desktop-Explain/Content/Right"
+  },
+  {
+   "text": "View project",
+   "layer": "Button Content rv-link",
+   "path": "Content/Right/Button"
+  },
+  {
+   "controls": {
+    "select": "false",
+    "name": "House",
+    "name1": "arrow-right",
+    "weight": "Bold",
+    "mirrored": "false"
+   },
+   "layer": "",
+   "path": "Content/Right/Button",
+   "component": "Phosphor"
+  }
+ ],
+ "Expertise Card": [
+  {
+   "text": "var(--variable-swKUs3qR2)",
+   "layer": "Text",
+   "path": "Content/Content/Title"
+  },
+  {
+   "text": "var(--variable-UnLc2wkus)",
+   "layer": "Text",
+   "path": "Content/Content/Title"
+  },
+  {
+   "text": "var(--variable-j57pYP2pA)",
+   "layer": "Text",
+   "path": "Our Expertise/Expertise Card/Content/Content"
+  },
+  {
+   "controls": {
+    "content": "View all",
+    "link": "/expertise",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Our Expertise/Expertise Card/Button",
+   "component": "Secondary Button"
+  }
+ ],
+ "Secondary Button": [
+  {
+   "link": "var(--variable-sehePYCKL)",
+   "layer": "L rv-link",
+   "path": "Button/Secondary Button"
+  },
+  {
+   "text": "var(--variable-c8wdr0qal)",
+   "layer": "Text",
+   "path": "L rv-link/Button Content/Content"
+  }
+ ],
+ "Footer": [
+  {
+   "text": "Menu",
+   "layer": "Label",
+   "path": "Content/Navigation Container/Menu"
+  },
+  {
+   "controls": {
+    "content": "Home",
+    "link": "/",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Navigation Container/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Projects",
+    "link": "/projects",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Navigation Container/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Publications",
+    "link": "/publications",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Navigation Container/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Recognition",
+    "link": "/recognition",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Navigation Container/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "News",
+    "link": "/news",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Navigation Container/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Team",
+    "link": "/team",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Navigation Container/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Contact",
+    "link": "/#contact",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Navigation Container/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "text": "Follow",
+   "layer": "Label",
+   "path": "Content/Navigation Container/Social"
+  },
+  {
+   "controls": {
+    "content": "Instagram",
+    "link": "https://www.instagram.com/rvtrarchitecture/",
+    "newTab": "true"
+   },
+   "layer": "",
+   "path": "Navigation Container/Social/Social Link",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Films on Vimeo",
+    "link": "https://vimeo.com/rvtr",
+    "newTab": "true"
+   },
+   "layer": "",
+   "path": "Navigation Container/Social/Social Link",
+   "component": "Navigation Button"
+  },
+  {
+   "text": "Email",
+   "layer": "Label",
+   "path": "Content/Studio Information/E-mail"
+  },
+  {
+   "text": "geoff@rvtr.com",
+   "link": "mailto:geoff@rvtr.com",
+   "layer": "E-mail",
+   "path": "Content/Studio Information/E-mail"
+  },
+  {
+   "text": "Phone Number",
+   "layer": "Label",
+   "path": "Content/Studio Information/Phone Number"
+  },
+  {
+   "text": "+1 (734) 834-9385",
+   "link": "tel:+17348349385",
+   "layer": "Phone Number",
+   "path": "Content/Studio Information/Phone Number"
+  },
+  {
+   "text": "Address",
+   "layer": "Label",
+   "path": "Content/Studio Information/Address"
+  },
+  {
+   "text": "Taubman College of Architecture and Urban Planning, University of Michigan, 305 W Liberty St, Ann Arbor, MI 48103",
+   "layer": "Address",
+   "path": "Content/Studio Information/Address"
+  },
+  {
+   "text": "Instagram",
+   "layer": "",
+   "path": "Instagram/Instagram Header/Left"
+  },
+  {
+   "text": "@rvtrarchitecture",
+   "link": "https://www.instagram.com/rvtrarchitecture/",
+   "layer": "Handle rv-link",
+   "path": "Instagram/Instagram Header/Left"
+  },
+  {
+   "link": "https://www.instagram.com/rvtrarchitecture/",
+   "layer": "Instagram icon",
+   "path": "Instagram/Instagram Header/Icons"
+  },
+  {
+   "controls": {
+    "select": "true",
+    "name": "InstagramLogo",
+    "name1": "House",
+    "weight": "Light",
+    "mirrored": "false"
+   },
+   "layer": "",
+   "path": "Instagram Header/Icons/Instagram icon",
+   "component": "Phosphor"
+  },
+  {
+   "link": "https://vimeo.com/rvtr",
+   "layer": "Vimeo icon",
+   "path": "Instagram/Instagram Header/Icons"
+  },
+  {
+   "controls": {
+    "select": "true",
+    "name": "House",
+    "name1": "House",
+    "weight": "Light",
+    "mirrored": "false"
+   },
+   "layer": "",
+   "path": "Instagram Header/Icons/Vimeo icon",
+   "component": "Phosphor"
+  },
+  {
+   "alt": "Vimeo",
+   "image": "https://framerusercontent.com/images/oI5HZfxq8HM5HwbYpkv1i9E8Fw.svg",
+   "layer": "Vimeo logo",
+   "path": "Instagram Header/Icons/Vimeo icon"
+  },
+  {
+   "cmsList": "Instagram",
+   "layer": "Tiles rv-insta rv-stagger",
+   "path": "Footer/Footer/Desktop-Light/Instagram"
+  },
+  {
+   "link": "var(--variable-lqIsZOdAe)",
+   "layer": "Tile rv-zoom",
+   "path": "Desktop-Light/Instagram/Tiles rv-insta rv-stagger"
+  },
+  {
+   "link": "/",
+   "layer": "Logo",
+   "path": "Desktop-Light/Bottom/Container"
+  },
+  {
+   "alt": "RVTR",
+   "image": "https://framerusercontent.com/images/faN23UMzV1ylIfiqYr182krgQ.svg",
+   "layer": "Logo rv-logo-colour",
+   "path": "Bottom/Container/Logo"
+  },
+  {
+   "text": "Research lab, University of Michigan",
+   "layer": "E-mail",
+   "path": "Bottom/Container/Logo"
+  },
+  {
+   "text": "© 2026 RVTR. Taubman College of Architecture and Urban Planning, University of Michigan.",
+   "layer": "Copyright",
+   "path": "Bottom/Legal & Copyright/Copyright"
+  }
+ ],
+ "Navigation Button": [
+  {
+   "link": "var(--variable-XmeuFYeg4)",
+   "layer": "S",
+   "path": "Button/Navigation Button"
+  },
+  {
+   "text": "var(--variable-ZUYelye0a)",
+   "layer": "Label",
+   "path": "Button/Navigation Button/S"
+  }
+ ],
+ "Navigation": [
+  {
+   "link": "/",
+   "layer": "Logo",
+   "path": "Layout/Navigation/Desktop rv-bar"
+  },
+  {
+   "image": "https://framerusercontent.com/images/JKwcgloAHEjAsX0AKJn8CTGws8.svg",
+   "layer": "Logo rv-logo-white",
+   "path": "Layout/Navigation/Desktop rv-bar/Logo"
+  },
+  {
+   "alt": "RVTR",
+   "image": "https://framerusercontent.com/images/faN23UMzV1ylIfiqYr182krgQ.svg",
+   "layer": "Logo rv-logo-colour",
+   "path": "Layout/Navigation/Desktop rv-bar/Logo"
+  },
+  {
+   "controls": {
+    "content": "Home",
+    "link": "/",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Desktop rv-bar/Navigation/Links rv-nav",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Projects",
+    "link": "/projects",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Desktop rv-bar/Navigation/Links rv-nav",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Publications",
+    "link": "/publications",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Desktop rv-bar/Navigation/Links rv-nav",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Recognition",
+    "link": "/recognition",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Desktop rv-bar/Navigation/Links rv-nav",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "News",
+    "link": "/news",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Desktop rv-bar/Navigation/Links rv-nav",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Team",
+    "link": "/team",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Desktop rv-bar/Navigation/Links rv-nav",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Contact",
+    "link": "/#contact",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Desktop rv-bar/Navigation/Links rv-nav",
+   "component": "Navigation Button"
+  }
+ ],
+ "Kathy Velikov": [
+  {
+   "text": "Read full bio +",
+   "layer": "Question",
+   "path": "Bio/Kathy Velikov/Collapsed/Question"
+  },
+  {
+   "text": "Her work is practice-based design research, in which new knowledge comes from design propositions and prototypes, developed through speculation, prototyping and visualization. At the material scale she prototypes building skins that integrate environmental sensing, kinetic action and responsiveness. At the territorial scale she uses urban analysis to build scenarios for decarbonized futures and new social infrastructures. With RVTR she was architect of record for North House, the solar-powered prototype for northern climates built for the 2009 U.S. Department of Energy Solar Decathlon; co-led Resonant Chamber, a rigid-origami acoustic envelope that received a U.S. patent in 2016; and co-authored Infra Eco Logi Urbanism: A Project for the Great Lakes Megaregion (Park Books, 2015). RVTR was part of the EXTRACTION team at the Canadian Pavilion, 2016 Venice Architecture Biennale. Her research has been funded by NSF, the National Fish and Wildlife Foundation, the U.S. Department of Transportation, SSHRC, Ford and Guardian Industries. She has published two books, more than twenty book chapters, thirty journal articles and forty conference papers.\nShe was President of ACADIA, the Association for Computer Aided Design in Architecture, from 2018 to 2020 and Vice President from 2021 to 2022. As President she created the ACADIA Diversity Committee and updated its publication ethics. She was Technical Co-Chair of ACADIA 2016, Posthuman Frontiers, hosted at the University of Michigan, and co-edited its proceedings. Since 2022 she has been External Examiner for the MArch Architectural Design (B-Pro) program at The Bartlett, UCL. She was Visiting Guest Professor at California College of the Arts in 2013 and Visiting Professor at Ryerson University in 2010, and is an invited guest critic at schools including Harvard GSD, Princeton, MIT and The Bartlett; in 2016 she spoke at the Realities and Realms Symposium at Harvard GSD. She co-edited Ambiguous Territory: Architecture, Landscape, and the Postnatural (Actar, 2022) and co-curated its exhibition, shown at four galleries from 2017 to 2019.\nAt Taubman College she teaches thesis and design studios and seminars in ecology and technology. She has taught more than 800 architecture students and employed more than 60 graduate research assistants. Her housing studio received the 2020 AIA/ACSA Housing Design Education Award, and in 2023 ACADIA gave her its Society Award for Leadership. She holds a B.ES and a B.Arch from the University of Waterloo and an MA in History of Art and Architecture from the University of Toronto.\nAppointments\nProfessor of Architecture, Taubman College, University of Michigan, 2021–\nAssociate Dean for Research and Creative Practice, Taubman College, 2021–\nDirector, Institute for Advanced Construction Futures, University of Michigan, 2026–\nDirector, RVTR (research lab), Ann Arbor, 2017–\nFounding Partner and Director, RVTR Inc, Ann Arbor and Toronto, 2007–2017\nAssociate Professor, Taubman College, 2015–2021; Assistant Professor, 2009–2015\nAssistant Professor, University of Waterloo, 2007–2009\nWillard A. Oberdick Fellow, Taubman College, 2006–2007\nLicensed architect: Michigan (since 2012), Ontario (since 2002)\nVisiting, examining and reviews\nExternal Examiner, MArch Architectural Design (B-Pro), The Bartlett, UCL, 2022–\nProgram Advisory Board, Florida Atlantic University School of Architecture, 2023–\nDesign Research Workshop, M.Arch, Syracuse University, 2022\nVisiting Guest Professor, Summer Studio, California College of the Arts, 2013\nVisiting Professor, MArch Summer Studio, Ryerson University (now Toronto Metropolitan University), 2010\nSpeaker, Realities and Realms Symposium, Harvard GSD, 2016\nInvited guest critic: Harvard GSD, Princeton, MIT, The Bartlett, Carnegie Mellon, Cornell Tech, University of Pennsylvania Weitzman, University of Virginia, University of Chicago, among others\nLeadership and service\nACADIA: Board of Directors, 2016–2017; President, 2018–2020; Vice President, 2021–2022\nFounder of the ACADIA Diversity Committee\nTechnical Co-Chair, ACADIA 2016, Posthuman Frontiers, University of Michigan; co-editor of the proceedings and projects catalog\nCo-organizer, LafargeHolcim Foundation 5th International Forum, Infrastructure Space, Detroit, 2016\nCo-curator, Ambiguous Territory, exhibition and symposium, 2017–2019; co-editor of the book, Actar, 2022\nFellow, Big Ten Academic Alliance Academic Leadership Program, 2022–2023\nPeer reviewer for IJAC, JAE, Architectural Science Review, ACADIA and FABRICATE; juror, eVolo Skyscraper Competition and ACSA Steel Design Competition\nSelected honors\n2026 Tulane Prize Honorable Achievement, Innovative Studio Pedagogy, studio Arid Logics\n2025 Fellow, American Institute of Architects (FAIA)\n2023 ACADIA Society Award for Leadership\n2020 AIA/ACSA Housing Design Education Award, studio New Domesticities New Collectivities\n2020 TAD Award for Research Contribution, “Climate Measures”\n2017 AZ Award, Social Good, EXTRACTION (with OPSYS)\n2017 CSLA National Award of Excellence, EXTRACTION\n2016 Architect R+D Awards, Honorable Mention, Infundibuliforms\n2013 Architizer A+ Awards, Architecture + Sound, Jury Award and Popular Choice Award, Resonant Chamber\n2013 JAE Best Design as Scholarship Article Award, “Thick Air”\n2012 ACSA Faculty Design Award, The Stratus Project\n2011 RAIC Award of Excellence for Innovation in the Practice of Architecture, North House\n2010 Architect R+D Award of Excellence, North House\n2010 OAA Design Excellence Award, North House\n2009 Professional Prix de Rome in Architecture, Canada Council for the Arts (RVTR)\n2008 Young Architects Forum Award, Architectural League of New York",
+   "layer": "Answer",
+   "path": "Bio/Kathy Velikov/Collapsed/Answer"
+  },
+  {
+   "text": "Close bio −",
+   "layer": "Question",
+   "path": "Bio/Kathy Velikov/Expanded/Question"
+  }
+ ],
+ "Geoffrey Thün": [
+  {
+   "text": "Read full bio +",
+   "layer": "Question",
+   "path": "Bio/Geoffrey Thün/Collapsed/Question"
+  },
+  {
+   "text": "His research applies complex-systems approaches across scales: regional territories and city planning, high-performance buildings, and full-scale prototypes of responsive, kinetic building envelopes. He was faculty lead and principal investigator for North House, the Team North entry to the 2009 U.S. Department of Energy Solar Decathlon, and co-led The Stratus Project and Resonant Chamber, two prototypes of responsive interior envelopes. With Kathy Velikov and Colin Ripley he developed Conduit Urbanism and Infra Eco Logi Urbanism, design research on the Great Lakes Megaregion published by Park Books in 2015 and exhibited in Montreal, Toronto, New Haven, Ann Arbor and Knoxville. He was principal investigator for M-NEX, a Detroit project funded in 2018 through the Belmont Forum’s SUGI Food-Water-Energy Nexus program, and is co-principal investigator for the University of Michigan component of NextHouse, the Purdue-led factory-built housing initiative that received a National Science Foundation Engines Development Award in 2024. In 2024 he gave the keynote “Responsive Envelopes: Paradigms and Potentials” at the Facade Tectonics World Congress.\nAt Taubman College he was Associate Dean for Research and Creative Practice from 2014 to 2020 and Senior Associate Dean from 2020 to 2021. He co-organized ACADIA 2016, Posthuman Frontiers, at the University of Michigan, co-edited its proceedings and catalog, and co-designed its exhibition with Matias del Campo. With Dan McTavish he planned and designed the display for New Brutalist Image 1949–55 at Tate Britain (2014–2015). He taught at the University of Waterloo from 2006 to 2009, was Adjunct Associate Professor at Ryerson University from 2011 to 2015, and has held visiting positions at California College of the Arts, Université du Québec à Montréal, Dalhousie University, Keio University and the International Solar University in Switzerland. He teaches design studios and courses on urban systems, site operations and material systems.\nHe shared in RVTR’s recognition, including the 2009 Professional Prix de Rome in Architecture, the 2010 Architect R+D Award of Excellence and the 2011 RAIC Award of Excellence for Innovation, and received the University of Waterloo Outstanding Faculty Researcher Award in 2008. Before RVTR he worked at Dereck Revington Studio and at Baird Sampson Neuert Architects, where he was central to the French River Visitor Centre. He holds a B.A. in Sociology from the University of Western Ontario, a B.ES and a B.Arch from the University of Waterloo, and a Master of Urban Design from the University of Toronto.\nAppointments\nProfessor of Architecture, Taubman College, University of Michigan, 2020–\nAssociate Vice President for Research: Social Sciences, Humanities, and the Arts, University of Michigan, 2021–\nDirector of Design Research, RVTR, 2007–\nCo-director, Urban Collaboratory, University of Michigan\nSenior Associate Dean for Research and Creative Practice, Taubman College, 2020–2021\nAssociate Dean for Research and Creative Practice, Taubman College, 2014–2020\nAssociate Professor, Taubman College, 2009–2020\nAssistant Professor, University of Waterloo, 2006–2009\nAdjunct Associate Professor, Ryerson University, 2011–2015\nLEED AP since 2004\nVisiting, examining and reviews\nKeio University (online), 2021\nAdjunct and external reader, Dalhousie University, 2012–2017\nCalifornia College of the Arts, Summer 2013\nUniversité du Québec à Montréal, Winter 2013\nInternational Solar University, Falera, Switzerland, Summer 2011\nRyerson University, Summer 2010\nLeadership and service\nCo-organizer, ACADIA 2016, Posthuman Frontiers, University of Michigan; co-editor of the proceedings and catalog; exhibition co-designer with Matias del Campo\nPrincipal investigator, M-NEX, Belmont Forum SUGI Food-Water-Energy Nexus, 2018\nFaculty lead and principal investigator, North House, Team North, 2009 Solar Decathlon\nModerator, “Territorial Scale” workshop, LafargeHolcim Foundation 5th International Forum, Detroit, 2016\nCo-founder, Metropolitan Futures Group, University of Michigan\nSpatial planning and display design with Dan McTavish, New Brutalist Image 1949–55, Tate Britain, 2014–2015\nKeynote, Facade Tectonics 2024 World Congress\nSelected honors\n2017 AZ Award, Social Good, EXTRACTION\n2016 Architect R+D Awards, Honorable Mention, Infundibuliforms\n2013 Architizer A+ Awards, Architecture + Sound, Jury Award and Popular Choice Award, Resonant Chamber\n2013 JAE Best Design as Scholarship Article Award, “Thick Air”\n2012 ACSA Faculty Design Award, The Stratus Project\n2011 RAIC Award of Excellence for Innovation in Architecture, North House\n2010 Architect R+D Award of Excellence, North House\n2009 Professional Prix de Rome in Architecture, Canada Council for the Arts (RVTR)\n2008 University of Waterloo Outstanding Faculty Researcher Award\n2008 Young Architects Forum Award, Architectural League of New York",
+   "layer": "Answer",
+   "path": "Bio/Geoffrey Thün/Collapsed/Answer"
+  },
+  {
+   "text": "Close bio −",
+   "layer": "Question",
+   "path": "Bio/Geoffrey Thün/Expanded/Question"
+  }
+ ],
+ "FAQ Item": [
+  {
+   "text": "var(--variable-ytxBFUy6t)",
+   "layer": "Question",
+   "path": "FAQ/FAQ Item/Desktop/Question"
+  },
+  {
+   "controls": {
+    "select": "false",
+    "name": "House",
+    "name1": "plus",
+    "weight": "Regular",
+    "mirrored": "false"
+   },
+   "layer": "",
+   "path": "FAQ/FAQ Item/Desktop/Question",
+   "component": "Phosphor"
+  },
+  {
+   "text": "var(--variable-HQiG8e4Rw)",
+   "layer": "Answer",
+   "path": "FAQ/FAQ Item/Desktop/Answer"
+  },
+  {
+   "controls": {
+    "select": "false",
+    "name": "House",
+    "name1": "minus",
+    "weight": "Regular",
+    "mirrored": "false"
+   },
+   "layer": "",
+   "path": "FAQ/FAQ Item/Desktop - Open/Question",
+   "component": "Phosphor"
+  }
+ ],
+ "FAQ Container": [
+  {
+   "controls": {
+    "direction": "Vertical"
+   },
+   "layer": "",
+   "path": "FAQ/FAQ Container/Desktop",
+   "component": "Layout Jump Preventer"
+  },
+  {
+   "controls": {
+    "question": "What services does Archline offer?",
+    "answer": "We provide a full range of interior design and architectural services — from concept development and material selection to project management and turnkey execution."
+   },
+   "layer": "1",
+   "path": "FAQ/FAQ Container/Desktop/Questions",
+   "component": "FAQ Item"
+  },
+  {
+   "controls": {
+    "question": "Do you work on both residential and commercial projects?",
+    "answer": "Yes. Our portfolio includes private residences, boutique hotels, retail spaces, and office interiors — each tailored to reflect the client’s unique personality and vision."
+   },
+   "layer": "2",
+   "path": "FAQ/FAQ Container/Desktop/Questions",
+   "component": "FAQ Item"
+  },
+  {
+   "controls": {
+    "question": "What’s the typical project timeline?",
+    "answer": "Depending on scale and complexity, projects usually range from 6 weeks for small interiors to 6–12 months for full architectural renovations."
+   },
+   "layer": "3",
+   "path": "FAQ/FAQ Container/Desktop/Questions",
+   "component": "FAQ Item"
+  },
+  {
+   "controls": {
+    "question": "How does the design process work?",
+    "answer": "Our process is divided into clear phases: Discovery, Concept, Design Development, and Execution. Each stage ensures transparency, collaboration, and refined results."
+   },
+   "layer": "4",
+   "path": "FAQ/FAQ Container/Desktop/Questions",
+   "component": "FAQ Item"
+  },
+  {
+   "controls": {
+    "question": "Can Archline work with clients remotely?",
+    "answer": "Absolutely. We collaborate with international clients through digital presentations, moodboards, and virtual site walkthroughs to maintain seamless communication."
+   },
+   "layer": "5",
+   "path": "FAQ/FAQ Container/Desktop/Questions",
+   "component": "FAQ Item"
+  },
+  {
+   "controls": {
+    "question": "What’s your design philosophy?",
+    "answer": "We believe in timeless elegance, balanced functionality, and material honesty. Every project is guided by harmony between aesthetics and everyday living."
+   },
+   "layer": "6",
+   "path": "FAQ/FAQ Container/Desktop/Questions",
+   "component": "FAQ Item"
+  },
+  {
+   "controls": {
+    "question": "Do you handle construction and furniture sourcing?",
+    "answer": "Yes. Beyond design, we manage on-site supervision, contractor coordination, and curated furniture & decor sourcing to deliver a cohesive final result."
+   },
+   "layer": "7",
+   "path": "FAQ/FAQ Container/Desktop/Questions",
+   "component": "FAQ Item"
+  },
+  {
+   "controls": {
+    "question": "How are project budgets determined?",
+    "answer": "Budgets are customized based on scope, materials, and timeline. We provide transparent cost breakdowns before any design phase begins."
+   },
+   "layer": "8",
+   "path": "FAQ/FAQ Container/Desktop/Questions",
+   "component": "FAQ Item"
+  },
+  {
+   "controls": {
+    "question": "Do you collaborate with other architects or developers?",
+    "answer": "Yes. Archline often partners with architects, real estate developers, and landscape designers to bring holistic spatial experiences to life."
+   },
+   "layer": "9",
+   "path": "FAQ/FAQ Container/Desktop/Questions",
+   "component": "FAQ Item"
+  },
+  {
+   "controls": {
+    "question": "How can I start a project with Archline?",
+    "answer": "Simply reach out via our Contact page. Share your ideas, location, and project goals — our team will arrange a consultation to discuss possibilities."
+   },
+   "layer": "10",
+   "path": "FAQ/FAQ Container/Desktop/Questions",
+   "component": "FAQ Item"
+  }
+ ],
+ "Article Card": [
+  {
+   "link": "var(--variable-AI1vpvS4Z)",
+   "layer": "Desktop",
+   "path": "Insights/Article Card"
+  },
+  {
+   "controls": {
+    "opacity": "0.5"
+   },
+   "layer": "",
+   "path": "Insights/Article Card/Desktop/Image Cover rv-zoom",
+   "component": "Grain"
+  },
+  {
+   "text": "var(--variable-xzFH7O8Tu)",
+   "layer": "Article Title",
+   "path": "Insights/Article Card/Desktop/Content"
+  },
+  {
+   "text": "var(--variable-q8rnyzG_u)",
+   "layer": "Reading Time",
+   "path": "Desktop/Content/Time"
+  },
+  {
+   "text": "var(--variable-j2TmZj4Qe)",
+   "layer": "Release Date",
+   "path": "Desktop/Content/Time"
+  }
+ ],
+ "Testimonial Item": [
+  {
+   "text": "var(--variable-Edx5AT99P)",
+   "layer": "Testimonial Content",
+   "path": "Testimonials/Testimonial Item/Desktop/Testimonial Content"
+  },
+  {
+   "text": "var(--variable-bTcSxV2nZ)",
+   "layer": "Client Name",
+   "path": "Testimonial Content/Client Infomation/Infomation"
+  },
+  {
+   "text": "var(--variable-iN0aQii4K)",
+   "layer": "Client Infomation",
+   "path": "Testimonial Content/Client Infomation/Infomation"
+  },
+  {
+   "alt": "Testimonial Image",
+   "layer": "Background Image",
+   "path": "Testimonials/Testimonial Item/Desktop/Background"
+  },
+  {
+   "controls": {
+    "opacity": "0.5"
+   },
+   "layer": "",
+   "path": "Testimonials/Testimonial Item/Desktop/Background",
+   "component": "Grain"
+  }
+ ],
+ "Back Button": [
+  {
+   "link": "var(--variable-LNODKCHM0)",
+   "layer": "M rv-link rv-back",
+   "path": "Button/Back Button"
+  },
+  {
+   "text": "var(--variable-J9l1EkKtA)",
+   "layer": "Text",
+   "path": "Button/Back Button/M rv-link rv-back"
+  }
+ ],
+ "CTA Section": [
+  {
+   "controls": {
+    "opacity": "0.5"
+   },
+   "layer": "",
+   "path": "Contact/CTA Section/Desktop",
+   "component": "Grain"
+  },
+  {
+   "image": "https://framerusercontent.com/images/KFh7OHuN6GZ0xi1QxyYFwcGDMaA.svg",
+   "layer": "Logo",
+   "path": "Letter/Studio/Logo"
+  },
+  {
+   "text": "Interior & Architecture Studio",
+   "layer": "Text",
+   "path": "Letter/Studio/Logo"
+  },
+  {
+   "controls": {
+    "defaultImage": {
+     "image": "https://framerusercontent.com/images/AvNfO5OX6ZvqEJq1hGE6HjllUk.png",
+     "alt": "Contact Displacement Image"
+    },
+    "hoverImage": {
+     "image": "https://framerusercontent.com/images/ubnRfkoCi9LFvT5L7Lew7iJuBy4.png",
+     "alt": "Contact Displacement Image"
+    },
+    "displacementMap": {
+     "image": "https://framerusercontent.com/images/9jsKhTpGkIRDU0k68BCIqSk1bO0.jpeg",
+     "alt": "Contact Displacement Map Image"
+    },
+    "durationS": "1",
+    "easing": "Expo Out",
+    "effectStrength": "0.75"
+   },
+   "layer": "Image Displacement Transition",
+   "path": "Letter/Studio/Image",
+   "component": "Displacement"
+  },
+  {
+   "text": "18",
+   "layer": "Text",
+   "path": "Desktop/Letter/Work Year"
+  },
+  {
+   "text": "25",
+   "layer": "Text",
+   "path": "Desktop/Letter/Work Year"
+  },
+  {
+   "text": "Let’s Create Together",
+   "layer": "Text",
+   "path": "Letter/Content/Text Wrapper"
+  },
+  {
+   "text": "A well-designed space isn’t just seen — it’s experienced. That’s the essence of Archline®.",
+   "layer": "Text",
+   "path": "Letter/Content/Text Wrapper"
+  },
+  {
+   "controls": {
+    "content": "SEND US AN ENQUIRY",
+    "link": "/contact",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Letter/Content/Button Container",
+   "component": "Primary Button"
+  },
+  {
+   "alt": "Background",
+   "image": "https://framerusercontent.com/images/fXYrgRayukM9r1bibwitkLWoc.jpg",
+   "layer": "Image",
+   "path": "Contact/CTA Section/Desktop/Background"
+  },
+  {
+   "controls": {
+    "content": "Send Us An Enquiry",
+    "link": "/contact",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Letter/Content/Button Container",
+   "component": "Primary Button"
+  }
+ ],
+ "Social Icon": [
+  {
+   "link": "var(--variable-qnpkmfP2d)",
+   "layer": "Desktop",
+   "path": "UI/Social Icon"
+  },
+  {
+   "controls": {
+    "select": "false",
+    "name": "House",
+    "name1": "var(--variable-m0d_eIEef)",
+    "weight": "Regular",
+    "mirrored": "false"
+   },
+   "layer": "",
+   "path": "UI/Social Icon/Desktop",
+   "component": "Phosphor"
+  }
+ ],
+ "Contact Button": [
+  {
+   "text": "var(--variable-Dpo7FxC0S)",
+   "layer": "Text",
+   "path": "Button/Contact Button/Default"
+  },
+  {
+   "text": "Thank you",
+   "layer": "Text",
+   "path": "Button/Contact Button/Success"
+  }
+ ],
+ "Primary Button": [
+  {
+   "link": "var(--variable-lPWmFdPBx)",
+   "layer": "L rv-link",
+   "path": "Button/Primary Button"
+  },
+  {
+   "text": "var(--variable-PNXvZtdME)",
+   "layer": "Text",
+   "path": "Button/Primary Button/L rv-link"
+  }
+ ],
+ "Testimonials": [
+  {
+   "controls": {
+    "direction": "Right",
+    "autoPlay": "true",
+    "interval": "5.5",
+    "draggable": "false",
+    "current": "0",
+    "effects": "{\"effectsOpacity\":{\"type\":\"number\",\"value\":1},\"effectsScale\":{\"type\":\"number\",\"value\":1},\"effectsPerspective\":{\"type\":\"number\",\"value\":1200},\"effectsRotate\":{\"type\":\"number\",\"value\":0},\"effectsHover\":{\"type\":\"boolean\",\"value\":true},\"playOffscreen\":{\"type\":\"boolean\",\"value\":false}}",
+    "width": "Fill",
+    "height": "Fill",
+    "align": "center",
+    "items": "1",
+    "gap": "0",
+    "padding": "0px",
+    "radius": "0",
+    "transition": "{\"type\":\"spring\",\"ease\":[0.44,0,0.56,1],\"duration\":0.3,\"delay\":0,\"stiffness\":200,\"damping\":40,\"mass\":1,\"stagger\":0}",
+    "clipping": "{\"fadeContent\":{\"type\":\"boolean\",\"value\":false},\"overflow\":{\"type\":\"boolean\",\"value\":false},\"fadeWidth\":{\"type\":\"number\",\"value\":25},\"fadeInset\":{\"type\":\"number\",\"value\":0},\"fadeAlpha\":{\"type\":\"number\",\"value\":0}}",
+    "arrows": "{\"showMouseControls\":{\"type\":\"boolean\",\"value\":true},\"arrowFill\":{\"type\":\"color\",\"value\":\"var(--token-76b83ed6-5a67-4ca6-b156-d2ff81511369, rgba(255, 252, 243, 0.12)) /* {\\\"name\\\":\\\"L-12\\\"} */\"},\"leftArrow\":{\"type\":\"image\"},\"rightArrow\":{\"type\":\"image\"},\"arrowSize\":{\"type\":\"number\",\"value\":40},\"arrowRadius\":{\"type\":\"number\",\"value\":40},\"arrowShouldFadeIn\":{\"type\":\"boolean\",\"value\":false},\"arrowShouldSpace\":{\"type\":\"boolean\",\"value\":true},\"arrowPosition\":{\"type\":\"enum\",\"value\":\"auto\"},\"arrowPadding\":{\"type\":\"number\",\"value\":28},\"arrowPaddingTop\":{\"type\":\"number\",\"value\":0},\"arrowPaddingBottom\":{\"type\":\"number\",\"value\":0},\"arrowPaddingRight\":{\"type\":\"number\",\"value\":0},\"arrowPaddingLeft\":{\"type\":\"number\",\"value\":0},\"arrowGap\":{\"type\":\"number\",\"value\":10}}",
+    "dots": "{\"showProgressDots\":{\"type\":\"boolean\",\"value\":true},\"dotSize\":{\"type\":\"number\",\"value\":8},\"dotsInset\":{\"type\":\"number\",\"value\":24},\"dotsGap\":{\"type\":\"number\",\"value\":8},\"dotsPadding\":{\"type\":\"number\",\"value\":8},\"dotsFill\":{\"type\":\"color\",\"value\":\"var(--token-28ccc123-9961-4ac2-9973-df9b60e95bfd, rgb(255, 252, 243)) /* {\\\"name\\\":\\\"L-100\\\"} */\"},\"dotsBackground\":{\"type\":\"color\",\"value\":\"var(--token-cd4417fd-ebd7-4e1d-9490-4f98d6d338db, rgba(255, 252, 243, 0.08)) /* {\\\"name\\\":\\\"L-8\\\"} */\"},\"dotsRadius\":{\"type\":\"number\",\"value\":40},\"dotsOpacity\":{\"type\":\"number\",\"value\":0.5},\"dotsActiveOpacity\":{\"type\":\"number\",\"value\":1},\"dotsBlur\":{\"type\":\"number\",\"value\":7}}"
+   },
+   "layer": "Desktop",
+   "path": "Testimonials/Testimonials/Desktop",
+   "component": "Slideshow"
+  },
+  {
+   "controls": {
+    "direction": "Right",
+    "autoPlay": "true",
+    "interval": "5.5",
+    "draggable": "false",
+    "current": "0",
+    "effects": "{\"effectsOpacity\":{\"type\":\"number\",\"value\":1},\"effectsScale\":{\"type\":\"number\",\"value\":1},\"effectsPerspective\":{\"type\":\"number\",\"value\":1200},\"effectsRotate\":{\"type\":\"number\",\"value\":0},\"effectsHover\":{\"type\":\"boolean\",\"value\":true},\"playOffscreen\":{\"type\":\"boolean\",\"value\":false}}",
+    "width": "Fill",
+    "height": "Fill",
+    "align": "center",
+    "items": "1",
+    "gap": "0",
+    "padding": "0px",
+    "radius": "0",
+    "transition": "{\"type\":\"spring\",\"ease\":[0.44,0,0.56,1],\"duration\":0.3,\"delay\":0,\"stiffness\":200,\"damping\":40,\"mass\":1,\"stagger\":0}",
+    "clipping": "{\"fadeContent\":{\"type\":\"boolean\",\"value\":false},\"overflow\":{\"type\":\"boolean\",\"value\":false},\"fadeWidth\":{\"type\":\"number\",\"value\":25},\"fadeInset\":{\"type\":\"number\",\"value\":0},\"fadeAlpha\":{\"type\":\"number\",\"value\":0}}",
+    "arrows": "{\"showMouseControls\":{\"type\":\"boolean\",\"value\":false},\"arrowFill\":{\"type\":\"color\",\"value\":\"var(--token-76b83ed6-5a67-4ca6-b156-d2ff81511369, rgba(255, 252, 243, 0.12)) /* {\\\"name\\\":\\\"L-12\\\"} */\"},\"leftArrow\":{\"type\":\"image\"},\"rightArrow\":{\"type\":\"image\"},\"arrowSize\":{\"type\":\"number\",\"value\":40},\"arrowRadius\":{\"type\":\"number\",\"value\":40},\"arrowShouldFadeIn\":{\"type\":\"boolean\",\"value\":false},\"arrowShouldSpace\":{\"type\":\"boolean\",\"value\":true},\"arrowPosition\":{\"type\":\"enum\",\"value\":\"auto\"},\"arrowPadding\":{\"type\":\"number\",\"value\":28},\"arrowPaddingTop\":{\"type\":\"number\",\"value\":0},\"arrowPaddingBottom\":{\"type\":\"number\",\"value\":0},\"arrowPaddingRight\":{\"type\":\"number\",\"value\":0},\"arrowPaddingLeft\":{\"type\":\"number\",\"value\":0},\"arrowGap\":{\"type\":\"number\",\"value\":10}}",
+    "dots": "{\"showProgressDots\":{\"type\":\"boolean\",\"value\":true},\"dotSize\":{\"type\":\"number\",\"value\":8},\"dotsInset\":{\"type\":\"number\",\"value\":24},\"dotsGap\":{\"type\":\"number\",\"value\":8},\"dotsPadding\":{\"type\":\"number\",\"value\":8},\"dotsFill\":{\"type\":\"color\",\"value\":\"var(--token-28ccc123-9961-4ac2-9973-df9b60e95bfd, rgb(255, 252, 243)) /* {\\\"name\\\":\\\"L-100\\\"} */\"},\"dotsBackground\":{\"type\":\"color\",\"value\":\"var(--token-cd4417fd-ebd7-4e1d-9490-4f98d6d338db, rgba(255, 252, 243, 0.08)) /* {\\\"name\\\":\\\"L-8\\\"} */\"},\"dotsRadius\":{\"type\":\"number\",\"value\":40},\"dotsOpacity\":{\"type\":\"number\",\"value\":0.5},\"dotsActiveOpacity\":{\"type\":\"number\",\"value\":1},\"dotsBlur\":{\"type\":\"number\",\"value\":7}}"
+   },
+   "layer": "Mobile",
+   "path": "Testimonials/Testimonials/Mobile",
+   "component": "Slideshow"
+  },
+  {
+   "controls": {
+    "testimonialContent": "\"Archline didn’t just design our space—they curated an atmosphere. Every line, surface, and tone feels effortless, yet deeply intentional. It’s where functionality meets poetry.\"",
+    "testimonialImage": {
+     "image": "https://framerusercontent.com/images/ubnRfkoCi9LFvT5L7Lew7iJuBy4.png",
+     "alt": "Testimonial Image"
+    },
+    "clientAvatar": {
+     "image": "https://framerusercontent.com/images/5VivPRjOklDZqNsQcxyPJEcXNFc.png",
+     "alt": ""
+    },
+    "clientName": "Issabela Roman",
+    "clientInfomation": "Lead Interior Designer – Studio Forma Milano"
+   },
+   "layer": "01",
+   "path": "Testimonials/Testimonials",
+   "component": "Testimonial Item"
+  },
+  {
+   "controls": {
+    "testimonialContent": "“The studio’s vision elevated our project beyond expectations. They captured the essence of our brand through material harmony, natural light, and architectural rhythm.”",
+    "testimonialImage": {
+     "image": "https://framerusercontent.com/images/zON4OODeFGmEVcExPw1AwoRCs.jpg",
+     "alt": "Testimonial Image"
+    },
+    "clientAvatar": {
+     "image": "https://framerusercontent.com/images/sUTtZX7GiFWYjsKbjV2vobOwlo.png",
+     "alt": ""
+    },
+    "clientName": "Marco De Santis",
+    "clientInfomation": "Founder – Atelier Arco Roma"
+   },
+   "layer": "02",
+   "path": "Testimonials/Testimonials",
+   "component": "Testimonial Item"
+  },
+  {
+   "controls": {
+    "testimonialContent": "“Working with Archline felt like collaborating with artists. They listen, observe, and craft spaces that evoke calm and character—every corner tells a quiet story.”",
+    "testimonialImage": {
+     "image": "https://framerusercontent.com/images/FnGLm2yRNviYdXrQyrqRuUBnz0.png",
+     "alt": "Testimonial Image"
+    },
+    "clientAvatar": {
+     "image": "https://framerusercontent.com/images/BShGoflZBKb8kgn84qwoisQPMc.jpg",
+     "alt": ""
+    },
+    "clientName": "Charlotte Hayes",
+    "clientInfomation": "Design Director – Hayes Collective"
+   },
+   "layer": "03",
+   "path": "Testimonials/Testimonials",
+   "component": "Testimonial Item"
+  },
+  {
+   "controls": {
+    "testimonialContent": "“The final interior feels timeless. Archline blended textures, volumes, and light so naturally that the space breathes luxury without saying a word.”",
+    "testimonialImage": {
+     "image": "https://framerusercontent.com/images/PrpWwHzHkEqWT1fmmn3aAkX6rQ.png",
+     "alt": "Testimonial Image"
+    },
+    "clientAvatar": {
+     "image": "https://framerusercontent.com/images/1NojF9yywMvqzHNbp79Nt0uTs.png",
+     "alt": ""
+    },
+    "clientName": "Kenji Nakamura",
+    "clientInfomation": "Architect – NKM Studio Tokyo"
+   },
+   "layer": "04",
+   "path": "Testimonials/Testimonials",
+   "component": "Testimonial Item"
+  },
+  {
+   "controls": {
+    "testimonialContent": "“Every detail reflects refinement. From bespoke finishes to spatial flow, Archline brought our vision to life with precision and soul. It’s design that feels alive.”",
+    "testimonialImage": {
+     "image": "https://framerusercontent.com/images/NZ1SGahlr25QpGLVSJsTdzUM9h4.png",
+     "alt": "Testimonial Image"
+    },
+    "clientAvatar": {
+     "image": "https://framerusercontent.com/images/GkLy7P2qExKroFwWDt2OdWBrxNg.jpg",
+     "alt": ""
+    },
+    "clientName": "Elena Moreau",
+    "clientInfomation": "Creative Partner – Maison de Lune Paris"
+   },
+   "layer": "05",
+   "path": "Testimonials/Testimonials",
+   "component": "Testimonial Item"
+  }
+ ],
+ "Gallery Carousel": [
+  {
+   "controls": {
+    "speed": "40",
+    "direction": "Left",
+    "align": "flex-start",
+    "gap": "16",
+    "padding": "0px",
+    "sizing": "{\"widthType\":{\"type\":\"boolean\",\"value\":true},\"heightType\":{\"type\":\"boolean\",\"value\":true}}",
+    "clipping": "{\"fadeContent\":{\"type\":\"boolean\",\"value\":false},\"overflow\":{\"type\":\"boolean\",\"value\":false},\"fadeWidth\":{\"type\":\"number\",\"value\":25},\"fadeInset\":{\"type\":\"number\",\"value\":0},\"fadeAlpha\":{\"type\":\"number\",\"value\":0}}",
+    "hover": "1"
+   },
+   "layer": "Desktop",
+   "path": "UI/Gallery Carousel/Desktop",
+   "component": "Ticker"
+  },
+  {
+   "controls": {
+    "speed": "40",
+    "direction": "Left",
+    "align": "flex-start",
+    "gap": "12",
+    "padding": "0px",
+    "sizing": "{\"widthType\":{\"type\":\"boolean\",\"value\":true},\"heightType\":{\"type\":\"boolean\",\"value\":true}}",
+    "clipping": "{\"fadeContent\":{\"type\":\"boolean\",\"value\":false},\"overflow\":{\"type\":\"boolean\",\"value\":false},\"fadeWidth\":{\"type\":\"number\",\"value\":25},\"fadeInset\":{\"type\":\"number\",\"value\":0},\"fadeAlpha\":{\"type\":\"number\",\"value\":0}}",
+    "hover": "1"
+   },
+   "layer": "Tablet",
+   "path": "UI/Gallery Carousel/Tablet",
+   "component": "Ticker"
+  },
+  {
+   "alt": "The Stratus Project, RVTR",
+   "image": "https://framerusercontent.com/images/3aWxYs06zSV3QZ1mAj6Tmn9gy1c.jpg",
+   "layer": "",
+   "path": "UI/Gallery Carousel/01"
+  },
+  {
+   "alt": "Pavilions at Notion, RVTR",
+   "image": "https://framerusercontent.com/images/VwqNp4I1Z9OKqVTxulXm7MCxw8.jpg",
+   "layer": "",
+   "path": "UI/Gallery Carousel/02"
+  },
+  {
+   "alt": "PneuSystems, RVTR",
+   "image": "https://framerusercontent.com/images/Vx5p44isYHOsgTdIZJCr0DEl5nw.jpg",
+   "layer": "",
+   "path": "UI/Gallery Carousel/03"
+  },
+  {
+   "alt": "Resonant Chamber, RVTR",
+   "image": "https://framerusercontent.com/images/D7XHrTBl49haiPUPn8KBe8tDwg.jpg",
+   "layer": "",
+   "path": "UI/Gallery Carousel/04"
+  },
+  {
+   "alt": "North House, RVTR",
+   "image": "https://framerusercontent.com/images/S7AZvYVMgu8RjYuAKsHS80rgM.jpg",
+   "layer": "",
+   "path": "UI/Gallery Carousel/05"
+  },
+  {
+   "alt": "Infundibuliforms, RVTR",
+   "image": "https://framerusercontent.com/images/0eOgB3gj907bjv5LbCDDbq38YM.jpg",
+   "layer": "",
+   "path": "UI/Gallery Carousel/06"
+  },
+  {
+   "alt": "Notion Excavation House, RVTR",
+   "image": "https://framerusercontent.com/images/4ef4przprByf4jPM8FBcCGZTzk.jpg",
+   "layer": "",
+   "path": "UI/Gallery Carousel/07"
+  },
+  {
+   "alt": "Latitudo Borealis, RVTR",
+   "image": "https://framerusercontent.com/images/F2aKNdMJO1UJ5WbRBZsXKFRayg.jpg",
+   "layer": "",
+   "path": "UI/Gallery Carousel/08"
+  },
+  {
+   "alt": "Becoming Biomass, RVTR",
+   "image": "https://framerusercontent.com/images/2Dp8wx0GaH6V9Qmkk0jPawjPQQ.jpg",
+   "layer": "",
+   "path": "UI/Gallery Carousel/09"
+  },
+  {
+   "alt": "Nervous Ether, RVTR",
+   "image": "https://framerusercontent.com/images/n9pqafinQf1znScOT2nX4DYC4.jpg",
+   "layer": "",
+   "path": "UI/Gallery Carousel/10"
+  }
+ ],
+ "Member Card": [
+  {
+   "controls": {
+    "opacity": "0.5"
+   },
+   "layer": "",
+   "path": "Member/Member Card/Desktop/Image Container",
+   "component": "Grain"
+  },
+  {
+   "text": "var(--variable-i0k2Zowt0)",
+   "layer": "Member Role",
+   "path": "Member/Member Card/Desktop/Content"
+  },
+  {
+   "text": "var(--variable-Ug8mAqOWs)",
+   "layer": "Content",
+   "path": "Member/Member Card/Desktop/Image Container"
+  }
+ ],
+ "Award Item": [
+  {
+   "link": "var(--variable-NynVR6sLb)",
+   "layer": "Desktop",
+   "path": "Awards/Award Item"
+  },
+  {
+   "text": "var(--variable-WzOS2XrtY)",
+   "layer": "Text",
+   "path": "Awards/Award Item/Desktop"
+  },
+  {
+   "text": "var(--variable-SgaAGc5wc)",
+   "layer": "Text",
+   "path": "Desktop/Content/Text Wrapper"
+  },
+  {
+   "text": "var(--variable-vBNp4FCMN)",
+   "layer": "Text",
+   "path": "Desktop/Content/Text Wrapper"
+  },
+  {
+   "controls": {
+    "select": "false",
+    "name": "House",
+    "name1": "arrow-up-right",
+    "weight": "Regular",
+    "mirrored": "false"
+   },
+   "layer": "",
+   "path": "Desktop/Content/Icon Wrapper",
+   "component": "Phosphor"
+  }
+ ],
+ "Our Expertise": [
+  {
+   "controls": {
+    "opacity": "0.5"
+   },
+   "layer": "",
+   "path": "Our Expertise/Our Expertise/Desktop",
+   "component": "Grain"
+  },
+  {
+   "text": "Six lines of inquiry run through the work, from material prototypes to regional territories.",
+   "layer": "Text",
+   "path": "Our Expertise/Our Expertise/Desktop/Content"
+  },
+  {
+   "text": "Research threads",
+   "layer": "Text",
+   "path": "Content/Services/Label"
+  },
+  {
+   "controls": {
+    "ordinalNumber": "01",
+    "serviceName": "Territories and Urban Systems",
+    "serviceDescription": "Design research at the scale of the region: mapping, scenarios and infrastructures for decarbonized and climate-adaptive futures, from the Great Lakes Megaregion to the Tennessee Valley.",
+    "backgroundImage": {
+     "image": "https://framerusercontent.com/images/cJX0McYVTL4UUZounCPqVT1Zyw.jpg",
+     "alt": "Territories and Urban Systems"
+    }
+   },
+   "layer": "",
+   "path": "Content/Services/Services",
+   "component": "Expertise Card"
+  },
+  {
+   "controls": {
+    "ordinalNumber": "01",
+    "serviceName": "Territories and Urban Systems",
+    "serviceDescription": "Design research at the scale of the region: mapping, scenarios and infrastructures for decarbonized and climate-adaptive futures, from the Great Lakes Megaregion to the Tennessee Valley."
+   },
+   "layer": "",
+   "path": "Content/Services/Services",
+   "component": "Expertise Card"
+  },
+  {
+   "controls": {
+    "ordinalNumber": "02",
+    "serviceName": "Responsive Envelopes and Material Systems",
+    "serviceDescription": "Full-scale prototypes of building skins that sense, move and respond to air, light, heat and sound, including Stratus, Resonant Chamber, PneuSystems and Infundibuliforms.",
+    "backgroundImage": {
+     "image": "https://framerusercontent.com/images/0eOgB3gj907bjv5LbCDDbq38YM.jpg",
+     "alt": "Responsive Envelopes and Material Systems"
+    }
+   },
+   "layer": "",
+   "path": "Content/Services/Services",
+   "component": "Expertise Card"
+  },
+  {
+   "controls": {
+    "ordinalNumber": "03",
+    "serviceName": "Buildings and Prototypes",
+    "serviceDescription": "Building designs, competitions and full-scale building prototypes, from North House at the 2009 Solar Decathlon to visitor facilities at Notion, Turkey."
+   },
+   "layer": "",
+   "path": "Content/Services/Services",
+   "component": "Expertise Card"
+  },
+  {
+   "controls": {
+    "ordinalNumber": "04",
+    "serviceName": "Exhibitions and Installations",
+    "serviceDescription": "Exhibition design, installations and touring shows, including EXTRACTION in the Canadian Pavilion at the 2016 Venice Architecture Biennale and New Brutalist Image at Tate Britain."
+   },
+   "layer": "",
+   "path": "Content/Services/Services",
+   "component": "Expertise Card"
+  },
+  {
+   "controls": {
+    "ordinalNumber": "03",
+    "serviceName": "Buildings and Prototypes",
+    "serviceDescription": "Building designs, competitions and full-scale building prototypes, from North House at the 2009 Solar Decathlon to visitor facilities at Notion, Turkey.",
+    "backgroundImage": {
+     "image": "https://framerusercontent.com/images/EqZ0gF3OWgiI5tFUUcbFIjLroU.jpg",
+     "alt": "Buildings and Prototypes"
+    }
+   },
+   "layer": "",
+   "path": "Content/Services/Services",
+   "component": "Expertise Card"
+  },
+  {
+   "controls": {
+    "ordinalNumber": "05",
+    "serviceName": "Field Research",
+    "serviceDescription": "Fieldwork-based survey, site analysis and planning, led since 2014 at the ancient Ionian city of Notion with archaeologists from the University of Michigan’s Kelsey Museum."
+   },
+   "layer": "",
+   "path": "Content/Services/Services",
+   "component": "Expertise Card"
+  },
+  {
+   "controls": {
+    "ordinalNumber": "06",
+    "serviceName": "Archive",
+    "serviceDescription": "Earlier work, including houses, competitions and projects by the directors before RVTR, kept as a record of the lab’s history.",
+    "backgroundImage": {
+     "image": "https://framerusercontent.com/images/eqdH8zobP2R61H2HJKztZsZ4ZI.jpg",
+     "alt": "Archive"
+    }
+   },
+   "layer": "",
+   "path": "Content/Services/Services",
+   "component": "Expertise Card"
+  },
+  {
+   "controls": {
+    "content": "All projects",
+    "link": "/projects",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Our Expertise/Our Expertise/Mobile/Button Container",
+   "component": "Secondary Button"
+  }
+ ],
+ "Menu Button": [
+  {
+   "text": "MENU",
+   "layer": "Text",
+   "path": "Button/Menu Button/Desktop-Open"
+  }
+ ],
+ "Expertise Item": [
+  {
+   "text": "var(--variable-z6EYhXzy0)",
+   "layer": "Expertise Name",
+   "path": "Desktop/Title Container/Title Wrapper"
+  },
+  {
+   "alt": "Expertise Image",
+   "layer": "Image",
+   "path": "Desktop/Title Container/Image"
+  },
+  {
+   "text": "var(--variable-V8YDt4iVq)",
+   "layer": "Text",
+   "path": "Our Expertise/Expertise Item/Desktop/Detail"
+  },
+  {
+   "text": "var(--variable-x7VgMLCe4)",
+   "layer": "Text",
+   "path": "Our Expertise/Expertise Item/Desktop/Detail"
+  }
+ ],
+ "FAQs": [
+  {
+   "text": "FAQ",
+   "layer": "Text",
+   "path": "Title Container/Title/Label"
+  },
+  {
+   "text": "Your Answers To Popular Questions",
+   "layer": "Text",
+   "path": "Desktop/Title Container/Title"
+  },
+  {
+   "text": "Clarity brings comfort. Discover answers to what others have asked — or reach out if yours is still unanswered.",
+   "layer": "Text",
+   "path": "Desktop/Title Container/Text Wrapper"
+  },
+  {
+   "controls": {
+    "content": "Let’s talk",
+    "link": "/contact",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Desktop/Title Container/Text Wrapper",
+   "component": "Secondary Button"
+  }
+ ],
+ "Menu": [
+  {
+   "link": "/",
+   "layer": "Logo Container",
+   "path": "Layout/Menu/Desktop/Navigation"
+  },
+  {
+   "alt": "RVTR",
+   "image": "https://framerusercontent.com/images/faN23UMzV1ylIfiqYr182krgQ.svg",
+   "layer": "Logo rv-logo-colour",
+   "path": "Desktop/Navigation/Logo Container"
+  },
+  {
+   "alt": "Pavilions at Notion, Turkey. Visualization by RVTR.",
+   "image": "https://framerusercontent.com/images/yRP2YuAD7Tv9QLyn266r7UvJfY.jpg",
+   "layer": "Image",
+   "path": "Desktop/Menu Content/Image"
+  },
+  {
+   "text": "Menu",
+   "layer": "Label",
+   "path": "Content/Menu & Social Media/Menu"
+  },
+  {
+   "controls": {
+    "content": "Home",
+    "link": "/",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Menu & Social Media/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Projects",
+    "link": "/projects",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Menu & Social Media/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Publications",
+    "link": "/publications",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Menu & Social Media/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Recognition",
+    "link": "/recognition",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Menu & Social Media/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "News",
+    "link": "/news",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Menu & Social Media/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Team",
+    "link": "/team",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Menu & Social Media/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Contact",
+    "link": "/#contact",
+    "newTab": "false"
+   },
+   "layer": "",
+   "path": "Menu & Social Media/Menu/Navigation Button",
+   "component": "Navigation Button"
+  },
+  {
+   "text": "Follow",
+   "layer": "Label",
+   "path": "Content/Menu & Social Media/Social"
+  },
+  {
+   "controls": {
+    "content": "Instagram",
+    "link": "https://www.instagram.com/rvtrarchitecture/",
+    "newTab": "true"
+   },
+   "layer": "",
+   "path": "Menu & Social Media/Social/Social Link",
+   "component": "Navigation Button"
+  },
+  {
+   "controls": {
+    "content": "Films on Vimeo",
+    "link": "https://vimeo.com/rvtr",
+    "newTab": "true"
+   },
+   "layer": "",
+   "path": "Menu & Social Media/Social/Social Link",
+   "component": "Navigation Button"
+  },
+  {
+   "text": "Contact",
+   "layer": "Label",
+   "path": "Content/Container/Contact"
+  },
+  {
+   "text": "+1 (734) 834-9385",
+   "link": "tel:+17348349385",
+   "layer": "Phone Number",
+   "path": "Container/Contact/Content"
+  },
+  {
+   "text": "geoff@rvtr.com",
+   "link": "mailto:geoff@rvtr.com",
+   "layer": "E-mail",
+   "path": "Container/Contact/Content"
+  },
+  {
+   "text": "© 2026 RVTR",
+   "layer": "Copyright",
+   "path": "Container/Legal & Copyright/Copyright"
+  }
+ ],
+ "Template Button": [
+  {
+   "link": "var(--variable-hpbBjM1bH)",
+   "layer": "Default",
+   "path": "Button/Template Button"
+  },
+  {
+   "text": "Buy Template",
+   "layer": "Text",
+   "path": "Button/Template Button/Default"
+  },
+  {
+   "text": "Buy for $79",
+   "layer": "Text",
+   "path": "Button/Template Button/Default"
+  },
+  {
+   "controls": {
+    "select": "false",
+    "name": "House",
+    "name1": "arrow up right",
+    "weight": "Regular",
+    "mirrored": "false"
+   },
+   "layer": "",
+   "path": "Button/Template Button/Default/Icon",
+   "component": "Phosphor"
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "collection": "Home Hero",
+ "items": [
+  {
+   "slug": "notion-east-entry",
+   "Image": {
+    "url": "https://framerusercontent.com/images/yRP2YuAD7Tv9QLyn266r7UvJfY.jpg",
+    "alt": null
+   },
+   "Alt": "Notion, Turkey: east entry. RVTR",
+   "Project": "Notion, Turkey",
+   "Order": 1,
+   "Show": true
+  },
+  {
+   "slug": "resonant-chamber",
+   "Image": {
+    "url": "https://framerusercontent.com/images/bsyoNvsH4GZTzdspfDHlmFScvA.jpg",
+    "alt": null
+   },
+   "Alt": "Resonant Chamber, RVTR",
+   "Project": "Resonant Chamber",
+   "Order": 2,
+   "Show": true
+  },
+  {
+   "slug": "pavilions-at-notion-bouleuterion",
+   "Image": {
+    "url": "https://framerusercontent.com/images/47NHYHB4F9XtlD733rD9CUBJE.jpg",
+    "alt": null
+   },
+   "Alt": "Pavilions at Notion, the bouleuterion, RVTR",
+   "Project": "Pavilions at Notion",
+   "Order": 3,
+   "Show": true
+  },
+  {
+   "slug": "latitudo-borealis",
+   "Image": {
+    "url": "https://framerusercontent.com/images/egjZTgTOvEg5zSw2MtKolSiO91o.jpg",
+    "alt": null
+   },
+   "Alt": "Latitudo Borealis, RVTR",
+   "Project": "Latitudo Borealis",
+   "Order": 4,
+   "Show": true
+  }
+ ]
+}

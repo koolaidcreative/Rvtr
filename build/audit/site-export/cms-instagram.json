@@ -1,0 +1,65 @@
+{
+ "collection": "Instagram",
+ "items": [
+  {
+   "slug": "tile-1",
+   "Image": {
+    "url": "https://framerusercontent.com/images/0eOgB3gj907bjv5LbCDDbq38YM.jpg",
+    "alt": "Infundibuliforms, image 1"
+   },
+   "Link": "/projects/infundibuliforms",
+   "Order": 1,
+   "Title": "Infundibuliforms"
+  },
+  {
+   "slug": "tile-2",
+   "Image": {
+    "url": "https://framerusercontent.com/images/bsyoNvsH4GZTzdspfDHlmFScvA.jpg",
+    "alt": "Resonant Chamber, image 1"
+   },
+   "Link": "/projects/resonant-chamber",
+   "Order": 2,
+   "Title": "Resonant Chamber"
+  },
+  {
+   "slug": "tile-3",
+   "Image": {
+    "url": "https://framerusercontent.com/images/s1r0t8yTYWiBs63AwOowQDlGAjE.jpg",
+    "alt": "PneuSystems, image 2"
+   },
+   "Link": "/projects/pneusystems",
+   "Order": 3,
+   "Title": "PneuSystems"
+  },
+  {
+   "slug": "tile-4",
+   "Image": {
+    "url": "https://framerusercontent.com/images/wWnEfiXGO7HacNy4pI2GEd7jZnM.jpg",
+    "alt": "North House, image 3"
+   },
+   "Link": "/projects/north-house",
+   "Order": 4,
+   "Title": "North House"
+  },
+  {
+   "slug": "tile-5",
+   "Image": {
+    "url": "https://framerusercontent.com/images/GeWFNtfQi81itehnepj65w0mY.jpg",
+    "alt": "Infra Eco Logi Urbanism: Liberty Gallery, Ann Arbor, image 2"
+   },
+   "Link": "/projects/infra-eco-logi-urbanism",
+   "Order": 5,
+   "Title": "Infra Eco Logi Urbanism: Liberty Gallery, Ann Arbor"
+  },
+  {
+   "slug": "tile-6",
+   "Image": {
+    "url": "https://framerusercontent.com/images/nvLLh8YVYBphI5Dln42yw1PDfA8.jpg",
+    "alt": "Pavilions at Notion, image 4"
+   },
+   "Link": "/projects/pavilions-at-notion",
+   "Order": 6,
+   "Title": "Pavilions at Notion"
+  }
+ ]
+}
