@@ -1,0 +1,431 @@
+{
+ "ancestorPath": [
+  {
+   "id": "LPDmI0Vjp",
+   "type": "WebPageNode",
+   "name": "/contact"
+  },
+  {
+   "id": "qw205CyUk",
+   "type": "FrameNode",
+   "name": "Desktop"
+  },
+  {
+   "id": "ElRhl973f",
+   "type": "FrameNode",
+   "name": "Main"
+  },
+  {
+   "id": "z_Pp6ThKo",
+   "type": "FrameNode",
+   "name": "Contact"
+  }
+ ],
+ "node": {
+  "type": "FrameNode",
+  "name": "Form",
+  "id": "ULhLuRY_Y",
+  "$parentId": "z_Pp6ThKo",
+  "$groundNodeId": "qw205CyUk",
+  "$scopeId": "LPDmI0Vjp",
+  "$mediaQuery": {
+   "range": "(min-width: 1200px)",
+   "name": "Desktop"
+  },
+  "attributes": {
+   "formSubmitButtonId": "A1KNB7F08",
+   "htmlTag": "form",
+   "layout": "stack",
+   "stackDirection": "vertical",
+   "stackDistribution": "start",
+   "stackAlignment": "start",
+   "gap": "48px",
+   "left": "null",
+   "right": "null",
+   "top": "36px",
+   "bottom": "null",
+   "centerAnchorX": "50%",
+   "centerAnchorY": "49.77%",
+   "constraintsLocked": false,
+   "width": "66.19718309859155%",
+   "height": "auto"
+  },
+  "children": [
+   {
+    "type": "FrameNode",
+    "name": "Form",
+    "id": "yvsoUi167",
+    "attributes": {
+     "layout": "stack",
+     "stackDirection": "vertical",
+     "stackDistribution": "start",
+     "stackAlignment": "center",
+     "stackWrapEnabled": false,
+     "gap": "24px",
+     "position": "relative",
+     "width": "1fr",
+     "height": "auto"
+    },
+    "children": [
+     {
+      "type": "FrameNode",
+      "name": "Name",
+      "id": "Hir8RNAYK",
+      "attributes": {
+       "htmlTag": "label",
+       "layout": "stack",
+       "stackDirection": "vertical",
+       "stackDistribution": "start",
+       "stackAlignment": "start",
+       "gap": "2px",
+       "position": "relative",
+       "width": "1fr",
+       "height": "auto"
+      },
+      "children": [
+       {
+        "type": "RichTextNode",
+        "name": "Text",
+        "id": "h11EuwjLW",
+        "attributes": {
+         "position": "relative",
+         "width": "1fr",
+         "height": "auto",
+         "textStylePreset": "Paragraph/14M",
+         "textAlignment": "left",
+         "textColor": "var(--token-8bee45cf-366e-4ffe-9dee-d17e953a2156)"
+        },
+        "children": [
+         {
+          "type": "TextBlock",
+          "id": "v:h11EuwjLW:0",
+          "attributes": {
+           "tag": "p"
+          },
+          "children": [
+           {
+            "type": "TextRun",
+            "id": "v:h11EuwjLW:0:0",
+            "attributes": {
+             "text": "Your Name*"
+            }
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "type": "FormPlainTextInputNode",
+        "id": "qlig5ZsLv",
+        "attributes": {
+         "borderStyle": "solid",
+         "borderColor": "var(--token-5050eb80-d12a-4bc5-93e7-95bb61c4a8fb)",
+         "borderBottom": "1px",
+         "formInputName": "Name",
+         "formInputRequired": "true",
+         "formInputFocusedBorderColor": "var(--token-d593f2d5-53c6-4603-bfb3-19c246fbf3a7)",
+         "formInputFocusedBorderWidth": 0,
+         "formInputFocusedBorderTop": 0,
+         "formInputFocusedBorderRight": 0,
+         "formInputFocusedBorderBottom": 1,
+         "formInputFocusedBorderLeft": 0,
+         "formInputFocusedBorderPerSide": true,
+         "formInputFocusedBorderStyle": "solid",
+         "formInputIconColor": "rgba(153, 153, 153, 1)",
+         "formInputPlaceholder": "Enter name",
+         "formInputPlaceholderColor": "var(--token-23512c15-36f4-453d-969e-ed60b068d58b, rgba(37, 35, 36, 0.48))",
+         "formTextInputType": "text",
+         "position": "relative",
+         "width": "1fr",
+         "height": "48px",
+         "fontName": "Inter Display",
+         "fontStyle": "normal",
+         "fontWeight": 400,
+         "fontSize": "20px",
+         "letterSpacing": "-0.1px",
+         "lineHeight": "120%",
+         "textAlignment": "left",
+         "textColor": "var(--token-8bee45cf-366e-4ffe-9dee-d17e953a2156)"
+        }
+       }
+      ]
+     },
+     {
+      "type": "FrameNode",
+      "name": "Email",
+      "id": "tKVXynITk",
+      "attributes": {
+       "htmlTag": "label",
+       "layout": "stack",
+       "stackDirection": "vertical",
+       "stackDistribution": "start",
+       "stackAlignment": "start",
+       "gap": "2px",
+       "position": "relative",
+       "width": "1fr",
+       "height": "auto"
+      },
+      "children": [
+       {
+        "type": "RichTextNode",
+        "name": "Text",
+        "id": "UDEIBuVI8",
+        "attributes": {
+         "position": "relative",
+         "width": "1fr",
+         "height": "auto",
+         "textStylePreset": "Paragraph/14M",
+         "textAlignment": "start",
+         "textColor": "var(--token-8bee45cf-366e-4ffe-9dee-d17e953a2156)"
+        },
+        "children": [
+         {
+          "type": "TextBlock",
+          "id": "v:UDEIBuVI8:0",
+          "attributes": {
+           "tag": "p"
+          },
+          "children": [
+           {
+            "type": "TextRun",
+            "id": "v:UDEIBuVI8:0:0",
+            "attributes": {
+             "text": "Your e-mail*"
+            }
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "type": "FormPlainTextInputNode",
+        "id": "dkxvROVZR",
+        "attributes": {
+         "borderStyle": "solid",
+         "borderColor": "var(--token-5050eb80-d12a-4bc5-93e7-95bb61c4a8fb)",
+         "borderBottom": "1px",
+         "formInputName": "Email",
+         "formInputRequired": "true",
+         "formInputFocusedBorderColor": "var(--token-d593f2d5-53c6-4603-bfb3-19c246fbf3a7)",
+         "formInputFocusedBorderWidth": 0,
+         "formInputFocusedBorderTop": 0,
+         "formInputFocusedBorderRight": 0,
+         "formInputFocusedBorderBottom": 1,
+         "formInputFocusedBorderLeft": 0,
+         "formInputFocusedBorderPerSide": true,
+         "formInputFocusedBorderStyle": "solid",
+         "formInputIconColor": "rgba(153, 153, 153, 1)",
+         "formInputPlaceholder": "Enter email",
+         "formInputPlaceholderColor": "var(--token-23512c15-36f4-453d-969e-ed60b068d58b, rgba(37, 35, 36, 0.48))",
+         "formTextInputType": "email",
+         "position": "relative",
+         "width": "1fr",
+         "height": "48px",
+         "fontName": "Inter Display",
+         "fontStyle": "normal",
+         "fontWeight": 400,
+         "fontSize": "20px",
+         "letterSpacing": "-0.1px",
+         "lineHeight": "120%",
+         "textAlignment": "left",
+         "textColor": "var(--token-8bee45cf-366e-4ffe-9dee-d17e953a2156)"
+        }
+       }
+      ]
+     },
+     {
+      "type": "FrameNode",
+      "name": "Message",
+      "id": "uPASJLX6f",
+      "attributes": {
+       "htmlTag": "label",
+       "layout": "stack",
+       "stackDirection": "vertical",
+       "stackDistribution": "start",
+       "stackAlignment": "start",
+       "gap": "2px",
+       "position": "relative",
+       "width": "1fr",
+       "height": "auto"
+      },
+      "children": [
+       {
+        "type": "RichTextNode",
+        "name": "Text",
+        "id": "oLpmkn326",
+        "attributes": {
+         "position": "relative",
+         "width": "1fr",
+         "height": "auto",
+         "textStylePreset": "Paragraph/14M",
+         "textAlignment": "start",
+         "textColor": "var(--token-8bee45cf-366e-4ffe-9dee-d17e953a2156)"
+        },
+        "children": [
+         {
+          "type": "TextBlock",
+          "id": "v:oLpmkn326:0",
+          "attributes": {
+           "tag": "p"
+          },
+          "children": [
+           {
+            "type": "TextRun",
+            "id": "v:oLpmkn326:0:0",
+            "attributes": {
+             "text": "Your message"
+            }
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "type": "FormPlainTextInputNode",
+        "id": "VD1bB2FEF",
+        "attributes": {
+         "borderStyle": "solid",
+         "borderColor": "var(--token-5050eb80-d12a-4bc5-93e7-95bb61c4a8fb)",
+         "borderBottom": "1px",
+         "formInputName": "Project details",
+         "formInputRequired": "false",
+         "formInputFocusedBorderColor": "var(--token-d593f2d5-53c6-4603-bfb3-19c246fbf3a7)",
+         "formInputFocusedBorderWidth": 0,
+         "formInputFocusedBorderTop": 0,
+         "formInputFocusedBorderRight": 0,
+         "formInputFocusedBorderBottom": 1,
+         "formInputFocusedBorderLeft": 0,
+         "formInputFocusedBorderPerSide": true,
+         "formInputFocusedBorderStyle": "solid",
+         "formInputIconColor": "rgba(153, 153, 153, 1)",
+         "formInputPlaceholder": "Enter details ",
+         "formInputPlaceholderColor": "var(--token-23512c15-36f4-453d-969e-ed60b068d58b, rgba(37, 35, 36, 0.48))",
+         "formTextInputType": "textarea",
+         "formTextAreaResizable": "true",
+         "padding": "10px 0px 0px 0px",
+         "position": "relative",
+         "width": "1fr",
+         "height": "auto",
+         "minHeight": "136px",
+         "fontName": "Inter Display",
+         "fontStyle": "normal",
+         "fontWeight": 400,
+         "fontSize": "20px",
+         "letterSpacing": "-0.1px",
+         "lineHeight": "120%",
+         "textAlignment": "left",
+         "textColor": "var(--token-8bee45cf-366e-4ffe-9dee-d17e953a2156)"
+        }
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "FrameNode",
+    "name": "Button Container",
+    "id": "QjCmtke0r",
+    "attributes": {
+     "layout": "stack",
+     "stackDirection": "vertical",
+     "stackDistribution": "center",
+     "stackAlignment": "start",
+     "stackWrapEnabled": false,
+     "gap": "24px",
+     "overflow": "clip",
+     "position": "relative",
+     "width": "1fr",
+     "height": "auto"
+    },
+    "children": [
+     {
+      "type": "ComponentInstanceNode",
+      "id": "A1KNB7F08",
+      "component": "VSfR5CcQ3",
+      "$componentDisplayName": "Contact Button",
+      "attributes": {
+       "$control__variant": "Default",
+       "$control__content": "Get in touch",
+       "formButtonSuccessVariant": "TDfp_8z0w",
+       "formButtonPendingVariant": "HuAVZlMyk",
+       "formButtonErrorVariant": "OAwWvbCLk",
+       "position": "relative",
+       "width": "auto",
+       "height": "auto"
+      }
+     },
+     {
+      "type": "RichTextNode",
+      "name": "Text",
+      "id": "yC8gwpOtc",
+      "attributes": {
+       "linkStylePreset": "Default/Dark",
+       "position": "relative",
+       "width": "1fr",
+       "height": "auto",
+       "textStylePreset": "Paragraph/14R",
+       "textAlignment": "left",
+       "textColor": "var(--token-d593f2d5-53c6-4603-bfb3-19c246fbf3a7)"
+      },
+      "children": [
+       {
+        "type": "TextBlock",
+        "id": "v:yC8gwpOtc:0",
+        "attributes": {
+         "tag": "p"
+        },
+        "children": [
+         {
+          "type": "TextRun",
+          "id": "v:yC8gwpOtc:0:0",
+          "attributes": {
+           "text": "By submitting, you agree to our "
+          }
+         },
+         {
+          "type": "TextRun",
+          "id": "v:yC8gwpOtc:0:1",
+          "attributes": {
+           "text": "Terms",
+           "link": {
+            "href": "/legal/:slug",
+            "collectionItem": "terms-of-service"
+           },
+           "linkStylePreset": "Default/Dark"
+          }
+         },
+         {
+          "type": "TextRun",
+          "id": "v:yC8gwpOtc:0:2",
+          "attributes": {
+           "text": " and "
+          }
+         },
+         {
+          "type": "TextRun",
+          "id": "v:yC8gwpOtc:0:3",
+          "attributes": {
+           "text": "Privacy Policy",
+           "link": {
+            "href": "/legal/:slug",
+            "collectionItem": "privacy-policy"
+           },
+           "linkStylePreset": "Default/Dark"
+          }
+         },
+         {
+          "type": "TextRun",
+          "id": "v:yC8gwpOtc:0:4",
+          "attributes": {
+           "text": "."
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
