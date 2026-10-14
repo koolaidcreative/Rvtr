@@ -1,0 +1,197 @@
+{
+  "collection": {
+    "id": "JOUMFK5e4",
+    "name": "Research Team",
+    "slugFieldName": "Slug"
+  },
+  "fields": [
+    {
+      "id": "JmDnesJi9",
+      "name": "Name",
+      "type": "string"
+    },
+    {
+      "id": "ee_4C_tFU",
+      "name": "Role",
+      "type": "string"
+    },
+    {
+      "id": "WHoWENu2C",
+      "name": "Program",
+      "type": "string"
+    },
+    {
+      "id": "JoauNczr4",
+      "name": "Years",
+      "type": "string"
+    },
+    {
+      "id": "GinJ4I5RU",
+      "name": "Photo",
+      "type": "image"
+    },
+    {
+      "id": "E1DxwPFwZ",
+      "name": "Link",
+      "type": "link"
+    },
+    {
+      "id": "JccN1kKMO",
+      "name": "Link Label",
+      "type": "string"
+    },
+    {
+      "id": "MY3dcDtso",
+      "name": "Order",
+      "type": "number"
+    },
+    {
+      "id": "MYsaDVuDh",
+      "name": "Current",
+      "type": "boolean"
+    }
+  ],
+  "items": [
+    {
+      "id": "EONBAPNa2",
+      "slug": "research-assistant-1",
+      "draft": false,
+      "fieldData": {
+        "JmDnesJi9": {
+          "type": "string",
+          "value": "Research Assistant Name",
+          "valueByLocale": {}
+        },
+        "ee_4C_tFU": {
+          "type": "string",
+          "value": "Research Assistant",
+          "valueByLocale": {}
+        },
+        "WHoWENu2C": {
+          "type": "string",
+          "value": "M.Arch / M.S. Program, Taubman College",
+          "valueByLocale": {}
+        },
+        "JoauNczr4": {
+          "type": "string",
+          "value": "2025–",
+          "valueByLocale": {}
+        },
+        "GinJ4I5RU": {
+          "type": "image"
+        },
+        "E1DxwPFwZ": {
+          "type": "link",
+          "valueByLocale": {}
+        },
+        "JccN1kKMO": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "MY3dcDtso": {
+          "type": "number",
+          "value": 1
+        },
+        "MYsaDVuDh": {
+          "type": "boolean",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "prlIl8UtA",
+      "slug": "research-assistant-2",
+      "draft": false,
+      "fieldData": {
+        "JmDnesJi9": {
+          "type": "string",
+          "value": "Research Assistant Name",
+          "valueByLocale": {}
+        },
+        "ee_4C_tFU": {
+          "type": "string",
+          "value": "Research Assistant",
+          "valueByLocale": {}
+        },
+        "WHoWENu2C": {
+          "type": "string",
+          "value": "M.Arch / M.S. Program, Taubman College",
+          "valueByLocale": {}
+        },
+        "JoauNczr4": {
+          "type": "string",
+          "value": "2025–",
+          "valueByLocale": {}
+        },
+        "GinJ4I5RU": {
+          "type": "image"
+        },
+        "E1DxwPFwZ": {
+          "type": "link",
+          "valueByLocale": {}
+        },
+        "JccN1kKMO": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "MY3dcDtso": {
+          "type": "number",
+          "value": 2
+        },
+        "MYsaDVuDh": {
+          "type": "boolean",
+          "value": true
+        }
+      }
+    },
+    {
+      "id": "ZrhK6vl2C",
+      "slug": "research-assistant-3",
+      "draft": false,
+      "fieldData": {
+        "JmDnesJi9": {
+          "type": "string",
+          "value": "Research Assistant Name",
+          "valueByLocale": {}
+        },
+        "ee_4C_tFU": {
+          "type": "string",
+          "value": "Research Assistant",
+          "valueByLocale": {}
+        },
+        "WHoWENu2C": {
+          "type": "string",
+          "value": "M.Arch / M.S. Program, Taubman College",
+          "valueByLocale": {}
+        },
+        "JoauNczr4": {
+          "type": "string",
+          "value": "2025–",
+          "valueByLocale": {}
+        },
+        "GinJ4I5RU": {
+          "type": "image"
+        },
+        "E1DxwPFwZ": {
+          "type": "link",
+          "valueByLocale": {}
+        },
+        "JccN1kKMO": {
+          "type": "string",
+          "value": "",
+          "valueByLocale": {}
+        },
+        "MY3dcDtso": {
+          "type": "number",
+          "value": 3
+        },
+        "MYsaDVuDh": {
+          "type": "boolean",
+          "value": true
+        }
+      }
+    }
+  ]
+}
